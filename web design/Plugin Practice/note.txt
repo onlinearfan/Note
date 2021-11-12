@@ -1,0 +1,29 @@
+1)Particle Js using Steps : 
+
+*)add jquery,particle.min.js,app.js
+*)add hero div id="particle-id" don't add class
+*)add this id into app.js file 
+*)modify your css my position top:0,left:0 of particle wrapper area
+*)make your original wrapper position relative widht:100%,height:100%   
+*)changle setting for style change or you can take style from internet download config.json
+--------------******---------------
+
+2)Magnific Popup Js using Steps : 
+
+*)add jquery,magnific.css and magnific.js 
+*)and html code and and a tag class or parent div target 
+*)and js activation and check you all link is correct,
+*)add img , gallery,video
+--------------******---------------
+
+3)Sticky top Scroll Js using Steps : 
+
+*)add jquery, add sticky.js
+*)add activation and and class to your header
+--------------******---------------
+
+4)Counter Js using Steps :
+
+*)add jquery,waypoint,counterJs,
+*)add class in h2 or span tag and active code by class 
+*)you can customize active js settings 

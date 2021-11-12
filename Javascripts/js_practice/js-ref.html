@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Reference</title>
+  </head>
+  <body>
+    <script>
+              /* **************The HTML DOM : Main  Topic**************** */
+
+
+              /* **************DOM Attr Object : Topic 1**************** */
+              // getNamedItem() Method
+              // Get the value of the onclick attribute of a button element:
+// Click the button to get the value of the onclick attribute of the button element.
+// <button onclick="myFunction()">Try it</button>
+// <p id="demo"></p>
+
+// <script>
+function myFunction() {
+  var a = document.getElementsByTagName("BUTTON")[0];
+  var x = a.attributes.getNamedItem("onclick").value;  
+  document.getElementById("demo").innerHTML = x;
+}
+// Try it
+// Note: Internet Explorer 8 and earlier does not support the getNamedItem method.
+
+// <p id="demo">Click the button to find out if the first attribute in this P element is an ID attribute</p>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  x.innerHTML = x.attributes[0].isId;
+}
+
+// <p><strong>Note:</strong> The isId property is not supported in any of the major browsers.</p>
+// // Try it
+// Note: The isId property is not supported in any of the major browsers.
+    //   myFunction()
+
+//     Click the button to get all attribute names of the button element.
+
+/* <button id="myBtn" onclick="myFunction()" class="example">Try it</button>
+
+<p id="demo"></p>
+
+<script> */
+function myFunction() {
+  var txt = "";
+  var x = document.getElementById("myBtn").attributes;
+
+  for (i = 0; i < x.length; i++) {
+    txt += "Attribute name: " + x[i].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+// Try it
+// Attribute name: id
+// Attribute name: onclick
+// Attribute name: class
+
+// Click the button to see how many attributes the img element have.
+// <img id="myImg" alt="Flower" src="klematis.jpg" width="150" height="113">
+function myFunction() {
+  var x = document.getElementById("myImg").attributes.length;
+  document.getElementById("demo").innerHTML = x;
+}
+// Try it
+// The result should be 5 (the img element's id, alt, src, width and height attributes).
+
+// Note: In Internet Explorer 8 and earlier, the attributes property will return a collection of all possible attributes for the element, and will, in this example, display a much higher number than 5 (possibly 134).
+
+// 5
+
+// Click the button to display each attribute's name and value of the image above.
+
+/* <img id="myImg" alt="Flower" src="klematis.jpg" width="150" height="113">
+
+<p>Click the button to display each attribute's name and value of the image above.</p>
+
+<button onclick="myFunction()">Try it</button> */
+function myFunction() {
+  var x = document.getElementById("myImg");
+  var txt = "";
+  var i;
+  for (i = 0; i < x.attributes.length; i++) {
+    txt = txt + x.attributes[i].name + " = " + x.attributes[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+// Try it
+// id = myImg
+// alt = Flower
+// src = klematis.jpg
+// width = 150
+// height = 113
+
+// Click the button to display the name of the button's first attribute.
+/* <button onclick="myFunction()" class='button'>Try it</button>
+
+<p><strong>Note:</strong> In Internet Explorer 8 and earlier, the attributes property will return a collection of all possible attributes for the element, and will, in this example, display the name of a different attribute.</p>
+
+<p id="demo"></p>
+
+<script> */
+function myFunction() {
+  var btn = document.getElementsByTagName("BUTTON")[0];
+  var x = btn.attributes[1].name;
+  document.getElementById("demo").innerHTML = x;
+//   <input type="button" value="OK">
+  var btn = document.getElementsByTagName("INPUT")[0];
+  btn.attributes.removeNamedItem("type");
+// Try it
+// Note: In Internet Explorer 8 and earlier, the attributes property will return a collection of all possible attributes for the element, and will, in this example, display the name of a different attribute.
+
+// class
+
+/* **************DOM Document Object : Topic 2**************** */
+
+
+/* **************DOM Document Object : Topic 2**************** */
+
+
+   </script>
+  </body>
+</html>

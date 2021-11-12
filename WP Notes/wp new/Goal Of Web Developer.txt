@@ -1,0 +1,35 @@
+Front End Developer ---
+
+0)Web site Stracture Understand - page, post ,archieve, tag, 
+1) HTML - all type tutorial,geeky show , it bari, mostakim billah
+2)css - yahoo baba , it bari , mostakim billah
+2.1)web page section make with responsive by flex or grid ,float - rr fundation , coderGyan, mostakim billah
+2.2) sublime, vs code editor, chrome dev tool, 
+3)Psd to html by flexbox and css grid -  rr fundation , coderGyan, mostakim billah
+4)Bootstrap - thapa tecnical , moshiur vai , 
+5)Psd to Html by bootstrap  -mostakim billah, rr fundation , salim rana
+6)javascript - basic - yahoo baba, it bari , 
+7)Jquary - basic yahoo baba , it bari
+8)Jquary Plugin used - slider, animation, scroll up button,  - divider, mustakim billah , 
+9)Do More 10 project with interactive by jquary and javascript
+
+-----------------------------
+
+Back End Developer -----
+
+1) Php - basic (itbari) by yahoo baba
+2) my sql
+3) Database
+
+4)Full course by Softect It 
+5)wordpress theme customization by abc it park
+6)Fiverr market place,freelancer, people per hour, upwork ,
+7)Seo course
+8)photoshop(photopea) basic - background remove, crop image, resize image, etc
+9)Income hoi taile photoshop kinbo and ui/ux shikbo 
+
+
+-----------
+1)Affiliate marketing - growbig
+2)content writing - 
+3)bloging - 

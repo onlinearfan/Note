@@ -1,0 +1,254 @@
+Here are the Git commands which are being covered:
+git --version
+git config
+git init (directory)
+git clone
+git add
+git commit 
+git diff
+git reset (filename) = unstage hobe file,
+git status
+git rm
+git log
+git show commit_id = shudu show master info show krbe
+git tag
+git branch
+git checkout = branchName / -f = reset to last commit
+git merge
+git remote
+git push
+git pull
+git stash = temporarily file saving
+git fork
+git pull request
+git fork project clone,
+
+---------------------------
+*).gitignore = *.png / name.png/arfan /dir == dir/ = inner dir shoho, /static/dir = exact inner only
+*)empty folder git ignore kore,
+*)git rename,
+*)tab full name will come
+*)git mv first.txt first_rename.txt, = stage e cole jabe rename hoye,
+*)git rm --cached file.txt = eita git ignore er kaje ase untrack kore dei file 
+*)git log -p = full diff show,
+*)git log -p -2 = 2 commit show,
+*)git log --stat = shhor change show,
+*)git log --preety=oneline = all commit show short,
+*)git log --preety=short,
+*)git log --preety=full,
+*)git log --since=2.days =
+*)git restore --staged filename = stage theke unstage e jabe file,
+*)git checkout filename = last commit er tai ane dibe shudu ei file k,
+*)git checkout -f = full change k last commit er shate miliye dibe,
+*)git commit -a -m "direct commit"  = untrack nibe na,only track file gulo staged+commit hobe,
+*)q for skip log ,
+*)git diff = stage ->work
+*)git diff --staged = stage ->comiit last,
+*)rm -rf .git = remove git repo,
+*)git clone ulr dite pari init na kore, eita krte git init kra lage na,
+*)git clone url newName,
+*)git kno change korle ferot ante parbo,
+*)and kno project e changne krte bolle and pore abr oitai fire jete bolle ekhane master and branch onk kaj korbe,
+*)github hocche git e j local repository banaisi oita server repository te convert kore remote kore,
+*)working directory = amr kaj korar jaiga ,
+*)stage = hocche commit and WD er moddhe ekta somoy babar commit dibo ki na,
+*)commit = amr kaj sob perfectly done commit koro,
+*)branch = protita commit ek ekta Subbranch nameless,
+*)kono ekta theke branch banale setai ja chilo tar file sob niye new branch create hobe,
+*)remote repository = eita amr local commited repository er ekta branch ke server e host kre dile hoi,
+*)fetch = remote -> local, pull,clone
+*)modified = changne korsi j file e,
+*)untrack  = j gulo new create korsi file,
+*)push = local -> remote
+*)git status = change somporke janabe and
+*)git log = full details of commit
+*)git log --oneline = commit list show, 
+*)git add =(change track kore, and eita ekta somoy dei commit krbo ki na vabar,) stage e tula, git add . (all korbe j folder e thakbe),git add *(delete bade sob tulbe,) git add --all git add -A(same kaj ) , git add *.txt, git add file.txt,
+*)git download kore, git --version,git config korbo, 
+*)git config user.name "arfan" = local set, git config user.name = local see,
+*)git config --global user.name/ user.name "khan" = global see, and set,
+*)git reset filename.txt = file unstage korbe only,
+*)git reset head one.txt = upper same
+*)git reset = sob unstage korbe,
+*)touch .gitignore
+*)git stash  = temporarily store code,
+*)git stash pop/apply = get form temp file,
+*)git clean -f = untrack file remove all, not folder in file untrack
+*)git clean -f -n = untrack file remove all show,
+-------------------------
+git config
+Usage: git config -–global user.name “[name]”  
+Usage: git config -–global user.email “[email address]”  
+git config user.email "typeEmail"
+git config user.name "name"
+git config user.email
+git config user.name
+git config --list = full config show,
+
+git init
+Usage: git init [repository name]
+
+git clone
+Usage: git clone [url] = project clone form site,
+
+git commit
+Usage: git commit -m “[ Type in the commit message]”  
+
+git add
+Usage: git add [file]  
+
+git diff = eita unstage and commite er diff dekhabe,
+git diff –staged = stage -> latest commite
+Usage: git diff [first branch] [second branch]  
+
+git reset
+Usage: git reset [file]  
+
+Usage: git log –follow[file]  
+
+This command lists version history for a file, including the renaming of files also.
+
+git show
+Usage: git show [commit]  
+This command shows the metadata and content changes of the specified commit.
+
+git tag
+Usage: git tag [commitID]  
+
+This command is used to give tags to the specified commit.
+
+git branch
+Usage: git branch = branch list show,
+Usage: git branch [branch name] = branch create
+git branch -d [branch name] = branch delete
+git checkout [branch name] = branch e shift kora,
+git checkout -b [branch name] = branch make + shift
+
+git merge
+Usage: git merge [branch name]  
+
+This command merges the specified branch’s history into the current branch.
+
+git remote
+Usage: git remote add [variable name] [Remote Server Link]  
+
+git push
+Usage: git push [variable name(origin)] master/branchName
+
+git push –all [variable name] / git push -all origin
+
+git pull
+Usage: git pull [Repository Link]  
+
+This command fetches and merges changes on the remote server to your working directory.
+
+git stash
+Usage: git stash save  
+
+This command temporarily stores all the modified tracked files.
+Usage: git stash list  
+
+
+
+--------------------------
+*)git diff head = working ->local repo,
+*)git reset head file.txt = eita ekta file k stage tkhe working e niye asbe,
+*)git show = eita master e j commit use krtase tar details asbe,
+*)git show commit = ei commit k korse tar info dekhabe,
+*)git reset = git add bad dibe , stage er file gulo unstage hoye jabe,
+*)git checkout -f = hard reset er motoi,
+*)git reset --hard = last commit er moddhe cole jabe and new text add and new file add or delete krle oigu change hobe,
+*)git init = git er kajer jonno ready hobe,
+*)github change er = new add = green and delete text = red, and not change no color rakhe,
+*)clone kore dowload korle sete marter e asbe and tar agr commit gulo pabo,
+*)git commit  = git commit -m "massage"
+*)git reset head~ head~1 = ekta back head~2 2ta back, eita diye last commit roll back korte parb delete hobe last commite,
+*)git rm fileName / * / *.txt = delete + stage er kaj korbe, eita commit chara file delte krbe na,
+*)git rm filename -f = delte force fully,
+*)git push -u origin master / git push --all origin
+*)git checkout branchName = shift on other branch,
+*)git branch branchName = create new branch,
+*)git untrack file = rm korte caile cinbei na, and 
+*)untrack = git ei file cinei na ,
+*)stage er file but commited na oigul normal remove krte caile error show krbe, rm f kore krte hobe noy commit er gulo krte parbo remove,
+*)git reset --hard = all delete file back before commit, and text o delte hobe, 
+*)git rm --cached one.txt = eita file delete krbe na but git theke untrak kore felbe,
+*)git rm -r -f folder2
+*)master branch tkhe picher branch er eshe jodi change kori and commit krbo na , 
+tarpor master asi agr moto master pabo and abr commit e gele oita agr motoi pabo ,  wrong info it is
+commit reset --hard kore set commit er sob chang reset krte pari,
+extra cmd = 
+touch = touch text.txt file create, in folder i have,
+
+*)push e j branch e change hoise oitai asbe, oitai active thakle,
+*)git theke amr kono project clone krle setai change kore push krle oita change hobe tara link ase jehetu,
+
+*)same file e code korle config kore tai oigu merge krle both kre krte pari, 
+*)and file name alada hole easily merge hobe,
+
+-----------------------
+ShajTEch -------
+00. Entry - 00:00
+01. What is version control - 05:19
+02. What is git branch - 13:02
+03. What is git and github? - 18:06
+04. How to download and install git - 21:03
+05. What is Local and Remote Repository? - 23:09
+06. What is git staging - 25:09
+
+
+07. What is git add - 29:02 
+08. What is git commit - 29:20
+09. What is git push - 30:58
+
+10. What is git fetch - 31:43
+11. What is git clone - 32:01
+12. What is git pull? - 32:47
+13. What is git diff - 35:01
+14. What is git diff HEAD? - 35:32
+15. What is git merge - 36:30
+16. What is git checkout? - 36:56
+
+Practical :
+
+17. Check git install version - 39:15
+
+18. Git GUI - initialize, stage, commit, push - 39:53
+
+Using Terminal (Main Part) :
+
+19. How to initialize - 44:13
+20. How to config git username and email - 45:23
+21. Check git username and email - 47:56
+22. Use of git status - 49:00
+23. How to stage changes - 49:59
+24. How to commit - 52:34
+25. List all changes/commits using git log - 55:47
+26. Use of git checkout - 58:54
+27. Use of git diff - 01:02:35
+28. Use of git show - 01:03:44
+29. See diffrence between two commits - 01:05:11
+30. Use of git diff stagged - 01:06:46
+31. Remove/Delte files using git rm and reset HEAD - 01:07:44
+
+32. How to create github account - 01:10:50
+33. Create github repository - 01:13:34
+34. How to push to github - 01:14:14
+
+35. What is SSH Key -  01:17:11
+36. How to generate SSH Key - 01:18:22
+37. Delete github credential - 01:18:31
+38. Add SSH Key to github - 01:21:33
+39. Push using SSH Key - 01:22:21
+
+40. How to clone - 01:23:57
+41. How to fecth and pull - 01:26:41
+
+42. Git Branching - 01:30:17
+
+43. How to git stash and clean - 01:35:23 
+
+44. How to use .gitignore - 01:41:57
+
+45. How to fork in github - 01:44:17
+46. How to create pull request - 01:45:38

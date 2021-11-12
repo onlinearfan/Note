@@ -1,0 +1,2249 @@
+/*
+  Theme Name: Name - SECTION PRACTICE PLATE
+*/
+
+/* CSS Index
+-----------------------------------
+01. General Styles
+
+*/
+
+
+/* ========= Google Font Add ===========  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+/* ========= Root CSS Add ===========  */
+:root {
+
+	/* Colors  */
+	--green: #8ec448;
+	--white: #ffffff;
+	--black: #000000;
+	--text-color: #353535;
+	--section: #F1F1F1;
+
+	/* Font-Family  */
+	--Raleway: 'Raleway', sans-serif;
+	--Lato: 'Lato', sans-serif;
+	/*========Other Style========*/
+	--transition: all .3s ease;
+}
+
+/* ========= Custom ScrollBar Part Start ===========  */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* ========= TEXT Selection & Placeholder CSS ===========  */
+
+*::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* ============Scroll Up Button============*/
+
+.scroll-up-btn {
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: var(--green);
+	right: 30px;
+	bottom: 10px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	z-index: 9999;
+	font-size: 30px;
+	border-radius: 6px;
+	border-bottom-width: 2px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+	background: black;
+}
+
+
+/* ========= Owl Carousel CSS ===========  */
+
+/* Owl nav  */
+
+.active .owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+
+.active .owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+
+.active .owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+
+.active .owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+
+/* owl dots css  */
+
+.active .owl-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: -90px;
+	z-index: 99999;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.active .owl-dot {
+	width: 15px;
+	height: 15px;
+	background: var(--white);
+	margin-right: 20px;
+	border: 2px solid #020202;
+	border-radius: 50%;
+}
+
+.active .owl-dot.active {
+	background: var(--green);
+}
+
+/* ========= 1) Theme Default CSS ===========  */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+
+body {
+	font-family: var(--Raleway);
+	font-size: 16px;
+	color: var(--text-color);
+	overflow-x: hidden;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: var(--Lato)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--Raleway);
+	font-weight: normal;
+	color: #353535;
+	font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* ========= ALL Outline NONE ===========  */
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:focus,
+input,
+input:focus,
+textarea,
+textarea:focus,
+button,
+button:focus {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 16px;
+	outline: none !important;
+}
+
+/* ========= Section Title ===========  */
+.section-title {
+	text-align: center;
+}
+
+.section-title h1 {
+	font-size: 24px;
+}
+
+.section-title p {
+	font-size: 16px;
+	margin-bottom: 35px;
+
+}
+
+/* ========= Common Button ===========  */
+.mybtn {
+	font-size: 14px;
+	margin: 0;
+	padding: 15px 40px;
+	border: 1px solid #121212;
+	text-transform: uppercase;
+	color: #121212;
+	transition: all 0.3s ease;
+	font-weight: 700;
+	font-family: var(--Raleway);
+	transition: .3s;
+}
+
+.mybtn:hover {
+	background: #8EC448;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.mybtn-active {
+	background: #8EC448;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+
+a {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	cursor: pointer;
+}
+
+
+/* ========= Theme Overlay ===========  */
+
+.theme-overlay {
+	position: relative
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.delete-row-margin {
+	margin: -15px 0;
+}
+
+
+
+
+/*! ========= 1) Particle Plugin ===========  */
+
+/* .top-header {
+	padding: 15px 0;
+	background: #3a0ae7;
+}
+
+.left-side {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+
+.right-side span {
+	padding-left: 25px;
+}
+
+.right-side .icon-1 span {
+	padding-right: 25px;
+}
+
+.right-side {
+	color: white;
+	font-weight: 500;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	display: block;
+	padding: 17px 24px;
+	position: relative;
+	transition: .5s;
+	margin: 15px 0;
+	font-weight: 500;
+	color: white !important;
+}
+
+nav ul li:last-child a {
+	padding-right: 0px;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background: aqua;
+	width: 0%;
+	height: 4px;
+	transition: .5s;
+}
+
+nav ul li:hover>a::before {
+	width: 100%;
+}
+
+nav ul li:hover>a {
+	color: aqua !important;
+}
+
+
+.logo {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 0;
+	border: 4px solid white;
+	position: relative;
+	padding: 2px 27px;
+	font-weight: 700;
+}
+
+.main-header {
+	background: #000c0c;
+}
+
+.logo span {
+	color: red;
+	font-size: 40px;
+}
+
+.logo:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+
+#header {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: 999;
+}
+
+.hero-slider .single-slider {
+	min-height: 100vh;
+	background: blueviolet;
+}
+
+
+.hero-text h1 {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+}
+
+.hero-text p {
+	color: white;
+	font-weight: 300;
+	margin: 20px 0 35px;
+}
+
+.hero-text a {
+	display: inline-block;
+	background: aqua;
+	color: black;
+	font-weight: 700;
+	padding: 10px 33px;
+	transition: .3s;
+	border: 2px solid aqua;
+}
+
+.hero-text {
+	margin-top: 55px;
+}
+
+.hero-img {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.hero-img img {
+	width: 366px;
+}
+
+.single-slider .row {
+	padding-top: 222px;
+}
+
+.hero-text a:hover {
+	color: white;
+	background: transparent;
+	border-color: white;
+}
+
+.hero-text a i {
+	padding-left: 10px;
+}
+
+
+.sub-menu {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	width: 200px;
+	top: 115%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+ul li {
+	position: relative;
+}
+
+.sub-menu li a {
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+.sub-menu li a:before {
+	background: transparent;
+}
+
+nav ul li:hover>.sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.sub-menu li .ul.sub-menu {
+	left: 100%;
+	background: red;
+}
+
+.sub-menu li .sub-menu {
+	left: 90%;
+	top: 0%;
+}
+
+.sub-menu li:hover>.sub-menu {
+	left: 100%;
+	top: 0%;
+}
+
+
+.hamberger span {
+	color: white;
+	display: inline-block;
+	font-size: 23px;
+	padding: 10px 25px;
+	background: red;
+	cursor: pointer;
+	color: black;
+	background: white;
+}
+
+
+.content{
+	padding:50px 0px;
+}
+.content.content-1 {
+  background: antiquewhite;
+}
+.content.content-2 {
+  background: azure;
+}
+.content.content-3 {
+  background: orange;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
+	left: 0;
+} */
+
+
+/*! ========= 2)Magnific Popup Plugin ===========  */
+
+
+/* .sec-padding {
+	padding: 100px 0px;
+	background: antiquewhite;
+  }
+  .col-md-4 div {
+	min-height: 200px;
+	border: 1px solid;
+	background: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .col-md-4 div a {
+	display: inline-block;
+	padding: 0px 2px;
+	height: 50px;
+	background: yellow;
+	font-size: 17px;
+	font-weight: 700;
+	margin-left: 10px;
+  } */
+
+/*! ========= 3)Sticky Scroll Top Plugin ===========  */
+
+/* .top-header {
+	padding: 15px 0;
+	background: #3a0ae7;
+}
+
+.left-side {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+
+.right-side span {
+	padding-left: 25px;
+}
+
+.right-side .icon-1 span {
+	padding-right: 25px;
+}
+
+.right-side {
+	color: white;
+	font-weight: 500;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	display: block;
+	padding: 17px 24px;
+	position: relative;
+	transition: .5s;
+	margin: 15px 0;
+	font-weight: 500;
+	color: white !important;
+}
+
+nav ul li:last-child a {
+	padding-right: 0px;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background: aqua;
+	width: 0%;
+	height: 4px;
+	transition: .5s;
+}
+
+nav ul li:hover>a::before {
+	width: 100%;
+}
+
+nav ul li:hover>a {
+	color: aqua !important;
+}
+
+
+.logo {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 0;
+	border: 4px solid white;
+	position: relative;
+	padding: 2px 27px;
+	font-weight: 700;
+}
+
+.main-header {
+	background: #000c0c;
+}
+
+.logo span {
+	color: red;
+	font-size: 40px;
+}
+
+.logo:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+
+#header {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: 999;
+}
+
+.hero-slider .single-slider {
+	min-height: 100vh;
+	background: blueviolet;
+}
+
+
+.hero-text h1 {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+}
+
+.hero-text p {
+	color: white;
+	font-weight: 300;
+	margin: 20px 0 35px;
+}
+
+.hero-text a {
+	display: inline-block;
+	background: aqua;
+	color: black;
+	font-weight: 700;
+	padding: 10px 33px;
+	transition: .3s;
+	border: 2px solid aqua;
+}
+
+.hero-text {
+	margin-top: 55px;
+}
+
+.hero-img {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.hero-img img {
+	width: 366px;
+}
+
+.single-slider .row {
+	padding-top: 222px;
+}
+
+.hero-text a:hover {
+	color: white;
+	background: transparent;
+	border-color: white;
+}
+
+.hero-text a i {
+	padding-left: 10px;
+}
+
+
+.sub-menu {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	width: 200px;
+	top: 115%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+ul li {
+	position: relative;
+}
+
+.sub-menu li a {
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+.sub-menu li a:before {
+	background: transparent;
+}
+
+nav ul li:hover>.sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.sub-menu li .ul.sub-menu {
+	left: 100%;
+	background: red;
+}
+
+.sub-menu li .sub-menu {
+	left: 90%;
+	top: 0%;
+}
+
+.sub-menu li:hover>.sub-menu {
+	left: 100%;
+	top: 0%;
+}
+
+
+.hamberger span {
+	color: white;
+	display: inline-block;
+	font-size: 23px;
+	padding: 10px 25px;
+	background: red;
+	cursor: pointer;
+	color: black;
+	background: white;
+}
+
+section {
+    padding: 200px 50px;
+    background: yellow;
+    font-weight: 700;
+    padding-bottom: 1000px;
+}
+
+header{
+	width: 100%;
+	background-color: black;
+} */
+
+/*! ========= 4)Counter Js Plugin = NO CSS===========  */
+
+/*! ========= 5)Modal js ===========  */
+
+
+/* .content{
+    width:600px;
+    text-align: center;
+}
+
+.popup-button{
+    width:500px;
+    margin:0 auto;
+    text-align: center;
+    background:#ddd;
+    padding:60px;
+    margin-top:50px;
+}
+.popup-button a{
+    color:#fff;
+    background: red;
+    text-decoration: none;
+    font-size:20px;
+    padding:10px 20px;
+    margin:5px;
+    transition: .4s;
+}
+.popup-button a:hover{
+    background:#fff;
+    color:#000;
+} */
+
+
+/*! ========= 6)Wow Js Plugin===========  */
+
+
+/* 
+.wowAnimation {
+	min-height: 100vh;
+	padding: 100px 0px;
+  }
+
+  .animation-1{
+	background: aqua;
+  }
+  .animation-2{
+	background: rebeccapurple;
+  }
+  .animation-3{
+	background: antiquewhite;
+  }
+  .animation-4{
+	background: teal;
+  }
+  .animation-5{
+	background: palevioletred;
+  }
+  .wowAnimation .col-md-4 div {
+	min-height: 230px;
+	border: 1px solid;
+  }
+  .color.color-1 {
+	background: yellow;
+  }
+  .color.color-2 {
+	background: red;
+  }
+  .color.color-3 {
+	background: greenyellow;
+  } */
+
+/*! ========= 7)Aos Js Plugin ===========  */
+
+
+/* .aosAnimation {
+	min-height: 100vh;
+	padding: 100px 0px;
+  }
+
+  .animation-1{
+	background: aqua;
+  }
+  .animation-2{
+	background: rebeccapurple;
+  }
+  .animation-3{
+	background: antiquewhite;
+  }
+  .animation-4{
+	background: teal;
+  }
+  .animation-5{
+	background: palevioletred;
+  }
+  .aosAnimation .col-md-4 div {
+	min-height: 230px;
+	border: 1px solid;
+  }
+  .color.color-1 {
+	background: yellow;
+  }
+  .color.color-2 {
+	background: red;
+  }
+  .color.color-3 {
+	background: greenyellow;
+  } */
+
+/*! ========= 8)Hover Scroll Img===========  */
+
+
+/* #demo-container {
+		padding: 100px 0px;
+		background: antiquewhite;
+	}
+	.section-title {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.demo-content {
+		border: 1px solid #ddd;
+		box-shadow: 0px 0px 10px -5px #000;
+	}
+	
+	.demo-img,
+	.demo-img a {
+		height: 340px;
+		overflow: hidden;
+	}
+	
+	.demo-img a {
+		display: block;
+		position: relative;
+	}
+	
+	.demo-img a,
+	.demo-img a img,
+	.demo-img a:after,
+	.demo-img a:before {
+		transition: 5s;
+	}
+	
+	.demo-img a img {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	.demo-img a:before {
+		background: #999 none repeat scroll 00;
+		content: "";
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		transition: all 0.3s ease 0s;
+		width: 100%;
+		z-index: 2;
+	}
+	
+	.single-demo:hover .demo-img a:before {
+		opacity: .3;
+	}
+	
+	.demo-img a:after {
+		color: #fff;
+		content: "";
+		font-size: 16px;
+		font-weight: 700;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		position: absolute;
+		text-align: center;
+		text-transform: capitalize;
+		top: 20%;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.single-demo:hover .demo-img a:after {
+		opacity: 1;
+		top: 44%;
+	}
+	
+	.demo-title {
+		background: #4dc3cf;
+		padding: 20px 0px;
+		text-align: center;
+	}
+	
+	.demo-title h2 {
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #fff;
+	} */
+
+/*! ========= 9) Smooth Scroll with Plugin Activation Start===========  */
+
+/* .header-area {
+	background: #000;
+	text-align: center;
+	padding: 20px 0px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+.main-menu ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+.main-menu ul li a {
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	transition: .3s;
+	position: relative;
+}
+
+.main-menu ul li a:hover {
+	color: #e26bf1;
+}
+
+.section-area {
+	text-align: center;
+	padding: 300px 0px;
+}
+
+.section-area h2 {
+	font-size: 30px;
+}
+
+#sec-1 {
+	background: #a3ffe5;
+	margin-top: 90px;
+}
+
+#sec-2 {
+	background: #ffd0d0;
+}
+
+#sec-3 {
+	background: #b2ffb1;
+}
+
+#sec-4 {
+	background: #ffedbb;
+}
+
+#sec-5 {
+	background: #beeaff;
+	margin-bottom: 600px;
+} */
+
+/*! ========= 10)DropDown Menu With SlickNav Plugin===========  */
+
+/* #header {
+    background: var(--orange);
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.menu ul li {
+    float: left;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 26px 20px;
+    color: var(--white);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.menu ul li ul.submenu {
+    position: absolute;
+    background: var(--orange);
+    width: 200px;
+    top: 110%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.menu ul li:hover > ul.submenu,.menu ul li:hover > div.mega-menu {
+	opacity: 1;
+    visibility: visible;
+    top:100%;
+}
+.menu ul li:hover > a {
+	background: var(--black);
+}
+
+.menu ul li ul.submenu li {
+    float: none;
+}
+
+.menu ul li ul.submenu li a {
+    padding: 11px 24px;
+}
+
+.menu ul li ul.submenu li ul.submenu {
+	top: 10%;
+	left: 100%;
+}
+.menu ul li ul.submenu li:hover > ul.submenu {
+	top: 0%;
+}
+
+.mega-menu {
+	position: absolute;
+	top: 110%;
+	background: #cdb740;
+	width: 1170px;
+	display: flex;
+    left: -422px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.mega-menu ul {
+	width: 33.33%;
+}
+
+.mega-menu ul li {
+	float: none;
+}
+
+.mega-menu ul li a {
+	padding: 18px 40px;
+}
+
+.blog-mega .mega-menu {
+	left: -684px;
+} */
+
+
+/*! ========= 11)Isotop Filter Plugin===========  */
+
+/* .single-protfolio {
+		margin-bottom: 30px;
+		position: relative;
+	  } */
+
+
+
+
+
+
+
+/*! ========= 12)Animated Headline Plugin ===========  */
+
+/* 
+.cusHead {
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cd-words-wrapper b {
+	font-weight: 700;
+	color: red;
+}
+
+.animated-header .col-md-4 {
+	min-height: 230px;
+	border: 1px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.head-1 .cd-words-wrapper b{
+	color:rebeccapurple
+}
+.head-2 .cd-words-wrapper b{
+	color:yellow
+}
+.head-3 .cd-words-wrapper b{
+	color:palevioletred
+}
+.head-4 .cd-words-wrapper b{
+	color:teal
+}
+.head-5 .cd-words-wrapper b{
+	color:blue
+}
+.head-6 .cd-words-wrapper b{
+	color:rosybrown
+}
+.head-7 .cd-words-wrapper b{
+	color:goldenrod
+}
+.head-8 .cd-words-wrapper b{
+	color:indigo
+}
+.head-9 .cd-words-wrapper b{
+	color:turquoise
+} */
+
+
+/*! =========13)Preloader Used===========  */
+
+/* .loader-wrapper {
+	width: 100%;
+	height: 100vh;
+	background: black;
+}
+  
+  @-webkit-keyframes loader-spin {
+	0% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes loader-spin {
+	0% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+  }
+  .loader {
+	position: absolute;
+	margin: -18px 0 0 -18px;
+	border: 3.6px solid #ff974d;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 36px;
+	height: 36px;
+	left: 50%;
+	top: 50%;
+	animation: loader-spin 2s linear infinite reverse;
+	-webkit-filter: url(#goo);
+			filter: url(#goo);
+	box-shadow: 0 0 0 1px #ff974d inset;
+  }
+  .loader:before {
+	content: "";
+	position: absolute;
+	-webkit-animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+			animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+	background: #ff974d;
+	-webkit-transform-origin: top center;
+			transform-origin: top center;
+	border-radius: 50%;
+	width: 150%;
+	height: 150%;
+	top: 50%;
+	left: -12.5%;
+  } */
+
+
+/*! =========14)Flat and Material Icon Used==========  */
+/* .flaticon-002-spray-bottle::before {
+	content: "\f101";
+	margin-left: 0px!important;
+} */
+
+
+/*! ========= 15)CountDown Plugin===========  */
+
+
+/* .single-countdown-wrapper {
+	display: block;
+	min-height: 230px;
+	border: 1px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+  }
+  .single-countdown-wrapper span {
+	display: block;
+  }
+  .countdown-time {
+	font-size: 40px;
+	font-weight: 700;
+	color: orangered;
+  }
+  .countdown-title {
+	color: green;
+	font-weight: 700;
+	font-size: 30px;
+  } */
+
+/*! ========= 16)One Page Nav Plugin===========  */
+
+/* li.current a {
+	color: #e26bf1 !important;
+}
+
+.main-menu ul li a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #e26bf1;
+	transition: .4s;
+}
+.main-menu ul li a:hover::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #e26bf1;
+	transition: .4s;
+}
+.main-menu ul li.current a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #e26bf1;
+	transition: .4s;
+} */
+
+
+/*! ========= 17)Circle Progress Bar Plugin===========  */
+/* .single-circle-wrapper #circle {
+	position: relative;
+	padding-left: 22px;
+}
+
+.single-circle-wrapper #circle span {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	font-size: 50px;
+	font-weight: 700;
+	left: 5px;
+	text-align: center;
+	transform: translateY(-50%);
+} */
+
+
+/*! ========= 18)Price Range Slider Plugin===========  */
+
+/* .range-slider input[id="amount"] {
+	border: 0;
+	color: #f6931f;
+	font-weight: bold;
+} */
+
+/*! ========19)Elevated Zoom Plugin===========  */
+
+
+/* .single-wrapper img {
+	border: 2px solid red;
+}
+
+#gal1 img {
+	border: 2px solid greenyellow;
+}
+
+.active img {
+	border: 2px solid #333 !important;
+} */
+
+/*! ========20)YTplayer VideoBG Plugin===========  */
+
+
+/* .sec-padding {
+	height: 100vh;
+	margin-bottom: 1000px;
+	background-image: url(../images/backiee-79295.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.sec-padding::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 1;
+	opacity: .2;
+} */
+
+
+/*! =========21)Slick Slider Plugin===========  */
+
+/* 
+.slick-nav-area {
+	height: 100vh;
+	background: aquamarine;
+	padding: 100px 0;
+}
+
+.single-slick-slider {
+	min-height: 230px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	line-height: 230px;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.bg-1 {
+	background: black;
+	color: white;
+}
+
+.bg-2 {
+	background: aqua;
+}
+
+.bg-3 {
+	background: orangered;
+	color: white;
+} */
+/*! =========22)Nivo Slider Plugin===========  */
+/* 
+.nivo-slider-wrapper .nivo-controlNav.nivo-thumbs-enabled a {
+	display: inline-block;
+	width: 180px;
+}
+
+.nivo-slider-wrapper .container {
+	position: relative;
+}
+
+.nivo-slider-wrapper .nivo-controlNav.nivo-thumbs-enabled {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 9999;
+}
+
+.nivo-directionNav a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: white;
+	border-radius: 50%;
+	left: 50px;
+}
+
+.nivo-directionNav a:last-child {
+	left: auto;
+	right: 50px;
+}
+
+.nivo-caption {
+	height: 100%;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	opacity: 1;
+}
+
+
+.nivo-caption h1 {
+	color: white;
+	font-weight: 700;
+}
+
+.nivo-caption p {
+	font-weight: 700;
+	color: aqua;
+	margin-bottom: 27px;
+}
+
+.nivo-slider-wrapper.position-relative::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff02021a;
+	content: "";
+	z-index: 6;
+}
+
+.nivo-controlNav {
+	text-align: center;
+	padding: 15px 0;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 99;
+}
+
+.nivo-controlNav a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid white;
+	margin-right: 10px;
+	font-size: 0px;
+	border-radius: 50px;
+  }
+  .nivo-controlNav a.active {
+	background: yellow;
+	border-color: blue;
+  }
+
+  .nivoSlider {
+	height: 100vh;
+} */
+
+
+
+
+/*! =========23)Sticky Js Plugin===========  */
+
+/* 
+.top-header {
+	padding: 15px 0;
+	background: #3a0ae7;
+}
+
+.left-side {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+
+.right-side span {
+	padding-left: 25px;
+}
+
+.right-side .icon-1 span {
+	padding-right: 25px;
+}
+
+.right-side {
+	color: white;
+	font-weight: 500;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	display: block;
+	padding: 17px 24px;
+	position: relative;
+	transition: .5s;
+	margin: 15px 0;
+	font-weight: 500;
+	color: white !important;
+}
+
+nav ul li:last-child a {
+	padding-right: 0px;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background: aqua;
+	width: 0%;
+	height: 4px;
+	transition: .5s;
+}
+
+nav ul li:hover>a::before {
+	width: 100%;
+}
+
+nav ul li:hover>a {
+	color: aqua !important;
+}
+
+
+.logo {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 0;
+	border: 4px solid white;
+	position: relative;
+	padding: 2px 27px;
+	font-weight: 700;
+}
+
+.main-header {
+	background: #000c0c;
+}
+
+.logo span {
+	color: red;
+	font-size: 40px;
+}
+
+.logo:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+
+#header {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: 999;
+}
+
+.hero-slider .single-slider {
+	min-height: 100vh;
+	background: blueviolet;
+}
+
+
+.hero-text h1 {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+}
+
+.hero-text p {
+	color: white;
+	font-weight: 300;
+	margin: 20px 0 35px;
+}
+
+.hero-text a {
+	display: inline-block;
+	background: aqua;
+	color: black;
+	font-weight: 700;
+	padding: 10px 33px;
+	transition: .3s;
+	border: 2px solid aqua;
+}
+
+.hero-text {
+	margin-top: 55px;
+}
+
+.hero-img {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.hero-img img {
+	width: 366px;
+}
+
+.single-slider .row {
+	padding-top: 222px;
+}
+
+.hero-text a:hover {
+	color: white;
+	background: transparent;
+	border-color: white;
+}
+
+.hero-text a i {
+	padding-left: 10px;
+}
+
+
+.sub-menu {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	width: 200px;
+	top: 115%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+ul li {
+	position: relative;
+}
+
+.sub-menu li a {
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+.sub-menu li a:before {
+	background: transparent;
+}
+
+nav ul li:hover>.sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.sub-menu li .ul.sub-menu {
+	left: 100%;
+	background: red;
+}
+
+.sub-menu li .sub-menu {
+	left: 90%;
+	top: 0%;
+}
+
+.sub-menu li:hover>.sub-menu {
+	left: 100%;
+	top: 0%;
+}
+
+
+.hamberger span {
+	color: white;
+	display: inline-block;
+	font-size: 23px;
+	padding: 10px 25px;
+	background: red;
+	cursor: pointer;
+	color: black;
+	background: white;
+}
+
+
+.content{
+	padding:50px 0px;
+}
+.content.content-1 {
+  background: antiquewhite;
+}
+.content.content-2 {
+  background: azure;
+}
+.content.content-3 {
+  background: orange;
+} */
+
+
+/*! =========24)Nice Select Js Plugin===========  */
+
+/* .container {
+	margin-top: 50px;
+}
+
+.remove{
+	color:red;
+}
+.color{
+	background-color: khaki;
+} */
+
+/*! =========25)Bootstrap Tab Js Plugin===========  */
+
+/* .nav-link.active {
+	background: red;
+	color: white;
+} */
+
+
+
+/*! =========26)Bootstrap Accordion Plugin===========  */
+/* .section-padding {
+	position: relative;
+	min-height: 645px;
+	padding: 50px 0 0 0;
+  }
+  .section-padding:before {
+	background: #68d9eb;
+	content: "";
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+  }
+
+.style-faq .card {
+	background-color: none;
+	background-clip: content-box;
+	border:none;
+	border-radius: 0px;
+}
+.style-faq .card-header {
+	padding: 0px;
+	margin:none;
+	background-color:transparent;
+	border-bottom:none;
+}
+
+
+.style-faq .card-header h2 a {
+	display: block;
+	padding: 15px 20px;
+	background: #80808030;
+  }
+.style-faq .accordion > .card > .card-header {
+	margin-bottom: 0px;
+}
+
+
+.style-faq .card-header h2 a:before {
+	content: "-";
+	font-size: 30px;
+	float: right;
+	line-height: 15px;
+  }
+  .style-faq .card-header h2 a[aria-expanded="true"]::before {
+	content: "+";
+  }
+  .style-faq .card-body{
+	  background:aqua;
+  } */
+
+
+/*! =========28)Fancy box Js Plugin===========  */
+/* no css */
+
+
+/*! =========29)Tree Js Plugin===========  */
+
+/* #jstree > ul > li  > i::before {
+	content: "a";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-top: 11px solid green;
+	border-radius: 30px;
+	background: yellow !important;
+	border-bottom: 11px solid red;
+	border-left: 11px solid aliceblue;
+}
+#jstree > ul > li >ul > li  > i::before {
+	content: "b";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-top: 11px solid green;
+	border-radius: 30px;
+	background: yellow !important;
+	border-bottom: 11px solid red;
+	border-left: 11px solid aliceblue;
+} */
+
+
+/*! =========30)js tree plugin 2===========  */
+
+
+/* .jsTree {
+	padding: 100px 0;
+}
+.our-style > ul > li {
+	position: relative;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+
+.drop-active > i:before {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	right: 20px;
+	top: 4px;
+	content: "a";
+	text-align: center;
+	line-height: 16px;
+  }
+
+  .drop-active-sub{
+	  position: relative;
+  }
+  .drop-active-sub > i:before {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	right: 20px;
+	top: 4px;
+	content: "a";
+	text-align: center;
+	line-height: 16px;
+  }
+  
+  .jstree-open > i:before{
+	  content: "b";
+  } */
+
+
+/*! ==================31)upper dropdown menu===========  */
+
+
+/* .product {
+	padding: 100px 0;
+	background: antiquewhite;
+  }
+  .all-sidebar-wrapper {
+	background: azure;
+	cursor: pointer;
+  }
+  .all-sidebar-wrapper h2 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .single-sidbar {
+	border: 1px solid black;
+	margin: 0 20px;
+	margin-top: 30px;
+	transition: .5s;
+	height: 230px;
+  }
+  .sidebar-1 {
+	background: aquamarine;
+  }
+  .sidebar-2 {
+	background: orange;
+  }
+  .sidebar-3 {
+	background: yellow;
+  }
+  .sidebar-4 {
+	background: rebeccapurple;
+  }
+  .sidebar-5 {
+	background: blue;
+  }
+
+  .single-grid-product{
+	height: 230px;
+	border: 1px solid black;
+	margin: 0 20px;
+	margin-top: 30px;
+  }
+
+ .product-1{
+	background: blue;
+ }
+ .product-2{
+	background: yellow;
+ }
+ .product-3{
+	background: hotpink;
+ }
+ .product-4{
+	background: orange;
+ }
+ .product-5{
+	background: red;
+ }
+ .product-6{
+	background: slategray;
+ }
+
+ @media (max-width:800px){
+	 h2	{
+		 background-color: red;
+	 }
+
+	 .single-sidbar{
+		 display: none;
+	 }
+	 .all-sidebar-wrapper .single-sidbar.active{
+	display: block;
+	 }
+
+	} */
+
+
+
+/*! ==================32)product tab with slider==================  */
+  
+/* .product-slider {
+	padding: 100px 0;
+  }
+  .product-img {
+	position: relative;
+  }
+  .product-img img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s;
+	opacity: 0;
+  }
+  .single-product-wrapper:hover .product-img img:nth-child(2) {
+	top: 0;
+	opacity: 1;
+  }
+  .product-icon-img {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background: black;
+	color: white;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: .3s;
+  }
+  .product-icon-img i {
+	display: block;
+	padding: 13px;
+  }
+  .single-product-wrapper:hover .product-icon-img {
+	top: 50%;
+	opacity: 1;
+  }
+  
+.product-content {
+	text-align: center;
+  }
+  .product-content h3 {
+	font-size: 16px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  .price {
+	position: relative;
+	margin-top: 12px;
+  }
+  .price .name {
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 100%;
+	opacity: 0;
+  }
+  .price h4 {
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: .3s;
+  }
+  .single-product-wrapper:hover .price .name {
+	left: 0;
+	opacity: 1;
+  }
+  .single-product-wrapper:hover .price h4:first-child {
+	opacity: 0;
+	margin-right: -60px;
+  }
+  
+.name:before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 152px;
+	height: 5%;
+	background: black;
+  }
+
+  
+.owl-nav button span {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: aqua;
+	text-align: center;
+	line-height: 40px;
+	font-weight: 700;
+	font-size: 30px;
+	margin-left: 10px;
+  }
+  .owl-nav {
+	position: absolute;
+	top: -56px;
+	right: 20px;
+  }
+  .nav-link.active {
+	border-top: 2px solid black;
+} */
+
+
+ /*!=========33)Mean Menu=========  */
+
+
+/* .mean-container a.meanmenu-reveal span:nth-child(2) {
+	margin: 5px 0px;
+}
+
+.mean-container a.meanmenu-reveal span {
+	display: block;
+	background: #fff;
+	height: 3px;
+}
+
+.mean-container a.meanmenu-reveal {
+	text-indent: 0px;
+
+}
+.logo {
+	font-size: 24px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	position:relative;
+	z-index: 99999999999;
+}
+
+.menu-container.mean-container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.menu-container.mean-container {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 100%;
+}
+
+.header-area {
+	background: #20ff4d;
+	text-align: center;
+	padding: 10px 0px;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+}
+
+.mean-container .mean-bar {
+	background-color: transparent;
+} */
+
+
+
+ /*!=========34)Demo Content=========  */

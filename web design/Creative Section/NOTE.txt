@@ -1,0 +1,165 @@
+100 - section notes:
+------------------------
+*)Product slider with tab
+------------------
+image - position diye opacity kore korbo,img j style cai dite parbo,
+icon box display block and position diye center kore korbo,
+price money ke before or full width kore position left and margin kore kaj korbo,
+mark up alway wrapper e vag kore kaj korbo,
+
+*)My - Section - Bootstrap Modal 
+------------------------------------
+<div class="modal-backdrop fade show"></div> eita fade er kaj kore,
+modal-content er bitor bitor part design korbo,
+button ke dore setar bitor design korb,
+section er moddhe rekhe kaj korb,
+
+*)RRF - Section - 37 - Our TEAM
+------------------------------------
+ei section e title ta vertical rotate korbo,
+team info er name ta ektu margin - top kore height dibo,
+responsive e title horizontal kore dibo,
+
+*)-RRF - Section - 34 - Appoinment Section 
+--------------------------------------------
+appoinment text er before after er kaj ase kisu,
+.Appoinment-text:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1000%;
+	width: 1000%;
+	height: 100%;
+	background: aqua;
+  }
+  .Appoinment-text:after {
+	content: "";
+	position: absolute;
+	top: calc(50% - 25px);
+	right: -25px;
+	width: 50px;
+	height: 50px;
+	background: aqua;
+	transform: rotate(45deg);
+  }
+  .Appoinment-text h2 {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: blue;
+  }
+
+  *)Css positon Practice 
+  ------------------------------
+  position e relative parent div k z-index dile tar bitor absolute z-index
+  dile content er piche jabe.. 
+  child upor niche korte z-index + use kore kaj korbo,
+
+  *)RRF - Section - 106 - Home Slider New Styl
+  -----------------------------------------------
+  slider design in container picture and section half background,
+  slider-area>slider-active>single-slider, slider-1,
+
+  *)RRF - Section - 135 - Google Brand Section
+  ------------------------------------------
+  eita left icon box ache ja positon or flex or float or display inline-block 
+  diye korte pari, section bg er er before after bg ase,
+
+  col-lg-7 offset-lg-1
+
+  *)RRF - Section - 131 - Pricing Table Section blue round price money,
+  ----------------------------------------
+  single prie box alway min-height and header min-height dibo
+  
+
+
+
+
+
+
+*)div center tricks
+--------------------------
+1)display flex,justy-cneter,align-center 
+2)positionTopLeft50%, transform:traslate(-50%), margin half delete or calc(50%-half width),
+3)parent(display:table) , child-wrapper(display:table-cell,vertical align middle,text-center),
+4)displya:grid,justy-content:center,align-content:center, 
+5)text-center, line-height:full height,
+---------------------------
+*)slider bananor somoy single age slider design korbo,
+*)font size and light-height 1.1 = 110%
+.single-product-wrapper:hover .product-img img:nth-child(2) {
+	top: 0;
+	opacity: 1;
+  }
+*)font awesome add korte, = add font awesome file in fonts folder,
+ -) all.min add ,
+ -)replace webfonts to fonts 
+  bt-class p-0 use kore container-fluid margin kata,
+  top: calc(50% - 25px);
+  *)position absolute, left,right 0 kore margin auto kore center neya jai
+  *)row te aling item center dile sob center e jabe,
+  *)dropdown menu te minimum width use korbo jate text thik thaek
+
+  *)position relative z-index thakle position absolute z-index -1 korle ta 
+  parent er content er piche jabe but ekdom piche jabe na tar background er upor thakbe,
+  *)z-index child up down korte +1 theke use korbo child e deya 
+
+1)kno div er fixed width na thakle margin diye laft right komano jai ,
+2)icon box position kore left,top e niye padding left diye banano jai icon box,
+3)img position ektar upor arekta korar jonno amra img er widht % hisebe use korbo and height auto position top,left % use korbo but 1st er ta korbo na
+ar jate responsive hoi r baki ta media te change korbo lagle
+4)owl dots er button >span  ke before kore tar bitor content deya jai
+5)blog section er khetre img hisebe background nibo jgulo face nai and 
+height dibo tar and content er padding diye sajabo and kaj korar somoy responsive and container fluid mathai rakhbo
+6)wrong - responsive margin botton = #section-name col-4{margin-bottom:30px} #section-name col-4:last-child{margin-bottom:0px}
+7)hero section er img last/right bottom e lagate position use korbo
+8) upor niche kno div hover e boro korte caile main single box er wrapper k margin top,botton dite hobe 
+and hover er ta margin top,bottom minus korte hobe. eta transform scale Y diyeo hobe
+9)kono kisu position korle setar width choto hoye jai and main wrapper er bitor khali hoye jai tachara choto ta  width  100% kore full widht kora lage abr or left and right 0 koreo hobe
+10)position:inherit mane uttoradikar theke value paowa k bujai
+11) position e icon center er khetre amra margin - kore korte pari tar ordhek width ba height er - kore
+12)img display block kore margin auto korle center cole asbe,
+13)box shadow dekhato hole content er upor or left right kichu faq rakha lagbe
+14)kono div er main e opacity dile seta before after eo lagbe karon seta main er bitor e ache jehetu before after child tar,
+15)height dekhte fully vabe inspect element ta seperate window kore kaj korbo
+16)z-index manage ta very important ei ta  niye deeply kaj korte ekta wrapper niye kaj kora valo
+*)position top:0,left:0,right:0 diye widht 100% hobe and bottom:0 diye height 100% hobe and left right px diye margin er moto kata jai
+17)positon top0left0 widht:100,height100 or bottom0 right 0
+18)transform-z & scale-z run by help of rotateX(60deg);
+19)perserva-3d can use in rotate div perpective can be used in parent or main div as a function
+20)man / team title er h1 er span(web desing) er font size % e dile valo
+21)hover e hover state on kore kaj kora
+22)kono kisu positon dile tar width content er size hoye jai pore seta widht 100% diye thik korte hoi
+**)RR foundation left - 10-20,27,29,31,32,34,37,38,39,40
+*)javascript class diye kaj korle class ta inspect e add kore style dibo,
+
+
+Inspector tutorials - 
+1)html search,css filter,full website ss, section ss,
+2)size mapa tools ,copy outer html,on hover option,change new css style see,
+3)animation,fonts,layout, mouse click html markup, edit and copy full html code,
+4)responsive mobile,color picker,
+5)copy html,css can easily,css off tools,css save older element in one click
+6)css copy trick  - save old style css and copy new style
+7)media query responsive css theke kaj korabo
+8)i can take full website ss mobile + dekstop version by full ss tools
+9)you can paste main css fully in inspect element
+change css option,filter,search html,
+10)save firefox bookmark, save website img by view img option
+*)how to check all link is working = go to view <source> and click all link if work then it will run auto in new tab,
+
+font see
+
+clt-shift-c
+
+
+1)inspector - html edit and add css rules and many
+2)style editor - cody or add css and get your new css stye etc 
+3)console for javascript
+4)debugger - for debug you code
+5)network , performance, memory,dom,storage,accessibility,application
+
+
+-------------------******--------------
+wrapper div er bitor content center tricks
+

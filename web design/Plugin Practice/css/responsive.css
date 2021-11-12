@@ -1,0 +1,40 @@
+/** ============Responsive Part============**/
+
+/* 
+
+1)Extra large = (1500-1200) = XL ------ Container = 1200px
+2)Large Device = (1200-992) = LG  ------ Container = 970px ***
+3)Medium large = (992-768) = MD ------ Container = 720px
+4)Tablet Devices = (768-576) = SM ------ Container = 560px ***
+5)Big Mobile  = (576-420) = Extra-SM ------ Container = 1200px ***
+6)Small Mobile = (420-320) = Extra-SM ------ Container = 1200px ***
+7)Extra Small Mobile = (320-0) = Extra-SM ------ Container = 1200px
+
+*/
+
+
+
+/*============Responsive Code Start============*/
+
+/* Extra large = (1500-1200) = XL */
+@media (max-width: 1500px) {}
+
+/* Large Device = (1200-992) = LG */
+@media (max-width: 1200px) {}
+
+/* Medium large = (992-768) = MD. */
+@media (max-width: 991px) {}
+
+/* Tablet Devices = (768-576) = SM */
+@media only screen and (max-width: 767px) {}
+
+/* Big Mobile  = (576-420) = Extra-SM */
+@media (max-width: 576px) {}
+
+/* Small Mobile = (420-320) = Extra-SM */
+@media (max-width: 420px) {}
+
+/* Extra Small Mobile = (320-0) = Extra-SM */
+@media (max-width: 320px) {}
+
+/* ============The End============ */

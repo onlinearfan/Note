@@ -1,0 +1,353 @@
+/*
+  Theme Name: Name - SECTION PRACTICE PLATE
+*/
+
+/* CSS Index
+-----------------------------------
+01. General Styles
+
+*/
+
+
+/* ========= Google Font Add ===========  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+/* ========= Root CSS Add ===========  */
+:root {
+
+	/* Colors  */
+	--green: #8ec448;
+	--white: #ffffff;
+	--black: #000000;
+	--text-color: #353535;
+	--section: #F1F1F1;
+
+	/* Font-Family  */
+	--Raleway: 'Raleway', sans-serif;
+	--Lato: 'Lato', sans-serif;
+	/*========Other Style========*/
+	--transition: all .3s ease;
+}
+
+/* ========= Custom ScrollBar Part Start ===========  */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* ========= TEXT Selection & Placeholder CSS ===========  */
+
+*::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* ============Scroll Up Button============*/
+
+.scroll-up-btn {
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: var(--green);
+	right: 30px;
+	bottom: 10px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	z-index: 9999;
+	font-size: 30px;
+	border-radius: 6px;
+	border-bottom-width: 2px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+	background: black;
+}
+
+
+/* ========= Float ClearFixed CSS ===========  */
+
+.myfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 0%;
+	height: 0%;
+}
+
+/* ========= Owl Carousel CSS ===========  */
+
+/* Owl nav  */
+
+.active .owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+
+.active .owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+
+.active .owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+
+.active .owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+
+/* owl dots css  */
+
+.active .owl-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: -90px;
+	z-index: 99999;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.active .owl-dot {
+	width: 15px;
+	height: 15px;
+	background: var(--white);
+	margin-right: 20px;
+	border: 2px solid #020202;
+	border-radius: 50%;
+}
+
+.active .owl-dot.active {
+	background: var(--green);
+}
+
+/* ========= 1) Theme Default CSS ===========  */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--Raleway);
+	font-size: 16px;
+	color: var(--text-color);
+	overflow-x: hidden;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: var(--Lato)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--Raleway);
+	font-weight: normal;
+	color: #353535;
+	font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* ========= ALL Outline NONE ===========  */
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:focus,
+input,
+input:focus,
+textarea,
+textarea:focus,
+button,
+button:focus {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 16px;
+	outline: none !important;
+}
+
+/* ========= Section Title ===========  */
+.section-title {
+	text-align: center;
+}
+
+.section-title h1 {
+	font-size: 24px;
+}
+
+.section-title p {
+	font-size: 16px;
+	margin-bottom: 35px;
+
+}
+
+/* ========= Common Button ===========  */
+.mybtn {
+	font-size: 14px;
+	margin: 0;
+	padding: 15px 40px;
+	border: 1px solid #121212;
+	text-transform: uppercase;
+	color: #121212;
+	transition: all 0.3s ease;
+	font-weight: 700;
+	font-family: var(--Raleway);
+	transition: .3s;
+}
+
+.mybtn:hover {
+	background: #8EC448;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.mybtn-active {
+	background: #8EC448;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+
+a{
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	cursor: pointer;
+}
+
+
+/* ========= Theme Overlay ===========  */
+
+.theme-overlay {
+	position: relative
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.delete-margin {
+	margin: -15px 0;
+}
+
+
+/* ========= Header Part Start ===========  */

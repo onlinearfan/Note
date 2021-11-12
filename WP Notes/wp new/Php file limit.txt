@@ -1,0 +1,14 @@
+Divi Exclude Module -----
+blog, Post,filterable Portfolio, comment,contact form, email option,map,comment,contact form,login, email option,pricing table,post title,
+
+
+
+php_value memory_limit 256M
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 1000
+
+
+
+ocenwp,astra,elementor pro,divi,wpbakary,elementor extra, ocenextra,slider revolution,woocommerce,max file size, avada, sahifa, child theme

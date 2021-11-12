@@ -1,0 +1,103 @@
+/** ============Responsive Part============**/
+
+/* 
+
+1)Extra large = (1500-1200) = XL ------ Container = 1140px
+2)Large Device = (1200-992) = LG  ------ Container = 970px ***
+3)Medium large = (992-768) = MD ------ Container = 720px
+4)Tablet Devices = (768-576) = SM ------ Container = 540px ***
+5)Big Mobile  = (576-420) = Extra-SM ------ Container = 100% ***
+6)Small Mobile = (420-320) = Extra-SM ------ Container = 100% ***
+7)Extra Small Mobile = (320-0) = Extra-SM ------ Container = 100%
+
+*/
+
+
+
+/*============Responsive Code Start============*/
+
+/* Extra large = (1500-1200) = XL */
+@media (max-width: 1500px) {
+    /* .container {
+        max-width: 1170px !important;
+    } */
+}
+
+/* Large Device = (1200-992) = LG */
+@media (max-width: 1200px) {}
+
+/* Medium large = (992-768) = MD. */
+@media (max-width: 991px) {
+
+    /*RRF - Section - 00 - Responsive NavBAr  */
+    /* nav ul {
+        margin-right: 0px;
+    } */
+}
+
+/* Tablet Devices = (768-576) = SM */
+@media (max-width: 767px) {
+
+    /*RRF - Section - 00 - Responsive NavBAr  */
+    /* .header-area .col-lg-9.col-7.d-flex.justify-content-end.align-items-center {
+        position: inherit;
+    }
+
+    nav {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 2;
+        transition: .5s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    nav ul li a {
+        padding: 18px 0;
+    }
+
+    nav.active {
+        left: 0%;
+    }
+
+    .hamberger-icon {
+        position: relative;
+        z-index: 999;
+    }
+
+    .hamberger-icon.active i::before {
+        content: "\f410";
+        font-family: Font Awesome 5 Free;
+    }
+
+    .single-slider .col-md-6:first-child {
+        order: 2;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: 53px;
+    }
+    .hero-img img {
+        max-width: 200px;
+    } */
+}
+
+/* Big Mobile  = (576-420) = Extra-SM */
+@media (max-width: 576px) {}
+
+/* Small Mobile = (420-320) = Extra-SM */
+@media (max-width: 420px) {}
+
+/* Extra Small Mobile = (320-0) = Extra-SM */
+@media (max-width: 320px) {}
+
+/* ============The End============ */

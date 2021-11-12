@@ -1,0 +1,12 @@
+1 - first add product like simple then add variation you can add same price for all product but you have to all color indiviually and size
+
+
+E-commerce website - 
+shop page, cart page , my account , checkout page, /// you have to make home , blog, contact, page menually
+
+shop page work for show all page ,
+
+product can be add simple , variable, affiliate, downloadable, etc,
+product catagory and tag use for relative product, 
+
+payment method work

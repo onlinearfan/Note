@@ -1,0 +1,11 @@
+1) theme , plugin update, 
+2) theme comment
+3)do backup before work,
+4)google speed, pingdom speed, gt metrix, 
+5) ss collect
+6)for blog site make video for client support
+7)code add ht access,
+8) wp fastes chech,w3total chech , smash , regeneret for all , wp optimize
+9)kaj korar somoy bar bar check kora speed , site map, tinypng , 
+10)bibinno plugin use korbo jetai kaj hoi 
+11) check site after plugin setting

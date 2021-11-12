@@ -1,0 +1,48 @@
+{
+
+
+	//******** Wordpress Code Snippits ************//
+
+//wp theme information By CSS Comment
+"wp theme info": {
+"prefix": "themeInfoComment",
+"body": [
+"/*\r",
+"Theme Name: $1\r",
+"Theme URI:\r",
+"Author: $2\r",
+"Author URI: https://learnwith.hasinhayder.com\r",
+"Description: $3\r",
+"Version: 1.0\r",
+"License: GNU General Public License v2 or later\r",
+"License URI: http://www.gnu.org/licenses/gpl-2.0.html\r",
+"Tags: blog, education\r",
+"Text Domain: $4\r",
+"*/$5"
+],
+"description": "=wp theme information by css cmt "
+},
+
+//wp child theme information By CSS Comment
+"Wp Child Theme Info": {
+"prefix": "childTheme_infoComment",
+"body": [
+"/*\r",
+"Theme Name: $1\r",
+"Template: $alpha\r",
+"Theme URI:$www.arfankhan.com\r",
+"Author: $LWHH\r",
+"Author URI: $https://learnwith.hasinhayder.com\r",
+"Description: $Desciption_adding\r",
+"Version: 1.0\r",
+"License: GNU General Public License v2 or later\r",
+"License URI: http://www.gnu.org/licenses/gpl-2.0.html\r",
+"Tags: blog, education$\r",
+"Text Domain: $alpha-child\r",
+"*/"
+],
+"description": "wp child theme information By CSS Comment"
+},
+
+//******** Wordpress Code Snippits ************//
+}

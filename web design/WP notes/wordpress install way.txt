@@ -1,0 +1,78 @@
+
+DB NAME :arfankha_mg01
+DB USER :arfankha_mg01usr
+BB USER PASS:drfkjariuif283dfi
+
+WP EMAIL:
+WP USER:
+WP PASS : 
+
+
+1)auto migration by duplicator
+--------------------
+take backup from localhost or liveserver, get installer.php and file,
+user database creat and add in new site which you want to migrate site,
+file directory upload in new site,
+link/installer.php,
+set all and save
+
+password ager tai thakbe..
+
+Manually migration
+--------------------
+1)take all file of wordpress and its database by export
+2)creat new database and user and add it . go to phpmyadmin and import database sql file (save database info in text)
+3)upload wordpress file as your location and
+4) edit wp-config.php and change database ,user, pass, (see site before change)
+5)now go to wp-option and edit url add your new location url.
+6) done . now your site is migrated.
+
+====================
+
+
+
+2)worpress manually install
+
+--------------------
+database and user creat and add ..
+2)file zip upload and add wordpress file..
+3) set everything like (database, user, pass, wp,)
+Done,
+you can change this in wp-config.php
+
+
+
+3)worpress auto install
+------------------------
+go to softaculas,
+fill info and done,
+it will creat database and wordpress auto,
+
+
+
+4)delete worpress
+------------------
+manullay = delete database and user and wordpress file fully,
+auto = go to softaculas and delete , it will delete database and wordpress file
+
+
+5) add new user and delete old user --
+1) add new info of user and select position,
+2) login with new user and delete old as a adminitrator
+
+you can change email, username by this method
+
+---------
+disk usage you can know disk and delete tmp file cpanel
+
+
+
+LocalHOst menually Backup ---------
+1) Upload File and Database,
+2) Edit database name,user (root), pass none, 
+3)EDIT DATAbase file option link to localhost link,
+
+Name Server Change ----
+1) Log in domain control.
+2) go to manage DNS , 
+3) Change name server as your server,

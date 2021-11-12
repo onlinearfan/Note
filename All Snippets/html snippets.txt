@@ -1,0 +1,40 @@
+{
+	"php": {
+		"prefix": "php",
+		"body": [
+			"<?php $1 ?>"
+		],
+		"description": "php tag"
+	},
+	"Wp Author Name With Link": {
+		"prefix": "wpAuthorNameWithLink",
+		"body": [
+			"<a href=\"<?php echo get_author_posts_url(get_the_author_meta('id'),get_the_author_meta('user_nicename')) ?>\"><?php the_author(); ?></a>"
+		],
+		"description": "Wp Author Name With Link"
+	},
+	"wp Seachr Html5 MarkUp": {
+		"prefix": "wpSearchHtml",
+		"body": [
+			"<form role=\"search\" method=\"get\" class=\"search-form\" action=\"<?php echo home_url( '/' ); ?>\">\r",
+			"    <label>\r",
+			"        <span class=\"screen-reader-text\"><?php echo _x( 'Search for:', 'label' ) ?></span>\r",
+			"        <input type=\"search\" class=\"search-field\"\r",
+			"            placeholder=\"<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>\"\r",
+			"            value=\"<?php echo get_search_query() ?>\" name=\"s\"\r",
+			"            title=\"<?php echo esc_attr_x( 'Search for:', 'label' ) ?>\" />\r",
+			"    </label>\r",
+			"    <input type=\"submit\" class=\"search-submit\"\r",
+			"        value=\"<?php echo esc_attr_x( 'Search', 'submit button' ) ?>\" />\r",
+			"</form>"
+		],
+		"description": "wp Search Html5 MarkUp"
+	},
+	"get_template_directory_uri": {
+		"prefix": "example_get_template_directory_uri",
+		"body": [
+			"<img src=\"<?php echo get_template_directory_uri();?>/path\" alt=\"\">"
+		],
+		"description": "asdf"
+	}
+}

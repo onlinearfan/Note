@@ -1,0 +1,5 @@
+1) Header - creat header add condition & you can import and export them. use single,archive,page,post, etc (site logo and nav)
+2) footer - creat footer and same as header,
+3)single post - creat post by single widget and set sidebar by wordpress widget or sidebar widget (add condition) sticky widget sidebar,
+4)archive page - design by archive widget (archieve post, )
+5) Add pop up and demo import or creat then customized and edit popup setting, without condition you can set by button click.

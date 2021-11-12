@@ -1,0 +1,30 @@
+softect it course =============
+1) basic wp customize 
+2) ki ki shekhabe ta bolse and basic wp 
+3) newspaper theme customize - premium theme customize reset plugin for delete demo content
+4)avada,flatsome , plugin customize kora dekhano hoise
+5)plugin customiz and php start
+6)php basic dekhaise (loop,function,if ,else)
+7)php error name, string function printf string funciton,
+8)w3school function and mail function
+9)php get,post , request , form submin by mail funciton
+10)session class, cmd using sql query codes
+11)my sql in cmd 
+12)php with my sql **** session part again with login form
+13)oop of php
+14)market place tips and tutorials , development start
+15)project 1 
+16,17)project 1,2,3 - login form with database
+18)crud oparation
+19)slixes php framework 
+20)project 3 login form project
+21)theme dev start
+22)theme dev lopment ,
+23-29) theme dev 1-13 part 2 missing 
+30)2nd theme one page theme dev
+31)child theme dev
+
+
+soft tech it playlist theme development,
+bangla playlist 2ta age shes korbo
+wp woocommerce dev

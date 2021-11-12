@@ -1,0 +1,1298 @@
+{
+
+	//******** PHP Code Example Snippits ************//
+
+//Switch Statement Example
+"Switch Statement Example": {
+"prefix": "example_SwitchStatement",
+"body": [
+"  $arfan = 10;\r",
+"  $adnan = 20;\r",
+"\r",
+"//1st way\r",
+"  switch($arfan){\r",
+"    case 10:\r",
+"        echo \"arfan = 10 found\";\r",
+"        break;\r",
+"    case 20:\r",
+"        echo \"arfan = 20 found\";\r",
+"        break;\r",
+"    default:\r",
+"        echo \"arfan found nothing\";\r",
+"  }\r",
+"\r",
+"//2nd way\r",
+"  switch(true){\r",
+"    case (($arfan==10) && ($adnan!=20)) :\r",
+"        echo \"arfan = 10\";\r",
+"        break;\r",
+"    case ($arfan==9):\r",
+"        echo \"arfan=9\";\r",
+"        break;\r",
+"    default:\r",
+"        echo \"arfan = unknown\";\r",
+"  }"
+],
+"description": "Switch Statement Example"
+},
+
+//pre-increment example"
+"pre-increment example": {
+"prefix": "example_incrementPrePost",
+"body": [
+"// pre-increment \r",
+"$x = 10;\r",
+"$y = ++$x;\r",
+"\r",
+"\r",
+"echo \"$y <br> $x\";\r",
+"echo \"<br>\";\r",
+"\r",
+"\r",
+"// post-increment \r",
+"$x = 10;\r",
+"$y = $x++;\r",
+"\r",
+"\r",
+"echo \"$y <br> $x\";\r",
+"echo \"<br>\";"
+],
+"description": "pre-increment example"
+},
+
+//Example while loop
+"Example while loop": {
+"prefix": "example_WhileLoop",
+"body": [
+"$x = 1;\r",
+"\r",
+"while($x <= 5) {\r",
+"  echo \"The number is: $x <br>\";\r",
+"  $x=$x+1;\r",
+"}\r",
+"echo \"<br>\";\r",
+"\r",
+"\r",
+"$x = 0;\r",
+"\r",
+"while($x <= 100) {\r",
+"  echo \"The number is: $x <br>\";\r",
+"  $x+=10;\r",
+"}"
+],
+"description": "Example while loop"
+},
+
+//do loop Example
+"do loop Example": {
+"prefix": "example_doLoop",
+"body": [
+"//one time must run \r",
+"$x = 4;\r",
+"\r",
+"do {\r",
+"  echo \"The number is: $x <br>\";\r",
+"  $x++;\r",
+"} while ($x <= 5);\r",
+"\r",
+"echo \"<br>\";\r",
+"\r",
+"$x = 6;\r",
+"\r",
+"do {\r",
+"  echo \"The number is: $x <br>\";\r",
+"  $x++;\r",
+"} while ($x <= 5);"
+],
+"description": "do loop Example"
+},
+//increment decrement example
+"increment decrement example": {
+"prefix": "example_increDecreOperator",
+"body": [
+"//increment decrement example\r",
+"\r",
+"$x = 1;\r",
+"\r",
+"echo $x++ . \"<br>\"; // x= x+1 = 2\r",
+"\r",
+"echo $x+=10 . \"<br>\"; // x = x+10 = 11 \r",
+"\r",
+"echo $x-- . \"<br>\"; //x = x-1 = 0 \r",
+" \r",
+"echo $x-=10 . \"<br>\"; // x = x-10 = 1-10 = -9"
+],
+"description": "adfawe"
+},
+
+//example of foreach
+"example of foreach": {
+"prefix": "example_foreachSimple",
+"body": [
+"//example of foreach\r",
+"\r",
+"$colors = array(\"red\", \"green\", \"blue\", \"yellow\");\r",
+"\r",
+"foreach ($colors as $value) {\r",
+"  echo \"$value <br>\";\r",
+"}\r",
+"\r",
+"\r",
+"echo \"<hr>\";\r",
+"\r",
+"$age = array(\"Peter\"=>\"35\", \"Ben\"=>\"37\", \"Joe\"=>\"43\");\r",
+"\r",
+"foreach($age as $x => $val) {\r",
+"  echo \"$x = $val<br>\";\r",
+"}"
+],
+"description": "example of foreach"
+},
+"dafae": {
+"prefix": "example_foreachAdvance",
+"body": [
+"\r",
+"function print__r($value){\r",
+"  echo '<pre>';\r",
+"  print_r($value);\r",
+"  echo '</pre>';\r",
+"}\r",
+"\r",
+"$cars = array (\r",
+"    array(\"Volvo\",22,18),\r",
+"    array(\"BMW\",15,13,array('a','b','c')),\r",
+"    array(\"Saab\",5,2),\r",
+"    array(\"Land Rover\",17,15)\r",
+"  );\r",
+"\r",
+"print__r($cars);\r",
+"\r",
+"echo \"<br>\";\r",
+"\r",
+"\r",
+"foreach ($cars as $keys=> $values) {\r",
+"    foreach ($values as $key => $value) {\r",
+"        if(is_array($value)){\r",
+"            foreach ($value as $keychild => $valuechild) {\r",
+"                echo \"Key of car $keys $key $keychild and value of array is $valuechild<br>\";\r",
+"            }\r",
+"        }\r",
+"        else{\r",
+"            echo \"Key of car $keys $key and value of array is $value<br>\";\r",
+"        }\r",
+"        \r",
+"    }\r",
+"}"
+],
+"description": "aerwer"
+},
+	//******** PHP Basic Code Snippits ************//
+
+//function exist checking 
+"function Exist Check": {
+"prefix": "funExists",
+"body": [
+"if(!function_exists($1)){\r",
+"  $yourCode\r",
+"}"
+],
+"description": "function exist checking "
+},
+
+//Print_r function by pre tag
+"Print_r by pre": {
+"prefix": "print__r",
+"body": [
+"function print__r($$value){\r",
+"  echo '<pre>';\r",
+"  print_r($$value);\r",
+"  echo '</pre>';\r",
+"}"
+],
+"description": "Print_r function by pre tag"
+},
+
+"function_s": {
+"prefix": "function_s",
+"body": [
+"function $1($$arg){\r",
+"    $your_code\r",
+"}"
+],
+"description": "function_s"
+},
+
+//avoid undefine var
+"avoid undefine var": {
+"prefix": "example_avoidVarUndefine",
+"body": [
+"$var = '';\r",
+"echo $var;"
+],
+"description": "avoid undefine var"
+},
+
+//funcition Vardum in pre tag
+"funcition Vardum in pre tag": {
+"prefix": "var__dump",
+"body": [
+"function var__dump($value){\r",
+"  echo '<pre>';\r",
+"  var_dump($value);\r",
+"  echo '</pre>';\r",
+"}"
+],
+"description": "funcition Vardum in pre tag"
+},
+
+//Tarnary Operator
+"Tarnary Operator": {
+"prefix": "TernaryOperator",
+"body": [
+"$condition ? \"$trueValue\" : \"$falseValue\";"
+],
+"description": "Tarnary Operator"
+},
+//Nullcollas operator
+"Nullcollas operator": {
+"prefix": "NullOperator",
+"body": [
+"$varName = $existItem??\"$3\";"
+],
+"description": "Nullcollas operator"
+},
+
+
+
+	//******** Wordpress Code Snippits ************//
+
+//wordpress post Loop
+"wordpresss post loop": {
+"prefix": "theLoop",
+"body": [
+"if(have_posts()){\r",
+"  while(have_posts()){\r",
+"    the_post();\r",
+"    $1\r",
+"  }\r",
+"}\r",
+"else{\r",
+"  $2\r",
+"}"
+],
+"description": "wordpress loop of post"
+},
+
+//wp theme version cash busting
+"Wp version cashbusting": {
+"prefix": "wpCashBusting",
+"body": [
+"  if ( site_url() == \"$1\" ) {\r",
+"    define( \"VERSION\", time() );\r",
+"} else {\r",
+"    define( \"VERSION\", wp_get_theme()->get( \"Version\" ) );\r",
+"}$2"
+],
+"description": "wordpress version cash bustion"
+},
+
+//wp page template adding
+"wp Pagetemplate": {
+"prefix": "pageTemplate",
+"body": [
+"/*",
+" * Template Name: $1",
+" */"
+],
+"description": "wordpress page template adding "
+},
+
+//wordpress sidebar registering
+"register sidebar wp": {
+"prefix": "regSidebar",
+"body": [
+"register_sidebar(\r",
+"  array(\r",
+"      'name'          => __( '$1', '$4' ),\r",
+"      'id'            => '$2',\r",
+"      'description'   => __( \"$3\", '$4' ),\r",
+"      'before_widget' => '<section id=\"%1$s\" class=\"widget %2$s\">',\r",
+"      'after_widget'  => '</section>',\r",
+"      'before_title'  => '',\r",
+"      'after_title'   => '',\r",
+"  )\r",
+");"
+],
+"description": "wordpress sidebar registering"
+},
+
+//dynamic sidebar wp
+"dynamic sidebar wp": {
+"prefix": "dynamicSidebar",
+"body": [
+"if ( is_active_sidebar( \"$1\" ) ) {\r",
+"  dynamic_sidebar( \"$2\" );\r",
+"}"
+],
+"description": "dynamic sidebar adding"
+},
+
+//wordpress theme support adding
+"after setup theme of wp": {
+"prefix": "addThemeSupport",
+"body": [
+"function $1(){\r",
+"    \r",
+"  load_theme_textdomain('$2');\r",
+"  add_theme_support('post-thumbnails');\r",
+"  add_theme_support('title-tag');\r",
+"  add_theme_support('custom-header');\r",
+"  add_theme_support( 'automatic-feed-links' );\r",
+"  add_theme_support('custom-logo');\r",
+"  add_theme_support('html5',array('search-form','comment-list'));\r",
+"  add_theme_support('post-formats',array(\"image\",\"gallery\",\"quote\",\"audio\",\"video\",\"link\"));\r",
+"  add_editor_style('/assets/css/editor-style.css');\r",
+"  register_nav_menu( \"mainmenu\", __( \"Main Menu\", \"$2\" ) );\r",
+"  add_image_size(\"philosophy-home-square\",400,400,true);\r",
+"}\r",
+"add_action('after_setup_theme','$1');"
+],
+"description": "wordpress theme support adding"
+},
+
+//wp query adding 
+"wp query adding": {
+"prefix": "wpQuery",
+"body": [
+"$1 = array(\r",
+"  $3\r",
+");\r",
+"\r",
+"$2 = new WP_Query($1);\r",
+"\r",
+"if($2->have_posts()){\r",
+"  while($2->have_posts()){the_post();\r",
+"    $4\r",
+"    \r",
+"  }\r",
+"  wp_reset_query();\r",
+"}\r",
+"else{\r",
+"  echo \"no post found\";\r",
+"}"
+],
+"description": "wp query adding "
+},
+
+//wp query Arguments adding 
+"wp Query Arguments": {
+"prefix": "wpQueryArgs",
+"body": [
+"'posts_per_page' => $posts_per_page, //post show in single pagination page\r",
+"'post_In' => $post_id,\r",
+"'author__in'     => array( 1 ), \r",
+"'numberposts'=>$total, //total post number\r",
+"'orderby'        => 'post__in',\r",
+"'paged'          => $paged = get_query_var( \"paged\" ) ? get_query_var( \"paged\" ) : 1,\r",
+"'numberposts'      => 5,\r",
+"'category'         => 0,\r",
+"'ignore_sticky_post' =>1,\r",
+"'orderby' =>'comment_count',\r",
+"'orderby'          => 'post_in',\r",
+"'order'            => 'DESC',\r",
+"'include'          => array(),\r",
+"'exclude'          => array(),\r",
+"'meta_key'         => '',\r",
+"'meta_value'       => '',\r",
+"'post_type'        => 'post',\r",
+"'suppress_filters' => true,",
+"'cat' => array(2,3,4),\r",
+"'category_name' =>'name',\r",
+"'category_id' => 1,\r",
+"'year' =>2020,\r",
+"'post_status' =>'draft',",
+"'post_status' => array( 'pending', 'draft', 'future' ),",
+"'day'=> 4,\r",
+],
+"description": "wp Query Arguments adding"
+},
+
+//wp dataPass to javascript
+"wp dataPass to javascript": {
+"prefix": "example_wpTojavascript",
+"body": [
+"wp_enqueue_script( \"main-jquery-js\", get_theme_file_uri( \"/assets/js/main.js\" ), array( \"jquery\" ), time(), true );\r",
+"$launcher_year  = get_post_meta( get_the_ID(), \"year\", true );\r",
+"$launcher_month = get_post_meta( get_the_ID(), \"month\", true );\r",
+"$launcher_day   = get_post_meta( get_the_ID(), \"day\", true );\r",
+"\r",
+"wp_localize_script( \"main-jquery-js\", \"datedata\", array(\r",
+"    \"year\"  => $launcher_year,\r",
+"    \"month\" => $launcher_month,\r",
+"    \"day\"   => $launcher_day,\r",
+") );"
+],
+"description": "wp dataPass to javascript"
+},
+
+//simple posts pagination
+"The Posts Pagination": {
+"prefix": "thePostsPagination",
+"body": [
+"the_posts_pagination( array(\r",
+"    'screen_reader_text'=>'',\r",
+"    'mid_size'  => $1,\r",
+"    'prev_text' => __( 'html tag can use', '$2' ),\r",
+"    'next_text' => __( 'Onward', '$2' ),\r",
+") );"
+],
+"description": "simple posts pagination"
+},
+
+//comments Tamplate Adding 
+"comments Tamplate": {
+"prefix": "commentsTemplate",
+"body": [
+"// If comments are open or we have at least one comment, load up the comment template.\r",
+"if ( comments_open() || get_comments_number() ) :\r",
+"  comments_template();\r",
+"endif;"
+],
+"description": "comments Tamplate Adding "
+},
+
+//wp require once adding 
+"Wp Require Once": {
+"prefix": "wpRequire",
+"body": [
+"require_once(get_theme_file_path('$path'));"
+],
+"description": "wp require once adding "
+},
+
+//get template Part details
+"get template Part details": {
+"prefix": "example_getTemplatePart",
+"body": [
+"get_template_part('pt-one');// ('pt','one') = eita 2ta part o krte pari abr 1tao rakhte pari,\r",
+"get_template_part('folder/file-name');// = eita 2vabei use krte pari"
+],
+"description": "get template Part details"
+},
+
+//post password require in excerpt filter
+"post password require": {
+"prefix": "filterExcerpt",
+"body": [
+"function alpha_the_excerpt( $excerpt ) {\r",
+"  if ( ! post_password_required() ) {\r",
+"      return $excerpt;\r",
+"  } else {\r",
+"      echo get_the_password_form();\r",
+"  }\r",
+"}\r",
+"\r",
+"add_filter( \"the_excerpt\", \"alpha_the_excerpt\" );"
+],
+"description": "post password require in excerpt filter"
+},
+
+//post password require tilte filter 
+"password require tilte ": {
+"prefix": "postPassTitle",
+"body": [
+"function $alpha_protected_title_change() {\r",
+"  return \"%s\";\r",
+"}\r",
+"\r",
+"add_filter( \"protected_title_format\", \"$alpha_protected_title_change\" );"
+],
+"description": "post password require tilte filter "
+},
+
+//register nav menu
+"register nav menu": {
+"prefix": "regNav",
+"body": [
+"register_nav_menu( \"$theme_location_id\", __( \"$menu_name\", \"$textDomain\" ) );"
+],
+"description": "register nav menu"
+},
+
+//wp nav menu adding
+"wp nav menu adding": {
+"prefix": "wpNavMenu",
+"body": [
+"wp_nav_menu(\r",
+"  array(\r",
+"    'theme_location'  => '$main_menu',\r",
+"    'menu'            => '',\r",
+"    'menu_id'         => 'footermenucontainer',      //ul id\r",
+"    'menu_class'      => 'list-inline text-right',   //ud class\r",
+"    'container'       => 'div',\r",
+"    'container_class' => '',\r",
+"    'container_id'    => '',\r",
+"));"
+],
+"description": "wp nav menu adding"
+},
+
+//wp nav menu args 
+"wp nav menu args ": {
+"prefix": "wpNavMenuArgs",
+"body": [
+"'menu'                 => '',\r",
+"        'container'            => 'div',\r",
+"        'container_class'      => '',\r",
+"        'container_id'         => '',\r",
+"        'container_aria_label' => '',\r",
+"        'menu_class'           => 'menu',\r",
+"        'menu_id'              => '',\r",
+"        'echo'                 => true,\r",
+"        'fallback_cb'          => 'wp_page_menu',\r",
+"        'before'               => '',\r",
+"        'after'                => '',\r",
+"        'link_before'          => '',\r",
+"        'link_after'           => '',\r",
+"        'items_wrap'           => '<ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>',\r",
+"        'item_spacing'         => 'preserve',\r",
+"        'depth'                => 0,\r",
+"        'walker'               => '',\r",
+"        'theme_location'       => '',"
+],
+"description": "wp nav menu args "
+},
+
+//wp enqueue style details  
+"enqueue style details ": {
+"prefix": "example_wpEnqueueStyle",
+"body": [
+"wp_enqueue_style('nameUniq',get_theme_file_uri('/path'),array('bootstrap','owl-css'),VERSION,\"all\");\r",
+"wp_enqueue_style('nameUniq',get_template_directory_uri().'/path',array(),VERSION,\"all\");\r",
+"wp_enqueue_style('nameUniq','//demo.lwhh.com',array(),null,\"all\");",
+"wp_enqueue_style('parent-style',get_parent_theme_file_uri('/style.css'),array('bootstrap'));"
+],
+"description": "wp enqueue style details"
+},
+
+//wp enqueue script details 
+"wp enqueue script details ": {
+"prefix": "example_wpEnqueueScript",
+"body": [
+"wp_enqueue_script('nameUniq',get_template_directory_uri().'/path',array('jquery'),null,true);\r",
+"wp_enqueue_script('nameUniq',get_theme_file_uri('/path'),array('jquery'),null,true);\r",
+"wp_enqueue_script('nameUniq','//demo.lwhh.com',array('jquery'),null,true);"
+
+],
+"description": "wp enqueue script details "
+},
+
+//custom logo adding 
+"custom logo adding": {
+"prefix": "customLogo",
+"body": [
+"if (current_theme_supports(\"custom-logo\")) :\r",
+"?>\r",
+"    <?php\r",
+"    $custom_logo_id = get_theme_mod('custom_logo');\r",
+"    $image = wp_get_attachment_image_src($custom_logo_id, 'full');\r",
+"    ?>\r",
+"    <!-- img code -->\r",
+"    <img src=\"<?php echo $image[0]; ?>\" alt=\"\">\r",
+"<?php\r",
+"endif;\r",
+"\r",
+],
+"description": "dgfadfg"
+},
+
+//wp post pagination link 
+"wp post pagination link ": {
+"prefix": "postPaginateLinks",
+"body": [
+"function $philosophy_pagination() {\r",
+"  global $wp_query;\r",
+"  $links = paginate_links( array(\r",
+"      'current'  => max( 1, get_query_var( 'paged' ) ),\r",
+"      'total'    => $wp_query->max_num_pages,\r",
+"      'type'     => 'list',\r",
+"      'mid_size' => 3\r",
+"  ) );\r",
+"  $links = str_replace( \"page-numbers\", \"pgn__num\", $links );\r",
+"  $links = str_replace( \"<ul class='pgn__num'>\", \"<ul>\", $links );\r",
+"  $links = str_replace( \"next pgn__num\", \"pgn__next\", $links );\r",
+"  $links = str_replace( \"prev pgn__num\", \"pgn__prev\", $links );\r",
+"  echo $links;\r",
+"}"
+],
+"description": "wp post pagination link "
+},
+
+//sidebar Checking
+"sidebar Check": {
+"prefix": "sidebarCheck",
+"body": [
+"if(is_active_sidebar('id')){\r",
+"  $class_sidebar = \"col-8\";\r",
+"}\r",
+"else{\r",
+"  $class_sidebar = 'col-10 offset-1';\r",
+"}"
+],
+"description": "sidebar Checking"
+},
+
+//filter Body Class
+"filter Body Class": {
+"prefix": "filterBodyClass",
+"body": [
+"//filter body class \r",
+"function $alpha_body_class($class){\r",
+"  $class[] =\"body-2\";\r",
+"  unset($class[array_search('body-class-2',$class)]);\r",
+"  return $class;\r",
+"}\r",
+"add_filter('body_class','$alpha_body_class');"
+],
+"description": "filter Body Class"
+},
+
+//search result highlight 
+"search Highlight": {
+"prefix": "searchHighlight",
+"body": [
+"//search form highlighting \r",
+"function alpha_highlight_search_results($text){\r",
+"  if(is_search()){\r",
+"      $pattern = '/('. join('|', explode(' ', get_search_query())).')/i';\r",
+"      $text = preg_replace($pattern, '<span class=\"search-highlight\">\\0</span>', $text);\r",
+"  }\r",
+"  return $text;\r",
+"}\r",
+"add_filter('the_content', 'alpha_highlight_search_results');\r",
+"add_filter('the_excerpt', 'alpha_highlight_search_results');\r",
+"add_filter('the_title', 'alpha_highlight_search_results');"
+],
+"description": "search Highlight"
+},
+
+//Assets Dequeue Management 
+"Assets Dequeue Management": {
+"prefix": "example_assetsDequeueManagement",
+"body": [
+"function alpha_child_assets_dequeue(){\r",
+"  wp_dequeue_style(\"alpha-style\");\r",
+"  wp_deregister_style(\"alpha-style\");\r",
+"  wp_enqueue_style(\"alpha-style\",get_theme_file_uri(\"/assets/css/alpha.css\"));\r",
+"}\r",
+"add_action(\"wp_enqueue_scripts\",\"alpha_child_assets_dequeue\",14);"
+],
+"description": "Assets Dequeue Management "
+},
+
+//wp nav menu class replaceing
+"wp nav menu class replace": {
+"prefix": "wpNavMenuReplace",
+"body": [
+"$philosophy_menu = wp_nav_menu( array(\r",
+"        'theme_location' => 'topmenu',\r",
+"        'menu_id'        => 'topmenu',\r",
+"        'menu_class'     => 'header__nav',\r",
+"        'echo'           => false // eita false korbo,\r",
+"    ) );\r",
+"\r",
+"    $philosophy_menu = str_replace(\"menu-item-has-children\",\"menu-item-has-children has-children\",$philosophy_menu);\r",
+"    echo $philosophy_menu;"
+],
+"description": "wp nav menu class replaceing"
+},
+
+//Dynamic Background Image
+"Dynamic Background Image": {
+"prefix": "backgroundDynamic",
+"body": [
+"function launcher_styles(){\r",
+"  if(is_page()){\r",
+"      $thumbnail_url = get_the_post_thumbnail_url(null,\"large\");\r",
+"  \r",
+"\r",
+"      ?>\r",
+"      <style>\r",
+"          .home-side{\r",
+"              background-image: url(<?php echo $thumbnail_url;?>);\r",
+"          }\r",
+"      </style>\r",
+"<?php\r",
+"  }\r",
+"}\r",
+"add_action(\"wp_head\",\"launcher_styles\");"
+],
+"description": "Dynamic Background Image"
+},
+
+//code run by template name 
+"code run by template name": {
+"prefix": "codeRunByTemplateName",
+"body": [
+"if(is_page()){\r",
+"  $$launcher_template_name = basename(get_page_template());\r",
+"  if($$launcher_template_name == \"launcher.php\")\r",
+"  {\r",
+"    //code if.\r",
+"  }\r",
+"  else {\r",
+"    # code...\r",
+"  }\r",
+"}\r",
+"\r",
+"//showing page path template, \r",
+"echo get_page_template();\r",
+"die();"
+],
+"description": "code run by template name "
+},
+
+//New Unused Code  
+
+//Disable Search in WordPress
+"Disable Search in WordPress": {
+"prefix": "disableSearch",
+"body": [
+"//Disable Search in WordPress\r",
+"function fb_filter_query( $query, $error = true ) {\r",
+"    if ( is_search() ) {\r",
+"    $query->is_search = false;\r",
+"    $query->query_vars[s] = false;\r",
+"    $query->query[s] = false;\r",
+"    // to error\r",
+"    if ( $error == true )\r",
+"    $query->is_404 = true;\r",
+"    }\r",
+"    }\r",
+"    add_action( 'parse_query', 'fb_filter_query' );\r",
+"    add_filter( 'get_search_form', create_function( '$a', \"return null;\" ) );"
+],
+"description": "Disable Search in WordPress"
+},
+
+//Protect Your Site from Malicious Requests
+"Protect from Malicious Requests": {
+"prefix": "wpProtect_from_malicious",
+"body": [
+"//Protect Your Site from Malicious Requests\r",
+"if (!function_exists('ProtectSite')) {\r",
+"    function ProtectSite()\r",
+"    {\r",
+"        global $user_ID;\r",
+"        if ($user_ID) {\r",
+"            if (!current_user_can('administrator')) {\r",
+"                if (\r",
+"                    strlen($_SERVER['REQUEST_URI']) > 255 ||\r",
+"                    stripos($_SERVER['REQUEST_URI'], \"eval(\") ||\r",
+"                    stripos($_SERVER['REQUEST_URI'], \"CONCAT\") ||\r",
+"                    stripos($_SERVER['REQUEST_URI'], \"UNION+SELECT\") ||\r",
+"                    stripos($_SERVER['REQUEST_URI'], \"base64\")\r",
+"                ) {\r",
+"                    @header(\"HTTP/1.1 414 Request-URI Too Long\");\r",
+"                    @header(\"Status: 414 Request-URI Too Long\");\r",
+"                    @header(\"Connection: Close\");\r",
+"                    @exit;\r",
+"                }\r",
+"            }\r",
+"        }\r",
+"    }\r",
+"\r",
+"    add_action('init','protectSite');\r",
+"}"
+],
+"description": "Protect Your Site from Malicious Requests"
+},
+
+//Remove the admin bar from the front end
+"Remove the admin bar": {
+"prefix": "removeAdminBar_all",
+"body": [
+"// Remove the admin bar from the front end\r",
+"add_filter( 'show_admin_bar', '__return_false' );"
+],
+"description": "Remove the admin bar from the front end"
+},
+
+// block users who are NOT an administrator from viewing the website.
+" block users from viewing the website.": {
+"prefix": "blockFromView",
+"body": [
+"// This will only block users who are NOT an administrator from viewing the website.\r",
+"\r",
+"function wp_maintenance_mode()\r",
+"{\r",
+"\r",
+"    if (!current_user_can(\"edit_themes\") || !is_user_logged_in()) {\r",
+"\r",
+"        wp_die(\"Maintenance, please come back soon.\", \"Maintenance – please come back soon.\", array('response' => '503'));\r",
+"    }\r",
+"}\r",
+"\r",
+"add_action('get_header', 'wp_maintenance_mode');"
+],
+"description": " This will only block users who are NOT an administrator from viewing the website."
+},
+
+//Change the failed login message for extra WordPress Secruty
+"Change the failed login message": {
+"prefix": "changeFailLoginMessage",
+"body": [
+"// Change the failed login message for extra WordPress Secruty\r",
+"function failed_login()\r",
+"{\r",
+"\r",
+"    return 'Incorrect login information.';\r",
+"}\r",
+"\r",
+"add_filter('login_errors', 'failed_login');"
+],
+"description": "Change the failed login message for extra WordPress Secruty"
+},
+
+// Remove the WP version for extra WordPress Secruty
+" Remove the WP version": {
+"prefix": "wpRemoveVersion",
+"body": [
+"// Remove the WP version for extra WordPress Secruty\r",
+"\r",
+"function remove_wp_version()\r",
+"{\r",
+"\r",
+"    return;\r",
+"}\r",
+"\r",
+"add_filter('the_generator', 'remove_wp_version');\r",
+""
+],
+"description": " Remove the WP version for extra WordPress Secruty"
+},
+
+//Add a class to the last post in a loop
+"Add class to last post": {
+"prefix": "addClassToLastPost",
+"body": [
+"// Add a class to the last post in a loop\r",
+"\r",
+"function last_post_class($classes){\r",
+"\r",
+"    global $wp_query;\r",
+"    \r",
+"    if(($wp_query->current_post+1) == $wp_query->post_count) $classes[] = 'last';\r",
+"    \r",
+"    return $classes;\r",
+"    \r",
+"    }\r",
+"    \r",
+"    add_filter('post_class', 'last_post_class');"
+],
+"description": "Add a class to the last post in a loop"
+},
+
+//Hide WordPress Update
+"Hide WordPress Update": {
+"prefix": "wpHideUpdate",
+"body": [
+"// Hide WordPress Update\r",
+"\r",
+"function wp_hide_update()\r",
+"{\r",
+"\r",
+"    remove_action('admin_notices', 'update_nag', 3);\r",
+"}\r",
+"\r",
+"add_action('admin_menu', 'wp_hide_update');"
+],
+"description": "Hide WordPress Update"
+},
+
+//Output a snapshot of any website!
+"Output a snapshot of any website!": {
+"prefix": "snapshotWebsite",
+"body": [
+"// Output a snapshot of any website!\r",
+"\r",
+"function wp_snap($atts, $content = NULL)\r",
+"{\r",
+"\r",
+"    extract(shortcode_atts(array(\r",
+"\r",
+"        \"snap\" => 'http://s.wordpress.com/mshots/v1/',\r",
+"\r",
+"        \"url\" => 'http://torquemag.io/',\r",
+"\r",
+"        \"alt\" => 'WPDaily',\r",
+"\r",
+"        \"w\" => '400', // width\r",
+"\r",
+"        \"h\" => '300' // height\r",
+"\r",
+"    ), $atts));\r",
+"\r",
+"    $img = '<img alt=\"’ . $alt . ‘\" src=\"’ . $snap . ” . urlencode($url) . ‘?w=’ . $w . ‘&h=’ . $h . ‘\" />';\r",
+"\r",
+"    return $img;\r",
+"}\r",
+"\r",
+"add_shortcode(\"snap\", \"wp_snap\");\r",
+"\r",
+"//To use this shortcode just add the following to your post.\r",
+"// [snap url=\"http://torquemag.io/\" alt=\"WPDaily Website\" w=\"400\" h=\"300\"]"
+],
+"description": "Output a snapshot of any website!"
+},
+
+//Changing excerpt more word
+"Changing excerpt more": {
+"prefix": "changeExcerptText",
+"body": [
+"// Changing excerpt more\r",
+"function smartwp_change_excerpt_more_text( $more ){\r",
+"    global $post;\r",
+"    return '&hellip; <a class=\"read-more\" href=\"'.get_permalink($post->ID).'\" title=\"'.esc_attr(get_the_title($post->ID)).'\">'.'Read More &raquo;'.'</a>';\r",
+"  }\r",
+"  add_filter('excerpt_more', 'smartwp_change_excerpt_more_text');"
+],
+"description": "Changing excerpt more"
+},
+
+//Change the default excerpt length in WordPress (default is 55 words
+"Change Excerpt Length": {
+"prefix": "changeExcerptLength",
+"body": [
+"//Change the default excerpt length in WordPress (default is 55 words)\r",
+"function smartwp_change_excerpt_length( $length ) {\r",
+"    return 24;\r",
+"  }\r",
+"  add_filter( 'excerpt_length', 'smartwp_change_excerpt_length', 9999);"
+],
+"description": "Change the default excerpt length in WordPress (default is 55 words"
+},
+
+//Enable shortcodes in widgets
+"Enable shortcodes in widgets": {
+"prefix": "enableShortCodeInWidgets",
+"body": [
+"//Enable shortcodes in text widgets\r",
+"add_filter('widget_text', 'do_shortcode');"
+],
+"description": "Enable shortcodes in text widgets"
+},
+
+//Adds a custom logo to the top left of the WordPress admin
+"Adds a custom logo to the WordPress admin": {
+"prefix": "customLogoToWpAdmin",
+"body": [
+"//Adds a custom logo to the top left of the WordPress admin\r",
+"function smartwp_custom_logo_wp_dashboard() {\r",
+"    echo \"<style type='text/css'>\r",
+"      #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {\r",
+"        background-image: url('\" . get_bloginfo('stylesheet_directory') . \"https://cdn.smartwp.com/admin-icon.png');\r",
+"        background-size: contain;\r",
+"        background-position: 0 0;\r",
+"        color:rgba(0, 0, 0, 0);\r",
+"      }\r",
+"      #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon {\r",
+"        background-position: 0 0;\r",
+"      }\r",
+"      </style>\";\r",
+"  }\r",
+"  add_action('wp_before_admin_bar_render', 'smartwp_custom_logo_wp_dashboard');"
+],
+"description": "Adds a custom logo to the top left of the WordPress admin"
+},
+
+//Enable SVG upload
+"Enable SVG upload": {
+"prefix": "enableSvgUpload",
+"body": [
+"//Enable SVG upload\r",
+"function smartwp_enable_svg_upload( $mimes ) {\r",
+"    //Only allow SVG upload by admins\r",
+"    if ( !current_user_can( 'administrator' ) ) {\r",
+"      return $mimes;\r",
+"    }\r",
+"    $mimes['svg']  = 'image/svg+xml';\r",
+"    $mimes['svgz'] = 'image/svg+xml';\r",
+"    \r",
+"    return $mimes;\r",
+"  }\r",
+"  add_filter('upload_mimes', 'smartwp_enable_svg_upload');"
+],
+"description": "Enable SVG upload"
+},
+
+//Remove the URL field in comments
+"Remove the URL field in comments": {
+"prefix": "removeCommentsUrlField",
+"body": [
+"//Remove the URL field in comments\r",
+"function remove_comment_fields($fields){\r",
+"\r",
+"    //can remove any field\r",
+"    unset($fields['url']);\r",
+"    return $fields;\r",
+"}\r",
+"\r",
+"add_filter('comment_form_default_fields','remove_comment_fields');"
+],
+"description": "Remove the URL field in comments"
+},
+
+//Change the number of results on the search results page
+"Change the number of Search results": {
+"prefix": "changeSearchResulstNumber",
+"body": [
+"//Change the number of results on the search results page\r",
+"function limit_posts_per_search_page() {\r",
+"    if (is_search() )\r",
+"    set_query_var( 'posts_per_archive_page',20);\r",
+"}\r",
+"add_filter('pre_get_posts', 'limit_posts_per_search_page');\r",
+" "
+],
+"description": "Change the number of results on the search results page"
+},
+
+//Exclude certain pages from WordPress search results
+"Exclude certain pages from search": {
+"prefix": "ExcludePageFormSearch",
+"body": [
+"//Exclude certain pages from WordPress search results\r",
+"function filter_search($query)\r",
+"{\r",
+"    if ($query->is_search) {\r",
+"        $query->set('post_type', 'page');\r",
+"    }\r",
+"    return $query;\r",
+"}\r",
+"add_filter('pre_get_posts', 'filter_search');"
+],
+"description": "Exclude certain pages from WordPress search results"
+},
+
+//Remove Width and Height Attributes From Inserted Images
+"Remove img Width and Height Attributes": {
+"prefix": "removeImgWidthHeight",
+"body": [
+"//Remove Width and Height Attributes From Inserted Images\r",
+"add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );\r",
+"add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );\r",
+"\r",
+"function remove_width_attribute( $html ) {\r",
+"   $html = preg_replace( '/(width|height)=\"\\d*\"\\s/', \"\", $html );\r",
+"   return $html;\r",
+"}\r",
+"\r",
+""
+],
+"description": "Remove Width and Height Attributes From Inserted Images"
+},
+
+//Add Category Name to body_class
+"Add Category Name to body_class": {
+"prefix": "addCategoryToBodyClass",
+"body": [
+"//Add Category Name to body_class\r",
+"function add_category_to_single($classes)\r",
+"{\r",
+"    if (is_single()) {\r",
+"        global $post;\r",
+"        foreach ((get_the_category($post->ID)) as $category) {\r",
+"            // add category slug to the $classes array\r",
+"            $classes[] = $category->category_nicename;\r",
+"        }\r",
+"    }\r",
+"    // return the $classes array\r",
+"    return $classes;\r",
+"}\r",
+"add_filter('body_class', 'add_category_to_single');"
+],
+"description": "Add Category Name to body_class"
+},
+
+//Make Archives.php Include Custom Post Types
+"Archives.php Include CPT": {
+"prefix": "IncludeINArchives_CPT",
+"body": [
+"//Make Archives.php Include Custom Post Types\r",
+"function namespace_add_custom_types( $query ) {\r",
+"    if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {\r",
+"      $query->set( 'post_type', array(\r",
+"       'post', 'nav_menu_item', 'your-custom-post-type-here'\r",
+"          ));\r",
+"        return $query;\r",
+"      }\r",
+"  }\r",
+"  add_filter( 'pre_get_posts', 'namespace_add_custom_types' );"
+],
+"description": "Make Archives.php Include Custom Post Types"
+},
+
+//Pluing Information Comment Text
+"Pluing Info Comment Text": {
+"prefix": "PluginInfoComments",
+"body": [
+"/*\r",
+" * Plugin Name: $1\r",
+" * Plugin URI: http://www.netyou.co.il/\r",
+" * Description: Makes the admin bar a small button on the left and expands on hover.\r",
+" * Version: 1.0\r",
+" * Author: $2\r",
+" * Author URI: http://www.netyou.co.il/\r",
+" * License: MIT\r",
+" * Copyright: NetYou\r",
+"*/"
+],
+"description": "Pluing Information Comment Text"
+},
+
+//Shrink or Expand the Admin Bar on Hover
+"Admin Bar on Hover": {
+"prefix": "hoverAdminBar",
+"body": [
+"//Shrink the Admin Bar / Expand on Hover\r",
+"add_action('get_header', 'my_filter_head');\r",
+"function my_filter_head() { remove_action('wp_head', '_admin_bar_bump_cb'); }\r",
+" \r",
+"function my_admin_css() {\r",
+"        if ( is_user_logged_in() ) {\r",
+"        ?>\r",
+"        <style type=\"text/css\">\r",
+"            #wpadminbar {\r",
+"                width: 47px;\r",
+"                min-width: auto;\r",
+"                overflow: hidden;\r",
+"                -webkit-transition: .4s width;\r",
+"                -webkit-transition-delay: 1s;\r",
+"                -moz-transition: .4s width;\r",
+"                -moz-transition-delay: 1s;\r",
+"                -o-transition: .4s width;\r",
+"                -o-transition-delay: 1s;\r",
+"                -ms-transition: .4s width;\r",
+"                -ms-transition-delay: 1s;\r",
+"                transition: .4s width;\r",
+"                transition-delay: 1s;\r",
+"            }\r",
+"            \r",
+"            #wpadminbar:hover {\r",
+"                width: 100%;\r",
+"                overflow: visible;\r",
+"                -webkit-transition-delay: 0;\r",
+"                -moz-transition-delay: 0;\r",
+"                -o-transition-delay: 0;\r",
+"                -ms-transition-delay: 0;\r",
+"                transition-delay: 0;\r",
+"            }\r",
+"        </style>\r",
+"        <?php }\r",
+"}\r",
+"add_action('wp_head', 'my_admin_css');"
+],
+"description": "Admin Bar on Hover"
+},
+
+//Remove Admin Bar For Subscribers
+"Remove Admin Bar For Subscribers": {
+"prefix": "removeAdminBar_subscribers",
+"body": [
+"//Remove Admin Bar For Subscribers\r",
+"add_action('set_current_user', 'cc_hide_admin_bar');\r",
+"function cc_hide_admin_bar()\r",
+"{\r",
+"    if (!current_user_can('edit_posts')) {\r",
+"        show_admin_bar(false);\r",
+"    }\r",
+"}"
+],
+"description": "Remove Admin Bar For Subscribers"
+},
+
+//Section run by Type
+"Section run by Type": {
+"prefix": "example_SectionRunByType",
+"body": [
+"function print__r($$value){\r",
+"   echo '<pre>';\r",
+"   print_r($$value);\r",
+"   echo '</pre>';\r",
+" }\r",
+" \r",
+" $$section_ids = get_post_meta(get_the_ID(),'page_section');\r",
+"\r",
+" foreach ($$section_ids as $$section_id) {\r",
+"     $$single_section_detail = get_post($$section_id);\r",
+"    $$section_type  = get_post_meta($$section_id,'section_type',true);\r",
+"     if($$section_type == \"hero\"){\r",
+"         echo $$single_section_detail->post_title;\r",
+"     }\r",
+"     elseif($$single_section_detail == 'contact' ){\r",
+"         echo $$single_section_detail->post_title;\r",
+"     }\r",
+"\r",
+" }"
+],
+"description": "Section run by Type"
+},
+
+//example_relatedPostshow
+"relatedPostshow": {
+"prefix": "example_relatedPostshow",
+"body": [
+"piklist('field', array(\r",
+"    'type' => 'select',\r",
+"    'field' => 'page_section',\r",
+"    'label' => 'Add Section',\r",
+"    'choices' => piklist(get_posts(\r",
+"        array(\r",
+"            'post_type' => 'section',\r",
+"            'posts_per_page' => -1,\r",
+"            \r",
+"        )\r",
+"    ),array('ID','post_title')),\r",
+"    'add_more' =>true,\r",
+"  ));"
+],
+"description": "relatedPostshow"
+},
+
+//Auto_EnqueueScript
+"Auto_EnqueueScript": {
+"prefix": "Auto_EnqueueScript",
+"body": [
+"#!/usr/bin/env php",
+"<?php",
+"",
+"echo \"<br><br>\";",
+"foreach(glob(\"*.js\") as $$js){",
+"    echo \"wp_enqueue_script( 'wptheme-{$$js}',get_theme_file_uri('/assets/js/{$$js}'), array('jquery'),'1.0',true);<br>\";",
+"}"
+],
+"description": "asdfvc"
+},
+
+//Auto_EnqueueStyle
+"Auto_EnqueueStyle": {
+"prefix": "Auto_EnqueueStyle",
+"body": [
+"#!/usr/bin/env php",
+"<?php",
+"",
+"echo \"<br><br>\";",
+"foreach(glob(\"*.css\") as $$css){",
+"    echo \"wp_enqueue_style( 'wptheme-{$$css}',get_theme_file_uri('/assets/css/{$$css}'), array(),'1.0','all');<br>\";",
+"}"
+],
+"description": "Auto_EnqueueStyle"
+}
+
+
+
+		//******** Wordpress Code Snippits End ************//
+
+
+}

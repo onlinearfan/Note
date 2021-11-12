@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Practice</title>
+  </head>
+
+  <body>
+    <!-- 
+        var = $variable , var / let variable_name,
+        echo,printf(),/ getElement,console,document.write,alert,
+        concrit . ,/+ 
+        php = "$varname" / javascript "string only" + varname.
+        php string_concrite = .= and javascript +=
+        php te echo dite breake kore leka jai javascript e ak line er string all data type concrite kore patate hoi,
+        php te return er value show kore na echo krte hoi, javascript e return ei show hoi
+
+        strtolowar($varName); javascript = text.strUpper(); var.fun();
+
+
+     -->
+
+    <!-- ! onclick on Javascript -->
+    <!-- <p id = 'hello'></p>
+    <button onclick="document.getElementById('idname').innerHTML='hello'"></button> -->
+    <!-- src, .style.FontSize='10'; style.display='none'(hide/show) function() pass, -->
+
+    <!--! Javascript insert way - -->
+    <!-- inline by onclick , head , under body,link external(direct,folder,link form website)  -->
+    <!--! JavaScript Output -->
+    <!-- document.write(5 + 6); = show result , console.log(5 + 6); = colsole result, window.alert(5 + 6); alert('');
+    document.getElementById("demo").innerHTML = 5 + 6; -->
+
+    <!-- !JavaScript Syntax -->
+    <!--  
+    var x, y, z;  // Declare 3 variables
+    x = 5;    // Assign the value 5 to x
+    y = 6;    // Assign the value 6 to y
+    z = x + y;  // Assign the sum of x and y to z
+    "The value of z is " + z + "."; = + diye conctit, var direct shudu value hoi, numbert 10.50
+    Strings can be written with double or single quotes. 'John Doe';
+    let x;
+    x = 6;
+    x * 10;
+    oparator(+,-,*,/,%)
+
+    Assign var
+    = use hoi, var x= 10;
+    + = Expressions compute to values. 
+
+    *keyword of Javascript 
+    var,let(local,), variables create kore,
+    *comment // diye hoi, /**/ eita diye block,
+    * var name case sensetive, Case Sensitive last/ Last,
+     -->
+
+    <!-- !javascript statment  -->
+    <!-- 
+         let a, b, c;
+         a=10;b=20;c=a+b; semicolon diye separate, Multiple statements on one line are allowed.
+         break a code line is after an operator or a comma. = enter diye niche value,
+      -->
+
+    <!-- !JavaScript Comments -->
+    <!-- 
+          *// /**/
+    -->
+
+    <!-- !JavaScript Variables -->
+
+    <!-- 
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+
+        Strings are written with quotes.Numbers are written without quotes.
+        var carName = "Volvo"; .innerHTML = carName;Create a variable, assign a value to it, and display it:
+        var person = "John Doe", carName = "Volvo", price = 200;
+        var carName;
+        A variable declared without a value will have the value undefined.
+
+    re-declare a JavaScript variable, it will not lose its value.
+        var carName = "Volvo";
+        var carName;
+        document.getElementById("demo").innerHTML = carName;
+
+        adding 
+        var x = 5 + 2 + 3;
+        var x = "John" + " " + "Doe";
+        var x = "5" + 2 + 3; resutl 523
+
+
+       -->
+
+    <!-- !JavaScript Arithmetic -->
+    <!-- 
+           +-*/%, egulo, ++,--
+           let z = x + y;
+           let z = x / y;
+
+           var y=5; x = y++; pore assing, echo y++ pore assing, 
+
+           --,++ aita assing er upor kaj kore, direct value show or var e assing e khetre,
+        -->
+
+    <!-- !JavaScript Assignment -->
+    <!-- =,+=(string or value adding,),-=,*= /= , %= -->
+    <!-- 
+            var x = 10;
+        x %= 5; //x= x%5;(string or value adding,)
+
+        txt1 + txt2; var concrit, txt1 + " " + txt2;
+        let text1 = "What a very ";
+        text1 += "nice day";
+        x + "<br>" + y + "<br>" + z;
+         -->
+
+    <script>
+      /* <button type="button" onclick="myFunction()">Click Me!</button>
+        
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+        function myFunction() {
+        document.getElementById("demo1").innerHTML = "Hello Dolly!";
+        document.getElementById("demo2").innerHTML = "How are you?";
+        } */
+    </script>
+
+    <!-- !JavaScript Data Types -->
+
+    <script>
+      // <!--JavaScript Strings: singlequte e dubblequote, -->
+      let answer2 = "He is called 'Johnny'";
+      //JavaScript Numbers:
+      let x1 = 34.0;
+      //array
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      document.getElementById("demo").innerHTML = cars[0];
+
+      //object
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old.";
+      //   fine type of var
+      document.write(typeof "arfan");
+      document.write(typeof "arfan");
+      //Different sequences can produce different results:
+      let x = "Volvo" + 16 + 4; //volvo164
+      let x = 16 + 4 + "Volvo"; //20volvo
+      document.getElementById("demo").innerHTML = x;
+
+      // emty string legal value, not undefined
+      let car = "";
+      document.getElementById("demo").innerHTML =
+        "The value is: " + car + "<br>" + "The type is: " + typeof car;
+      //value cara undefined
+      let car;
+      document.getElementById("demo").innerHTML = car + "<br>" + typeof car;
+
+      //**************************javascript object -topic 1**************************
+
+      // Create and display a variable:
+      let car = "Fiat";
+      document.getElementById("demo").innerHTML = car;
+      // Create an object:
+      const car = { type: "Fiat", model: "500", color: "white" };
+
+      // Display some data from the object:
+      document.getElementById("demo").innerHTML = "The car type is " + car.type;
+
+      // Create an object:
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      // Display some data from the object:
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old.";
+
+      document.getElementById("demo").innerHTML =
+        person["firstName"] +
+        " " +
+        person["age"] +
+        person.fullName +
+        person.firstName();
+
+      //**************************function in js -topic 2**************************
+
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World!";
+      }
+      myFunction();
+      //function in js
+      function myFunction(name = null, job = "hello") {
+        document.getElementById("demo").innerHTML =
+          "Welcome " + name + ", the " + job + ".";
+      }
+      myFunction();
+
+      function myfunction(txt) {
+        document.getElementById("demo").innerHTML = txt;
+      }
+
+      //     <input type="button" onclick="myfunction('Good Morning!')" value="In the Morning">
+      //   <input type="button" onclick="myfunction('Good Evening!')" value="In the Evening">
+
+      //func call in variable,
+      var x = myFunction(4, 3);
+      document.getElementById("demo").innerHTML = x;
+
+      function myFunction(a, b) {
+        return a * b;
+      }
+      //   This example calls a function to convert from Fahrenheit to Celsius:
+      function toCelsius(f) {
+        return (5 / 9) * (f - 32);
+      }
+      document.getElementById("demo").innerHTML = toCelsius(77);
+      //   Accessing a function without () will return the function definition instead of the function result:
+
+      function toCelsius(f) {
+        return (5 / 9) * (f - 32);
+      }
+      document.getElementById("demo").innerHTML = toCelsius;
+
+      //   **************************JavaScript Events - topic 3**************************
+
+      //onclick="document.getElementById('demo').innerHTML=Date()
+      //onclick="this.innerHTML=Date()"
+      // onclick="displayDate()";
+
+      //**************************JavaScript Strings - topic 4**************************
+
+      //Strings are written inside quotes.  use single or double quotes:
+      var carName1 = "Volvo XC60";
+      var carName2 = "Volvo XC60";
+      //quotes inside a string,
+      let answer1 = "It's alright";
+
+      //escape \ key
+      //   var x = "It\"s alright";
+      var x = 'It"s alright';
+      var y = 'We are the so-called "Vikings" from the north.';
+
+      //lengte property
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      document.getElementById("demo").innerHTML = text.length;
+
+      //You can break a code line within a text string with a backslash.
+      // \ diye line break krte pari code e,
+      document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+      //error code
+      /* document.getElementById("demo").innerHTML = "Hello 
+Dolly!"; */
+      //only string ei break krte parbo,
+      /* document.getElementById("demo").innerHTML = 34\
+"Hello Dolly."; */
+      // The indexOf() method returns the position of the first occurrence of a specified text:
+      let str = "Please locate where 'locate' occurs!";
+      document.getElementById("demo").innerHTML = str.indexOf("locate");
+
+      function myFunction() {
+        var str = "The rain in SPAIN stays mainly in the plain";
+        var res = str.match(/ain/g);
+        document.getElementById("demo").innerHTML = res;
+      }
+      // output: ain,ain,ain
+
+      //   Replace "Microsoft" with "W3Schools" in the paragraph below:
+      // <p id="demo">Please visit Microsoft!</p>
+
+      function myFunction() {
+        let text = document.getElementById("demo").innerHTML; //collecting data,
+        document.getElementById("demo").innerHTML = text.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+
+      myFunction();
+
+      //Convert string to lower case:
+
+      /* <button onclick="myFunction()">Try it</button>
+        <p id="demo">Hello World!</p> */
+
+      function myFunction() {
+        //let text = document.getElementById("demo").innerHTML='ARFAN';
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.toLowerCase();
+      }
+      //   Display the first array element, after a string split:
+      //   <p id="demo"></p>
+      let text = "a|b,c,d,e,f";
+      const myArray = text.split("|");
+      document.getElementById("demo").innerHTML = myArray[1];
+
+      //**************************JavaScript Numbers - topic 5**************************
+      //number write
+      let x = 3.14;
+      let y = 3;
+
+      // Extra large or extra small numbers can be written with scientific (exponent) notation:
+
+      let x = 123e5; //12300000
+      let y = 123e-5; //0.00123
+      document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+      //Integers (numbers without a period or exponent notation) are accurate up to 15 digits:
+      let x = 999999999999343445454343434432999; //9.999999999993435e+32
+      let y = 10000000000000000; //10000000000000000
+      document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+      // Floating point arithmetic is not always 100% accurate.
+
+      // 0.2 + 0.1 = 0.30000000000000004
+      let x = 0.2 + 0.1;
+      document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
+
+      // But it helps to multiply and divide:
+      let y = (0.2 * 10 + 0.1 * 10) / 10; //0.2 + 0.1 = 0.3
+      document.getElementById("demo2").innerHTML = "0.2 + 0.1 = " + y;
+
+      //If you add two numbers, the result will be a number:
+      let x = 10;
+let y = 20;
+let z = x + y;
+document.getElementById("demo").innerHTML = z; //output 30
+// If you add two numeric strings, the result will be a concatenated string:
+let x = "10";
+let y = "20";
+let z = x + y;
+document.getElementById("demo").innerHTML = z; //output 1020
+
+// If you add a numeric string and a number, the result will be a concatenated string:
+let x = "10";
+let y = 20;
+document.getElementById("demo").innerHTML = "The result is: " + y + x; //2010
+// A common mistake is to expect this result to be 30:
+var x = 10;
+var y = 20;
+document.getElementById("demo").innerHTML =
+"The result is: " + x + y; // 1020 (x+y) 30
+
+// A common mistake is to expect this result to be 102030:
+/* let x = '10';
+let y = 20;
+let z = 30; */ //102030 age string thakle sob string,
+let x = 10;
+let y = 20;
+let z = "30";
+let result = x + y + z;
+document.getElementById("demo").innerHTML = result; //3030
+
+//JavaScript will try to convert strings to numbers when dividing/multiplying/subtracting NOT convert strings to numbers when adding::
+let x = "100";
+let y = "10";
+let z = x / y;   
+// let z = x * y;   can convert
+// let z = x - y;  can convert 
+// let z = x + y;  can't convert to number 
+document.getElementById("demo").innerHTML = z; //10
+// A number divided by a non-numeric string becomes NaN (Not a Number):
+
+
+document.getElementById("demo").innerHTML = 100 / "Apple"; //NaN
+//A number divided,multi,sub by a numeric string becomes a number but not adding :
+document.getElementById("demo").innerHTML = 100 / "10";
+
+// You can use the global JavaScript function isNaN() to find out if a value is not a number:
+let x = 100 / "Apple";
+document.getElementById("demo").innerHTML = isNaN(x); //true df
+
+//If you use NaN in a mathematical operation, the result will also be NaN:
+let x = NaN;
+let y = 5;
+document.getElementById("demo").innerHTML = x + y; //Nan
+// If you use NaN in a mathematical operation, the result can be a concatenation:
+let x = NaN;
+let y = "5";
+document.getElementById("demo").innerHTML = x + y;
+
+//The typeof NaN is number:
+let x = NaN;
+document.getElementById("demo").innerHTML = typeof x;
+//Infinity is returned if you calculate a number outside the largest possible number:
+let myNumber = 60; 
+let txt = "";
+//while true ase false hobe infine hole,
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
+
+// Division by zero generates Infinity;
+let x = 2/0;
+let y = -2/0;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+// Infinity is a number
+document.getElementById("demo").innerHTML = typeof Infinity;
+// Numeric constants, preceded by 0x, are interpreted as hexadecimal:
+let x = 0xFF;
+document.getElementById("demo").innerHTML = "0xFF = " + x; //0xFF = 255
+
+//A number can be an object, but there is no need to create a number as an object.
+let x = 123;
+let y = new Number(123);
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+// Never create numbers as objects. Numbers and objects cannot be safely compared.
+
+let x = 500;        // x is a number
+let y = new Number(500);  // y is an object
+document.getElementById("demo").innerHTML = (x===y); //true
+
+let x = new Number(500);  // x is an object
+let y = new Number(500);  // y is an object
+document.getElementById("demo").innerHTML = (x==y); //always false,
+
+//**************************JavaScript Number Methods ; topic - 6**************************
+
+//The toString() method can output numbers from base 2 to 36:
+
+//<p id="demo"></p>
+
+let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"32 = " + "<br>" + 
+" Decimal " + myNumber.toString(10) + "<br>" +
+" Hexadecimal " + myNumber.toString(16) + "<br>" +
+" Octal " + myNumber.toString(8) + "<br>" +
+" Binary " + myNumber.toString(2);
+
+
+// The valueOf() method returns a number as a number:
+// <p id="demo"></p>
+
+let x = 123;
+
+document.getElementById("demo").innerHTML = 
+  x.valueOf() + "<br>" +
+  (123).valueOf() + "<br>" +
+  (100 + 23).valueOf();
+
+// output:  123
+// 123
+// 123
+
+// The toExponential() method returns a string, with the number rounded and written using exponential notation.
+// An optional parameter defines the number of digits behind the decimal point.
+// <p id="demo"></p>
+let x = 9.656;
+document.getElementById("demo").innerHTML =
+  x.toExponential() + "<br>" + 
+  x.toExponential(2) + "<br>" + 
+  x.toExponential(4) + "<br>" + 
+  x.toExponential(6);
+
+// output:  9.656e+0
+// 9.66e+0
+// 9.6560e+0
+// 9.656000e+0
+
+
+// The toFixed() method rounds a number to a given number of digits.
+// For working with money, toFixed(2) is perfect.
+
+let x = 9.656;
+document.getElementById("demo").innerHTML =
+  x.toFixed(0) + "<br>" +
+  x.toFixed(2) + "<br>" +
+  x.toFixed(4) + "<br>" +
+  x.toFixed(6);
+
+// output:  10
+// 9.69
+// 9.6876
+// 9.687640
+
+// The toPrecision() method returns a string, with a number written with a specified length:
+let x = 9.666;
+document.getElementById("demo").innerHTML = 
+  x.toPrecision() + "<br>" +
+  x.toPrecision(2) + "<br>" +
+  x.toPrecision(3) + "<br>" +
+  x.toPrecision(6);  
+
+//output: 9.656
+// 9.7
+// 9.656
+// 9.65600
+
+// The Number() method can convert a date to a number:
+let x = new Date("2017-09-30");
+document.getElementById("demo").innerHTML = Number(x); 
+// 1506729600000
+
+// The global JavaScript function parseInt() converts strings to numbers:
+document.getElementById("demo").innerHTML = 
+  parseInt("-10") + "<br>" +
+  parseInt("-10.33") + "<br>" +
+  parseInt("10") + "<br>" +
+  parseInt("10.33") + "<br>" +
+  parseInt("10 6") + "<br>" +  
+  parseInt("10 years") + "<br>" +  
+  parseInt("years 10");  
+// -10
+// -10
+// 10
+// 10
+// 10
+// 10
+// NaN
+
+// The parseFloat() method converts strings to numbers:
+document.getElementById("demo").innerHTML = 
+  parseFloat("10") + "<br>" +
+  parseFloat("10.33") + "<br>" +
+  parseFloat("10 6") + "<br>" +  
+  parseFloat("10 years") + "<br>" +
+  parseFloat("years 10");   
+// 10
+// 10.33
+// 10
+// 10
+// NaN
+
+// MAX_VALUE returns the largest possible number in JavaScript.
+
+let x = Number.MAX_VALUE;
+document.getElementById("demo").innerHTML = x;
+
+// 1.7976931348623157e+308
+
+// MIN_VALUE returns the smallest number possible in JavaScript.
+let x = Number.MIN_VALUE;
+document.getElementById("demo").innerHTML = x;
+// 5e-324
+
+// POSITIVE_INFINITY
+let x = Number.POSITIVE_INFINITY;
+document.getElementById("demo").innerHTML = x;
+// Infinity
+
+// POSITIVE_INFINITY is returned on overflow:
+let x = 6 /0;
+document.getElementById("demo").innerHTML = x;
+// Infinity
+
+// NEGATIVE_INFINITY
+let x = -1 / 0;
+document.getElementById("demo").innerHTML = x;
+// -Infinity
+
+document.getElementById("demo").innerHTML = Number.NaN;
+// NaN
+
+// A number divided by a non-numeric string becomes NaN (Not a Number):
+document.getElementById("demo").innerHTML = 100 / "Apple";
+// NaN
+
+// Using a Number property on a variable, expression, or value, will return undefined:
+let x = 50;
+document.getElementById("demo").innerHTML = x.MAX_VALUE;
+// undefined
+
+// **************************JavaScript Maths Topic:7**************************
+// **************************JavaScript Random Topic:8**************************
+// **************************JavaScript Dates Topic:9**************************
+// **************************JavaScript Arrays Topic:10**************************
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+document.getElementById("demo").innerHTML = cars[0]; // Saab
+// Saab,Volvo,BMW
+
+// JavaScript Arrays
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo").innerHTML = cars;
+// Saab,Volvo,BMW
+
+// Array elements are accessed using their index number:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits[0] = "Kiwi";
+document.getElementById("demo2").innerHTML = fruits;
+// Banana,Orange,Apple,Mango
+
+// Kiwi,Orange,Apple,Mango
+
+
+// The length property returns the length of an array.
+
+let a="arfan";
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = a.length;
+document.getElementById("demo2").innerHTML = fruits.length;
+
+// 5
+
+// 4
+
+// The best way to loop through an array is using a standard for loop:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+// Banana
+// Orange
+// Apple
+// Mango
+
+// The length property provides an easy way to append new elements to an array without using the push() method.
+
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("demo").innerHTML = fruits;
+}
+
+// Try it
+// Banana,Orange,Apple,Lemon
+
+
+// Adding elements with high indexes can create undefined "holes" in an array.
+
+const fruits = ["Banana", "Orange", "Apple"];
+fruits[6] = "Lemon";
+
+let fLen = fruits.length;
+let text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+
+// Banana
+// Orange
+// Apple
+// undefined
+// undefined
+// undefined
+// Lemon
+
+// The instanceof operator returns true when used on an array:
+var fruits = 34; //false
+var fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits instanceof Array;
+// true
+
+// JavaScript Arrays
+var fruits = 34; //false
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = Array.isArray(fruits);
+// true
+
+
+
+
+
+// **************************JavaScript Array Methods Topic:11**********************
+
+// The push() method appends a new element to an array.
+
+// <button onclick="myFunction()">Try it</button>
+// <p id="demo"></p>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Kiwi");
+  document.getElementById("demo").innerHTML = fruits;
+}
+
+// Try it
+// Banana,Orange,Apple,Mango,Kiwi
+
+// The pop() method removes the last element from an array.
+
+// <p id="demo1"></p>
+// <p id="demo2"></p>
+// <p id="demo3"></p>
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+a = fruits.pop();
+document.getElementById("demo2").innerHTML = a;
+document.getElementById("demo3").innerHTML = fruits;
+// Banana,Orange,Apple,Mango
+
+// Mango
+
+// Banana,Orange,Apple
+
+
+// The join() method joins array elements into a string.
+
+// It this example we have used " * " as a separator between the elements:
+// <p id="demo"></p>
+// <p id="demo2"></p>
+// <p id="demo3"></p>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(); // , default
+document.getElementById("demo2").innerHTML = fruits.join(""); // , kete dibe
+document.getElementById("demo3").innerHTML = fruits.join(":"); // , space / :
+
+// Banana,Orange,Apple,Mango
+// BananaOrangeAppleMango
+// Banana:Orange:Apple:Mango
+
+// The concat() method is used to merge (concatenate) arrays:
+// <p id="demo"></p>
+// <p id="demo2"></p>
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo").innerHTML = myChildren[0];
+document.getElementById("demo2").innerHTML = myChildren;
+// Cecilie
+// Cecilie,Lone,Emil,Tobias,Linus
+
+
+// concat()
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+
+const myChildren = array1.concat(array2, array3); 
+
+document.getElementById("demo").innerHTML = myChildren;
+// Cecilie,Lone,Emil,Tobias,Linus,Robin,Morgan
+
+// The splice() method adds new elements to an array.
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo1"></p>
+// <p id="demo2"></p>
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = "Original Array:<br>" + fruits;
+
+function myFunction() {
+  fruits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+}
+// output:
+// Original Array:
+// Banana,Orange,Apple,Mango
+
+// New Array:
+// Banana,Orange,Lemon,Kiwi,Apple,Mango
+
+// toString()
+// The toString() method returns an array as a comma separated string:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+// output:
+// Banana,Orange,Apple,Mango
+
+// unshift()
+// The unshift() method adds new elements to the beginning of an array.
+
+// <button onclick="myFunction()">Try it</button>
+// <p id="demo"></p>
+// <p id="demo2"></p>
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.unshift("Lemon");
+  document.getElementById("demo").innerHTML = fruits;
+  document.getElementById("demo2").innerHTML = fruits[0];
+}
+// Lemon,Banana,Orange,Apple,Mango
+// Lemon
+
+// shift()
+// The shift() method removes the first element of an array (and "shifts" all other elements to the left):
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo1").innerHTML = fruits;
+// Banana,Orange,Apple,Mango
+// Orange,Apple,Mango
+
+// When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(0,4);
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+// Banana,Orange,Lemon,Apple,Mango
+// Banana,Orange,Lemon,Apple
+
+// ************************** JavaScript Array Sort Topic:12************************** 
+
+// The sort() method sorts an array alphabetically.
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+
+const fruits = ["Banana", "Arange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+//output: after cilck
+// Apple,Arange,Banana,Mango
+
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+// <script>
+// Create and display an array:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  // First sort the array
+  fruits.sort();
+  // Then reverse it:
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+
+// Click the button to sort the array in ascending order.
+// <button onclick="myFunction()">Try it</button>
+// <p id="demo"></p>
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(c, d){return	c - d});
+  document.getElementById("demo").innerHTML = points;
+}
+
+// 1,5,10,25,40,100
+
+// Click the button to sort the array in descending order
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction() {
+  points.sort(function(a, b){return b - a});
+  document.getElementById("demo").innerHTML = points;
+}
+// 100,40,25,10,5,1
+
+// Click the buttons to sort the array alphabetically or numerically.
+// <button onclick="myFunction1()">Sort Alphabetically</button>
+// <button onclick="myFunction2()">Sort Numerically</button>
+
+// <p id="demo"></p>
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+// Sort Alphabetically
+// 1,10,100,25,40,5
+
+// Click the button (again and again) to sort the array in random order.
+// <button onclick="myFunction()">Try it</button>
+// <p id="demo"></p>
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(a, b){return 0.5 - Math.random()});
+  document.getElementById("demo").innerHTML = points;
+}
+// Try it
+// 25,10,1,100,40,5 output
+
+// The lowest number is 1.output
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+document.getElementById("demo").innerHTML = points[0];
+
+// The highest number is 100.output
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+document.getElementById("demo").innerHTML = points[0];
+
+// The lowest number is 1. output
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+  // return Math.max.apply(null, arr); //for max value
+}
+
+// The lowest number is -1.
+// <p>The lowest number is <span id="demo"></span>.</p>
+
+const points = [40, 100, 1,0,-1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
+
+// The highest number is 100.
+// <p>The highest number is <span id="demo"></span>.</p>
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+
+// Click the buttons to sort car objects on age.
+// <button onclick="myFunction()">Sort</button>
+// <p id="demo"></p>
+
+
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+displayCars();
+
+function myFunction() {
+  cars.sort(function(a, b){return a.year - b.year});
+  displayCars();
+}
+
+function displayCars() {
+  document.getElementById("demo").innerHTML =
+  cars[0].type + " " + cars[0].year + "<br>" +
+  cars[1].type + " " + cars[1].year + "<br>" +
+  cars[2].type + " " + cars[2].year;
+}
+// Sort - button 
+// Saab 2001
+// BMW 2010
+// Volvo 2016
+
+// Click the buttons to sort car objects on type.
+// <button onclick="myFunction()">Sort</button>
+// <p id="demo"></p>
+
+const cars = [
+  {type:"zolvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+displayCars();
+
+function myFunction() {
+  cars.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+  displayCars();
+}
+
+function displayCars() {
+  document.getElementById("demo").innerHTML =
+  cars[0].type + " " + cars[0].year + "<br>" +
+  cars[1].type + " " + cars[1].year + "<br>" +
+  cars[2].type + " " + cars[2].year;
+}
+// Sort - output
+// BMW 2010
+// Saab 2001
+// Volvo 2016
+// ************************** JavaScript Array Iteration Topic:13************************** 
+
+// JavaScript Array.forEach()
+// Calls a function once for each array element.
+// <p id="demo"></p>
+
+
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value +"-"+index+"<br>"; 
+}
+// output
+// 45-0
+// 4-1
+// 9-2
+// 16-3
+// 25-4
+
+// JavaScript Array.map()
+// Creates a new array by performing a function on each array element.
+// <p id="demo"></p>
+
+// <script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+// 90,8,18,32,50
+
+// JavaScript Array.filter()
+// Creates a new array with all array elements that passes a test.
+// <p id="demo"></p>
+
+// <script>
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// 45,25
+
+// JavaScript Array.reduce()
+// This example finds the sum of all numbers in an array:
+// <p id="demo"></p>
+
+// <script>
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value; //*-/
+}
+// The sum is 99
+
+// JavaScript Array.every()
+// The every() method checks if all array values pass a test.
+// <p id="demo"></p>
+
+// <script>
+const numbers = [45, 4, 9, 16, 25];
+const numbers = [45, 45, 96, 165, 25]; //true
+let allOver18 = numbers.every(myFunction);
+
+document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// All over 18 is false
+
+// JavaScript Array.some()
+// The some() method checks if some array values pass a test.
+// <p id="demo"></p>
+
+// <script>
+const numbers = [45, 4, 9, 16, 2];
+const numbers = [4, 4, 9, 16, 2]; //false
+let someOver18 = numbers.some(myFunction);
+
+document.getElementById("demo").innerHTML = "Some over 18 is " + someOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// Some over 18 is true
+
+// JavaScript Array.indexOf()
+// <p id="demo"></p>
+
+// <script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple") + 1;
+
+document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+// Apple is found in position 1
+
+
+// JavaScript Array.lastIndexOf()
+// <p id="demo"></p>
+
+// <script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// const fruits = ["Apple", "Orange", "Mango"]; //lastIndex 1
+let position = fruits.lastIndexOf("Apple") + 1;
+
+document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+// Apple is found in position 3
+
+// JavaScript Array.find()
+// <p id="demo"></p>
+
+// <script>
+const numbers = [4, 9, 16, 25, 29];
+const numbers = [4, 9, 16, 29]; //29 first number
+let first = numbers.find(myFunction);
+
+document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// First number over 18 is 25
+
+// JavaScript Array.findIndex()
+// <p id="demo"></p>
+
+// <script>
+const numbers = [4, 9, 16, 25, 29];
+
+document.getElementById("demo").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// First number over 18 has index 3
+
+// ************************** JavaScript Type Conversion Topic:14************************** 
+
+// The JavaScript typeof Operator
+// The typeof operator returns the type of a variable, object, function or expression.
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML = 
+  typeof "john" + "<br>" +
+  typeof 3.14 + "<br>" +
+  typeof NaN + "<br>" +
+  typeof false + "<br>" +
+  typeof [1,2,3,4] + "<br>" +
+  typeof {name:'john', age:34} + "<br>" +
+  typeof new Date() + "<br>" +
+  typeof function () {} + "<br>" +
+  typeof myCar + "<br>" +
+  typeof null;
+
+//output :
+// string
+// number
+// number
+// boolean
+// object
+// object
+// object
+// function
+// undefined
+// object
+
+// The JavaScript constructor Property
+// The constructor property returns the constructor function for a variable or an object.
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML = 
+  "john".constructor + "<br>" +
+  (3.14).constructor + "<br>" +
+  false.constructor + "<br>" +
+  [1,2,3,4].constructor + "<br>" +
+  {name:'john', age:34}.constructor + "<br>" +
+  new Date().constructor + "<br>" +
+  function () {}.constructor;
+// function String() { [native code] }
+// function Number() { [native code] }
+// function Boolean() { [native code] }
+// function Array() { [native code] }
+// function Object() { [native code] }
+// function Date() { [native code] }
+// function Function() { [native code] }
+
+// The JavaScript String() Method
+// The String() method can convert a number to a string.
+// <p id="demo"></p>
+
+// <script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  String(x) + "<br>" +
+  String(123) + "<br>" +
+  typeof String(100 + 23);
+// 123
+// 123
+// string
+
+// JavaScript Number Methods
+// The toString() method converts a number to a string.
+// <p id="demo"></p>
+
+// <script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   typeof (100 + 23).toString();
+// 123
+// 123
+// string
+
+// JavaScript Arrays
+// This "home made" isArray() function returns true when used on an array:
+// <p id="demo"></p>
+
+// <script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = isArray(fruits);
+
+function isArray(myArray) {
+  return myArray.constructor.toString().indexOf("Array") > -1;
+}
+// true
+
+
+// JavaScript Date Object
+// This "home made" isDate() function returns true when used on an date:
+// <p id="demo"></p>
+
+// <script>
+const myDate = new Date();
+document.getElementById("demo").innerHTML = isDate(myDate);
+
+function isDate(myDate) {
+  return myDate.constructor.toString().indexOf("Date") > -1;
+}
+// true
+// ************************** JavaScript Booleans Topic:15************************** 
+
+// JavaScript Booleans
+// Display the value of Boolean(10 > 9):
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML = Boolean(10 > 9);
+// true
+
+// JavaScript Booleans
+// Display the value of 10 > 9:
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML = 10 > 9;
+// true
+
+// JavaScript Booleas
+
+// <p id="demo"></p>
+
+// <script>
+  document.getElementById("demo").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"0 is " + Boolean(0) + "<br>" + //false
+"-0 is " + Boolean(-0) + "<br>" + //false
+"-0 is " + Boolean("0") + "<br>" + //true
+"undefine is " + Boolean(x) + "<br>" + //false
+"false is " + Boolean(false) + "<br>" + //false
+"true is " + Boolean(true) + "<br>" + //false
+"NaN is " + Boolean(NaN) + "<br>" + //false
+"NaN is " + Boolean(10/"hello") + "<br>" + //false
+"empty string is " + Boolean("") + "<br>" +
+"null is " + Boolean(null) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+// 100 is true
+// 3.14 is true
+// Any (not empty) string is true
+// Even the string 'false' is true
+// 0 is false
+// empty string is false
+// null is false
+// -15 is true
+// Any expression (except zero) is true
+
+
+
+// ************************** JavaScript Comparisons Topic:16************************** 
+//  x = 5 
+// (x == 8): false
+// (x === 5): true
+// (x === "5"): false
+// (x != 8):true
+// (x !== 5):false
+// (x !== "5"): true
+// (x > 8):false
+// (x < 8):true
+// (x >= 8):false
+// (x <= 8):true
+
+// ************************** JavaScript Conditionals Topic:17**************************
+// JavaScript if
+// Display "Good day!" if the hour is less than 18:00:
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+// Good day!
+
+
+// JavaScript if .. else
+// A time-based greeting:
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+// Good Evening!
+
+
+// JavaScript if .. else
+// A time-based greeting:
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+
+// Good evening
+
+// JavaScript Math.random() = eita randon number echo korbe,
+let text;
+if (Math.random() < 0.5) {
+  text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+} else {
+  text = "<a href='https://wwf.org'>Visit WWF</a>";
+}
+document.getElementById("demo").innerHTML = text;
+// Visit W3Schools
+
+
+// JavaScript switch
+let day = new Date().getDay();
+switch (day) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+// Today is Monday
+
+// nested if else 
+
+
+
+
+
+
+// ************************** JavaScript Loops Topic:18************************** 
+// JavaScript For Loop
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+// The number is 0
+// The number is 1
+// The number is 2
+// The number is 3
+// The number is 4
+
+// JavaScript For Loop
+
+// <p id="demo"></p>
+
+// <script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+// BMW
+// Volvo
+// Saab
+// Ford
+// Fiat
+// Audi
+
+// JavaScript For Loop
+// Loop from 1 to 6, to make HTML headings.
+// <div id="demo"></div>
+
+// <script>
+var x ="", i;
+for (i=1; i<=6; i++) {
+  x = x + "<h" + i + ">Heading " + i + "</h" + i + ">";
+  // x +=  "<h" + i + ">Heading " + i + "</h" + i + ">";
+}
+document.getElementById("demo").innerHTML = x;
+// Heading 1
+// Heading 2
+// Heading 3
+// Heading 4
+// Heading 5
+// Heading 6
+
+// JavaScript While Loop
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+// The number is 0
+// The number is 1
+// The number is 2
+// The number is 3
+// The number is 4
+// The number is 5
+// The number is 6
+// The number is 7
+// The number is 8
+// The number is 9
+
+// JavaScript Do While Loop
+let text = ""
+let i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+// The number is 0
+// The number is 1
+// The number is 2
+// The number is 3
+// The number is 4
+// The number is 5
+// The number is 6
+// The number is 7
+// The number is 8
+// The number is 9
+
+// JavaScript Loops
+// A loop with a break statement.
+// <p id="demo"></p>
+
+// <script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  text += "The number is " + i + "<br>";
+  if (i === 3) { break; }
+}
+
+document.getElementById("demo").innerHTML = text;
+// The number is 0
+// The number is 1
+// The number is 2
+
+// JavaScript Loops
+// A loop with a continue statement.
+
+// A loop which will skip the step where i = 3.
+// <p id="demo"></p>
+
+// <script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+// The number is 0
+// The number is 1
+// The number is 2
+// The number is 4
+// The number is 5
+// The number is 6
+// The number is 7
+// The number is 8
+// The number is 9
+
+// JavaScript For In Loop
+// The for in statement loops through the properties of an object:
+// <p id="demo"></p>
+
+// <script>
+const person = {fname:"John", lname:"Doe", age:25}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = txt;
+// John Doe 25
+
+
+// ************************** JavaScript Error Handling Topic:19**************************
+
+//l:1
+// JavaScript Error Handling
+// This example demonstrates how to use catch to diplay an error.
+// <p id="demo"></p>
+
+// <script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+// adddlert is not defined
+
+//l:2
+// JavaScript Error Handling
+
+var txt = "";
+function message() {
+  try {
+    adddlert("Welcome guest!");
+  }
+  catch(err) {
+    txt = "There was an error on this page.\n\n";
+    txt += "Click OK to continue viewing this page,\n";
+    txt += "or Cancel to return to the home page.\n\n";
+    if(!confirm(txt)) {
+      document.location.href = "https://www.w3schools.com/";
+    }
+  }
+}
+// <h2>JavaScript Error Handling</h2>
+
+// <input type="button" value="View message" onclick="message()" />
+
+//l:3
+
+onerror = handleErr;
+var txt = "";
+function handleErr(msg, url, l) {
+  txt = "There was an error on this page.\n\n";
+  txt += "Error: " + msg + "\n";
+  txt += "URL: " + url + "\n";
+  txt += "Line: " + l + "\n\n";
+  txt += "Click OK to continue.\n\n";
+  alert(txt);
+  return true;
+}
+
+function message() {
+   adddlert("Welcome guest!");
+}
+// <input type="button" value="View message" onclick="message()" />
+
+// ************************** JavaScript Regular Expressions Topic:20************************** 
+
+// JavaScript Regular Expressions
+// Search a string for "w3Schools", and display the position of the match:
+// <p id="demo"></p>
+
+// <script>
+let text = "Visit W3Schools!"; 
+let n = text.search(/w3Schools/i);
+document.getElementById("demo").innerHTML = n;
+// 6
+
+// JavaScript String Methods
+// Replace "Microsoft" with "W3Schools" in the paragraph below:
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo">Please visit Microsoft!</p>
+
+// <script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.replace(/microsoft/i, "W3Schools");
+}
+// Try it
+// Please visit Microsoft!
+
+// **************************  JavaScript Objects Topic:21************************** 
+
+// Create and display a variable:
+let person = "John Doe";
+document.getElementById("demo").innerHTML = person;
+
+// JavaScript Objects
+// Creating an object:
+// <p id="demo"></p>
+
+// <script>
+let person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+// const person = {firstName:"John", lastName:"Doe", age:50,eyeColor:"blue"}; single line
+
+document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+// John Doe
+
+// JavaScript Objects
+// Creating a JavaScript Object:
+// <p id="demo"></p>
+
+// <script>
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+// John is 50 years old.
+
+// JavaScript Object Constructors
+// <p id="demo"></p>
+
+// <script>
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+const myFather = new Person("John", "Doe", 50, "blue");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + "."; 
+// My father is 50.
+
+//----------------
+var x1 = {};
+var x2 = "";
+var x3 = 0;
+var x4 = false;
+var x5 = [];
+var x6 = /()/;
+var x7 = function(){};
+
+document.getElementById("demo").innerHTML =
+"x1: " + typeof x1 + "<br>" +
+"x2: " + typeof x2 + "<br>" +
+"x3: " + typeof x3 + "<br>" +
+"x4: " + typeof x4 + "<br>" +
+"x5: " + typeof x5 + "<br>" +
+"x6: " + typeof x6 + "<br>" +
+"x7: " + typeof x7 + "<br>";
+
+// x1: object
+// x2: string
+// x3: number
+// x4: boolean
+// x5: object
+// x6: object
+// x7: function
+
+// JavaScript Objects
+// JavaScript objects are mutable.
+
+// Any changes to a copy of an object will also change the original object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+const x = person;
+x.age = 10;
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+// John is 10 years old.
+
+
+// **************************  JavaScript Object Properties Topic:22************************** 
+// JavaScript Object Properties
+// Access a property with .property:
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+// John is 50 years old.
+
+// JavaScript Object Properties
+// Access a property with ["property"]:
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+document.getElementById("demo").innerHTML = person["firstname"] + " is " + person["age"] + " years old.";
+// John is 50 years old.
+
+// JavaScript Object Properties
+// Looping object property values:
+const person = {
+  fname:"John",
+  lname:"Doe",
+  age:25
+}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = txt;
+// John Doe 25
+
+// JavaScript Object Properties
+// Add a new property to an existing object:
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+// John is English.
+
+// JavaScript Object Properties
+// Deleting object properties.
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+delete person.age;
+
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+// John is undefined years old.
+
+
+// print_r or var_dump as console.log(); 
+
+// ************************** JSON Objects Topic:23************************** 
+// Access a JavaScript Object
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+document.getElementById("demo").innerHTML = myObj["name"];
+//output: John
+let text = "";
+for (const x in myObj) {
+  text += x + ", ";
+  // text += myObj[x] + ", ";
+}
+document.getElementById("demo").innerHTML = text;
+//output: name, age, car,
+
+// Looping JavaScript Object Values
+
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+
+let text = "";
+for (const x in myObj) {
+  text += myObj[x] + ", ";
+}
+document.getElementById("demo").innerHTML = text;
+// John, 30, null,
+
+// Access Nested JavaScript Objects
+const myObj = {
+  "name":"John",
+  "age":30,
+  "cars": {
+  "car1":"Ford",
+  "car2":"BMW",
+  "car3":"Fiat"
+  }
+}
+document.getElementById("demo").innerHTML = myObj.cars.car2;
+// BMW
+
+// Modify object values:
+let x = "";
+let myObj = {
+  "name":"John",
+  "age":30,
+  "cars": {
+  "car1":"Ford",
+  "car2":"BMW",
+  "car3":"Fiat"
+  }
+}
+myObj.cars.car2 = "Mercedes";
+// myObj.cars["car2"] = "Mercedes";
+
+for (let i in myObj.cars) {
+  x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+// Ford
+// Mercedes
+// Fiat
+
+// Delete JavaScript Object Properties
+
+let x = "";
+let myObj = {
+  "name":"John",
+  "age":30,
+  "cars": {
+  "car1":"Ford",
+  "car2":"BMW",
+  "car3":"Fiat"
+  }
+}
+delete myObj.cars.car2;
+
+for (let i in myObj.cars) {
+  x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+// Ford
+// Fiat
+
+
+// ************************** JSON Arrays Topic:24************************** 
+// Access Array Values
+const myJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj = JSON.parse(myJSON);
+
+document.getElementById("demo").innerHTML = myObj.cars[0];
+// Ford
+
+// Looping an Array
+const myJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj = JSON.parse(myJSON);
+
+let text = "";
+for (let i in myObj.cars) {
+  text += myObj.cars[i] + ", ";
+}
+
+document.getElementById("demo").innerHTML = text;
+// Ford, BMW, Fiat,
+
+// Looping an Array
+const myJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj = JSON.parse(myJSON);
+
+let text = "";
+for (let i = 0; i < myObj.cars.length; i++) {
+  text += myObj.cars[i] + ", ";
+}
+
+document.getElementById("demo").innerHTML = text;
+// Ford, BMW, Fiat,
+
+// Looping through arrays inside arrays.
+let x = "";
+const myObj = {
+  "name":"John",
+  "age":30,
+  "cars": [
+    {"name":"Ford", "models":["Fiesta", "Focus", "Mustang"]},
+    {"name":"BMW", "models":["320", "X3", "X5"]},
+    {"name":"Fiat", "models":["500", "Panda"] }
+  ]
+}
+
+for (let i in myObj.cars) {
+  x += "<h2>" + myObj.cars[i].name + "</h2>";
+  for (let j in myObj.cars[i].models) {
+    x += myObj.cars[i].models[j] + "<br>";
+  }
+}
+
+document.getElementById("demo").innerHTML = x;
+// Ford
+// Fiesta
+// Focus
+// Mustang
+// BMW
+// 320
+// X3
+// X5
+// Fiat
+// 500
+// Panda
+
+// Modify an array value of an object.
+let x = "";
+const myObj = {
+  "name":"John",
+  "age":30,
+  "cars":[ "Ford", "BMW", "Fiat" ]
+};
+
+myObj.cars[1] = "Mercedes";
+
+for (let i in myObj.cars) {
+  x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+// Ford
+// Mercedes
+// Fiat
+
+// Delete array properties:
+let x = "";
+const myObj = {
+  "name":"John",
+  "age":30,
+  "cars": ["Ford","BMW","Fiat"]
+}
+
+delete myObj.cars[1];
+
+for (let i in myObj.cars) {
+  x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+// Ford
+// Fiat
+// ************************** JSON Parse Topic:25************************** 
+
+// Creating an Object from a JSON String
+const txt = '{"name":"John", "age":30, "city":"New York"}'
+const obj = JSON.parse(txt);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+// John, 30
+
+// Fetch a JSON file with XMLHttpRequest
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
+// John
+
+// Fetch a JSON file with XMLHttpRequest
+// Content written as an JSON array will be converted into a JavaScript array.
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myArr = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myArr[0];
+}
+xmlhttp.open("GET", "json_demo_array.txt", true);
+xmlhttp.send();
+// Ford
+
+// Convert a string into a date object.
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth; 
+// John, Sun Dec 14 1986 06:00:00 GMT+0600 (Bangladesh Standard Time)
+
+// Convert a string into a date object.
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text, function (key, value) {
+  if (key == "birth") {
+    return new Date(value);
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth; 
+// John, Sun Dec 14 1986 06:00:00 GMT+0600 (Bangladesh Standard Time)
+
+// Convert a string into a function.
+const text = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}';
+const obj = JSON.parse(text);
+obj.age = eval("(" + obj.age + ")");
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age(); 
+// John, 30
+
+
+// ************************** JSON Stringify Topic:26************************** 
+// Create a JSON string from a JavaScript object.
+const obj = {name: "John", age: 30, city: "New York"};
+const myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+// {"name":"John","age":30,"city":"New York"}
+
+// Create a JSON string from a JavaScript array.
+const arr = ["John", "Peter", "Sally", "Jane"];
+const myJSON = JSON.stringify(arr);
+document.getElementById("demo").innerHTML = myJSON;
+// ["John","Peter","Sally","Jane"]
+
+// JSON.stringify() converts date objects into strings.
+const obj = {name: "John", today: new Date(), city: "New York"};
+const myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+// {"name":"John","today":"2021-10-25T18:38:36.949Z","city":"New York"}
+
+// JSON.stringify() will remove any functions from an object.
+const obj = {name: "John", age: function () {return 30;}, city: "New York"};
+const myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+// {"name":"John","city":"New York"}
+
+// JSON.stringify() will remove any functions from an object.
+// Convert functions into strings to keep them in the JSON object.
+const obj = {name: "John", age: function () {return 30;}, city: "New York"};
+obj.age = obj.age.toString();
+const myJSON = JSON.stringify(obj);
+// {"name":"John","age":"function () {return 30;}","city":"New York"}
+
+
+// ************************** JSON PHP Topic:27************************** 
+
+// Get JSON Data from a PHP Server
+
+// <p id="demo"></p>
+
+// <script>
+const xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "demo_file.php");
+xmlhttp.send();
+// John
+
+// Get JSON Data from a PHP Server
+// Convert the data into a JavaScript array:
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj[2];
+}
+xmlhttp.open("GET", "demo_file_array.php");
+xmlhttp.send();
+// Peter
+
+// Get JSON Data from a PHP Server
+// The JSON received from the PHP file:
+const dbParam = JSON.stringify({"limit":10});
+
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  document.getElementById("demo").innerHTML = this.responseText;
+}
+xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam);
+xmlhttp.send();
+// [{"name":"Alfreds Futterkiste"},{"name":"Ana Trujillo Emparedados y helados"},{"name":"Antonio Moreno Taqueria"},{"name":"Around the Horn"},{"name":"Berglunds snabbkop"},{"name":"Blauer See Delikatessen"},{"name":"Blondel pere et fils"},{"name":"Bolido Comidas preparadas"},{"name":"Bon app'"},{"name":"Bottom-Dollar Marketse"}]
+
+// Get JSON Data from a PHP Server
+const obj = { "limit":10 };
+const dbParam = JSON.stringify(obj);
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  myObj = JSON.parse(this.responseText);
+  let text = ""
+  for (let x in myObj) {
+    text += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+};
+xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam);
+xmlhttp.send();
+// <p>Try changing the "limit" property from 10 to 5.</p>
+
+// Alfreds Futterkiste
+// Ana Trujillo Emparedados y helados
+// Antonio Moreno Taqueria
+// Around the Horn
+// Berglunds snabbkop
+// Blauer See Delikatessen
+// Blondel pere et fils
+// Bolido Comidas preparadas
+// Bon app'
+// Bottom-Dollar Marketse
+
+// Try changing the "limit" property from 10 to 5.
+
+
+// Use HTTP POST to Get JSON Data from a PHP Server
+
+const dbParam = JSON.stringify({"limit":10});
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  myObj = JSON.parse(this.responseText);
+  let text = "";
+  for (let x in myObj) {
+    text += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+xmlhttp.open("POST", "json_demo_db_post.php");
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+// <p>Try changing the "limit" property from 10 to 5.</p>
+
+// Alfreds Futterkiste
+// Ana Trujillo Emparedados y helados
+// Antonio Moreno Taqueria
+// Around the Horn
+// Berglunds snabbkop
+// Blauer See Delikatessen
+// Blondel pere et fils
+// Bolido Comidas preparadas
+// Bon app'
+// Bottom-Dollar Marketse
+
+// Try changing the "limit" property from 10 to 5.
+
+
+// ************************** JSON Html Topic:28************************** 
+
+// Make a table based on JSON data.
+
+// <h2>Make a table based on JSON data.</h2>
+
+// <p id="demo"></p>
+
+// <script>
+const dbParam = JSON.stringify({table:"customers",limit:20});
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  let text = "<table border='1'>"
+  for (let x in myObj) {
+    text += "<tr><td>" + myObj[x].name + "</td></tr>";
+  }
+  text += "</table>"    
+  document.getElementById("demo").innerHTML = text;
+}
+xmlhttp.open("POST", "json_demo_html_table.php");
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+
+/*
+Table Data:
+ Alfreds Futterkiste
+Ana Trujillo Emparedados y helados
+Antonio Moreno Taqueria
+Around the Horn
+Berglunds snabbkop
+Blauer See Delikatessen
+Blondel pere et fils
+Bolido Comidas preparadas
+Bon app'
+Bottom-Dollar Marketse
+B's Beverages
+Cactus Comidas para llevar
+Centro comercial Moctezuma
+Chop-suey Chinese
+Comercio Mineiro
+Consolidated Holdings
+Drachenblut Delikatessend
+Du monde entier
+Eastern Connection
+Ernst Handel */
+
+// Make a table based on the value of a 
+//drop down menu. html select tag
+
+// <select id="myselect" onchange="change_myselect(this.value)">
+//   <option value="">Choose an option:</option>
+//   <option value="customers">Customers</option>
+//   <option value="products">Products</option>
+//   <option value="suppliers">Suppliers</option>
+// </select>
+
+// <p id="demo"></p>
+
+// <script>
+function change_myselect(sel) {
+  const dbParam = JSON.stringify({table:sel,limit:20});
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function() {
+    myObj = JSON.parse(this.responseText);
+    text = "<table border='1'>"
+    for (x in myObj) {
+      text += "<tr><td>" + myObj[x].name + "</td></tr>";
+    }
+    text += "</table>"    
+    document.getElementById("demo").innerHTML = text;
+  }
+  xmlhttp.open("POST", "json_demo_html_table.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+// Suppliers
+// Exotic Liquid
+// New Orleans Cajun Delights
+// Grandma Kelly's Homestead
+// Tokyo Traders
+// Cooperativa de Quesos 'Las Cabras'
+// Mayumi's
+// Pavlova, Ltd.
+// Specialty Biscuits, Ltd.
+// PB Kneckebrod AB
+// Refrescos Americanas LTDA
+// Heli Suswaren GmbH & Co. KG
+// Plutzer Lebensmittelgrosmarkte AG
+// Nord-Ost-Fisch Handelsgesellschaft mbH
+// Formaggi Fortini s.r.l.
+// Norske Meierier
+// Bigfoot Breweries
+// Svensk Sjofoda AB
+// Aux joyeux ecclesiastiques
+// New England Seafood Cannery
+// Leka Trading
+
+// Make a drop down list based on JSON data.
+// <p id="demo"></p>
+
+// <script>
+const dbParam = JSON.stringify({table:"customers",limit:20});
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  let text = "<select>"
+  for (let x in myObj) {
+    text += "<option>" + myObj[x].name;
+  }
+  text += "</select>"
+  document.getElementById("demo").innerHTML = text;
+}
+xmlhttp.open("POST", "json_demo_html_table.php");
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+// Blondel pere et fils  = dropdown tag
+
+
+// ************************** JSON JSONP Topic:29************************** 
+
+
+// ************************** JavaScript HTML DOM Examples MainTopoic:2************************** 
+
+// ************************** The Document Object Topic:01************************** 
+
+// Click the button to display the cookies associated with this document.
+// <p id="demo">Click the button to display the cookies associated with this document.</p>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML =
+  "Cookies associated with this document: " + document.cookie;
+}
+// Try it = cookie result
+
+
+// Click the button to display the domain name of the server that loaded this document.
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+// <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = document.domain;
+}
+// Try it
+
+//-------------------
+document.getElementById("demo").innerHTML = document.lastModified;
+// This document was last modified 10/26/2021 01:11:34.
+
+// Finding HTML Elements Using document.title
+document.getElementById("demo").innerHTML =
+"The title of this document is: " + document.title;
+// The title of this document is: W3Schools Demo
+
+// The full URL of this document is:
+document.getElementById("demo").innerHTML = document.URL
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_url.
+
+// Click the button to replace this document with new content.
+// <button onclick="myFunction()">Try it</button>
+
+// <script>
+function myFunction() {
+  document.open("text/html","replace");
+  document.write("<h2>Learning about the HTML DOM is fun!</h2>");
+  document.close();
+}
+// Try it
+
+// Click the button to open a new window and add some content.
+// <button onclick="myFunction()">Try it</button>
+
+// <script>
+function myFunction() {
+  var w = window.open();
+  w.document.open();
+  w.document.write("<h2>Hello World!</h2>");
+  w.document.close();
+}
+// Try it
+
+// How many elements named x
+// <p>
+// Cats: <input name="x" type="radio" value="Cats">
+// Dogs: <input name="y" type="radio" value="Dogs">
+// </p>
+
+function getElements() {
+  var x = document.getElementsByName("x");
+  document.getElementById("demo").innerHTML = x.length;
+
+  // var x = document.getElementsByTagName("input");
+  // document.getElementById("demo").innerHTML = x.length;
+}
+//1,2
+
+// ************************** The Anchors Collection Topic:02************************** 
+
+// Finding HTML Elements Using document.anchors
+// <a name="html">HTML Tutorial</a><br>
+// <a name="css">CSS Tutorial</a><br>
+// <a name="xml">XML Tutorial</a><br>
+
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML =
+"Number of anchors are: " + document.anchors.length;
+// Number of anchors are: 3
+
+//------------------
+// <a name="html">HTML Tutorial</a><br>
+// <a name="css">CSS Tutorial</a><br>
+// <a name="xml">XML Tutorial</a><br>
+
+// <p>Click the button to display the innerHTML of the first anchor in the document.</p>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+// <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML =
+  document.anchors[0].innerHTML;
+}
+// Try it - button 
+// HTML Tutorial
+
+// ************************** The Links Collection Topic:03************************** 
+
+// Finding HTML Elements Using document.links
+// <a href="/html/default.asp">HTML</a>
+// <a href="/css/default.asp">CSS</a>
+document.getElementById("demo").innerHTML =
+"Number of links: " + document.links.length;
+
+// Number of links: 2
+
+// <a href="/html/default.asp">HTML</a>
+// <br>
+// <a href="/css/default.asp">CSS</a>
+// </p>
+
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML =
+"The href of the first link is " + document.links[0].href;
+// The href of the first link is https://www.w3schools.com/html/default.asp
+
+
+// ************************** The Forms Collection Topic:04************************** 
+
+// Finding HTML Elements Using document.forms
+document.getElementById("demo").innerHTML =
+"Number of forms: " + document.forms.length;
+// Number of forms: 1
+
+// <form name="Form1"></form>
+// <form name="Form2"></form>
+// <form name="Form3"></form>
+
+// <p id="demo"></p>
+
+// <script>
+document.getElementById("demo").innerHTML =
+"The name of the first for is " + document.forms[0].name;
+// The name of the first for is Form1
+
+// Finding HTML Elements Using document.images
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images.length;
+// Number of images: 2
+//-----------
+document.getElementById("demo").innerHTML =
+"The id of the first image is " + document.images[0].src;
+// The id of the first image is https://www.w3schools.com/js/pic_htmltree.gif
+
+//----------------
+/* <p id="p1">
+This is a text.
+This is a text.
+This is a text.
+</p>
+
+<input type="button" value="Hide text" 
+onclick="document.getElementById('p1').style.visibility='hidden'">
+
+<input type="button" value="Show text"
+onclick="document.getElementById('p1').style.visibility='visible'"> */
+//---------------
+
+
+function bgChange(bg) {
+  document.body.style.background = bg;
+}
+
+/* </head>
+<body>
+
+<h2>Change background color</h2>
+<p>Mouse over the squares!</p>
+
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:Khaki">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:PaleGreen">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:Silver">
+    </td>
+  </tr>
+</table> */
+
+// ************************** CSS Manipulation Topic:5************************** 
+
+
+// ************************** JavaScript HTML Input Examples MainTopic************************** 
+
+// ************************** Button Objec Topic:01************************** 
+
+// Click the "Disable" button to disable the "OK" button:
+// <input type="button" id="btn01" value="OK">
+// <button onclick="disableElement()">Disable</button>
+
+// <script>
+function disableElement() {
+  document.getElementById("btn01").disabled = true;
+}
+// Disable
+
+
+// <p>Click the "Try it" button to display the name of the "HTML" button:</p>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+// <script>
+function myFunction() {
+  var x = document.getElementById("btn1").name;
+  document.getElementById("demo").innerHTML = x;
+}
+// Click the "Try it" button to display the name of the "HTML" button:
+
+// Click the "Try it" button to return the type of the "HTML" button:
+function myFunction() {
+  var x = document.getElementById("btn1").type;
+  document.getElementById("demo").innerHTML = x;
+}
+// Try it
+// button
+
+// Click the "Try it" button to return the value of the "HTML" button:
+// <button id="btn1" name="subject" type="submit" value="fav_HTML">HTML</button>
+// <button id="btn2" name="subject" type="submit" value="fav_CSS">CSS</button>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <p id="demo"></p>
+
+// <script>
+function myFunction() {
+  var x = document.getElementById("btn1").value;
+  document.getElementById("demo").innerHTML = x;
+}
+
+// Click the "Try it" button to return the text on the "HTML" button:
+var x = document.getElementById("btn1").innerHTML;
+var x = document.getElementById("frm1").acceptCharset;
+var x = document.getElementById("frm1").action;
+var x = document.getElementById("frm1").enctype;
+var x = document.getElementById("frm1").length; //eita tar input count kore dei,
+var x = document.getElementById("frm1").method;
+var x = document.getElementById("frm1").name;
+var x = document.getElementById("frm1").target;
+  document.getElementById("demo").innerHTML = x;
+  // Click the "Try it" button to display the id of the form the HTML button belongs to:
+  var x = document.getElementById("btn1").form.id;
+  document.getElementById("demo").innerHTML = x;
+
+
+// ************************** Form Object Topic:02************************** 
+
+  // Enter names in the fields, then click "Submit" to submit the form:
+
+/*   
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script> */
+function myFunction() {
+  document.getElementById("frm1").submit();
+  document.getElementById("frm1").reset();
+}
+
+// Click "Try it" to display the value of each element in the form.
+/* <form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script> */
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
+
+// ************************** Option and Select Objects Topic:03************************** 
+//disable and enable by button click
+function disable() {
+  document.getElementById("mySelect").disabled=true;
+}
+function enable() {
+  document.getElementById("mySelect").disabled=false;
+}
+
+//----------------
+/* <form id="myForm">
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select>
+</form>
+
+<p>The id of the form is:<p>
+<p id="demo"></p>
+
+<script> */
+document.getElementById("demo").innerHTML = document.getElementById("mySelect").form.id;
+
+// ------------
+/* <select id="mySelect">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select> */
+document.getElementById("demo").innerHTML =
+document.getElementById("mySelect").length;
+// 4
+
+function changeSize() {
+  document.getElementById("mySelect").size = 4;
+  document.getElementById("mySelect").multiple = true;
+}
+// <select id="mySelect">
+//   <option>Apple</option>
+//   <option>Banana</option>
+//   <option>Orange</option>
+//   <option>Melon</option>
+// </select>
+// <input type="button" onclick="changeSize()" value="Change size">
+
+
+/* <form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+</select>
+<br><br>
+<input type="button" onclick="getOptions()" value="Output all options">
+</form>
+
+<p id="demo"></p> */
+
+function getOptions() {
+  var x = document.getElementById("mySelect");
+  var txt = "";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    txt = txt + " " + x.options[i].text;
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+// Apple Orange Pineapple Banana
+
+// display index of select 
+/* <form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+</select>
+<br><br>
+<input type="button" onclick="getIndex()" 
+value="Display the index of the selected option">
+</form>
+
+<p id="demo"></p> */
+
+function getIndex() {
+  document.getElementById("demo").innerHTML =
+  document.getElementById("mySelect").selectedIndex;
+}
+// 3
+
+/* <form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+</select>
+<br><br>
+<input type="button" onclick="changeText()" value="Set text of selected option">
+</form> */
+
+function changeText() {
+  x = document.getElementById("mySelect");
+  x.options[x.selectedIndex].text = "Melon";
+}
+
+/* <form>
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select>
+<input type="button" onclick="removeOption()" value="Remove the selected option">
+</form> */
+
+function removeOption() {
+  var x = document.getElementById("mySelect");
+  x.remove(x.selectedIndex);
+  // x.remove(1);  index 1
+}
+// **************************  Topic:0************************** 
+// **************************  Topic:0************************** 
+// **************************  Topic:0************************** 
+
+
+
+
+
+    </script>
+  </body>
+</html>

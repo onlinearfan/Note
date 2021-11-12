@@ -1,0 +1,11 @@
+Psd to html Tricks in Photopea
+
+image export - alt +clt+mouse , Move tools, trims , export png-jpg
+font check and color - T tool click and check then again click and undo
+sizing for - sizing tool click and take size and then out click (window info to make sure)
+for copy text text tool and copy
+
+merge all image
+
+
+display:inline use korle ul li bullet point cole jabe

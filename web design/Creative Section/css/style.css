@@ -1,0 +1,3536 @@
+/*
+  Theme Name: Name - SECTION PRACTICE PLATE
+*/
+
+/* CSS Index
+-----------------------------------
+01. General Styles
+
+*/
+
+
+/* ========= Google Font Add ===========  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+/* ========= Root CSS Add ===========  */
+:root {
+
+	/* Colors  */
+	--green: #8ec448;
+	--white: #ffffff;
+	--black: #000000;
+	--text-color: #353535;
+	--section: #F1F1F1;
+
+	/* Font-Family  */
+	--Raleway: 'Raleway', sans-serif;
+	--Lato: 'Lato', sans-serif;
+	/*========Other Style========*/
+	--transition: all .3s ease;
+}
+
+/* ========= Custom ScrollBar Part Start ===========  */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* ========= TEXT Selection & Placeholder CSS ===========  */
+
+*::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: #000;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* ============Scroll Up Button============*/
+
+.scroll-up-btn {
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: var(--green);
+	right: 30px;
+	bottom: 10px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	z-index: 9999;
+	font-size: 30px;
+	border-radius: 6px;
+	border-bottom-width: 2px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+	background: black;
+}
+
+
+/* ========= Float ClearFixed CSS ===========  */
+
+.myfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 0%;
+	height: 0%;
+}
+
+/* ========= Owl Carousel CSS ===========  */
+
+/* Owl nav  */
+
+.active .owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+
+.active .owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+
+.active .owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+
+.active .owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+
+/* owl dots css  */
+
+.active .owl-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: -90px;
+	z-index: 99999;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.active .owl-dot {
+	width: 15px;
+	height: 15px;
+	background: var(--white);
+	margin-right: 20px;
+	border: 2px solid #020202;
+	border-radius: 50%;
+}
+
+.active .owl-dot.active {
+	background: var(--green);
+}
+
+/* ========= 1) Theme Default CSS ===========  */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--Raleway);
+	font-size: 16px;
+	color: var(--text-color);
+	overflow-x: hidden;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: var(--Lato)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--Raleway);
+	font-weight: normal;
+	color: #353535;
+	font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* ========= ALL Outline NONE ===========  */
+a {
+	color: var(--black);
+	font-size: 16px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:focus,
+input,
+input:focus,
+textarea,
+textarea:focus,
+button,
+button:focus {
+	text-decoration: none;
+
+	outline: none !important;
+}
+
+/* ========= Section Title ===========  */
+.section-title {
+	text-align: center;
+}
+
+.section-title h1 {
+	font-size: 24px;
+}
+
+.section-title p {
+	font-size: 16px;
+	margin-bottom: 35px;
+
+}
+
+/* ========= Common Button ===========  */
+.mybtn {
+	margin: 0;
+	padding: 15px 40px;
+	border: 1px solid #121212;
+	text-transform: uppercase;
+	color: #121212;
+	transition: all 0.3s ease;
+	font-weight: 700;
+	font-family: var(--Raleway);
+	transition: .3s;
+	display: inline-block;
+}
+
+.mybtn:hover {
+	background: #3B47FF;
+	color: #fff;
+}
+
+.mybtn-active {
+	background: #8EC448;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+
+a {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	cursor: pointer;
+}
+
+
+/* ========= Theme Overlay ===========  */
+
+.theme-overlay {
+	position: relative
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.delete-margin {
+	margin: -15px 0;
+}
+
+
+/* !========= RRF - Section - 1 - Contact Form ===========  */
+
+/* .section-padding {
+	padding: 100px 0;
+	position: relative;
+}
+
+.section-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 100%;
+	background: url(../images/backiee-79295.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section-bg:after {
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: #ffb37061;
+	content: "";
+}
+
+.contact-form h2 {
+	position: absolute;
+	top: 40%;
+	left: -22%;
+	z-index: 2;
+	transform: rotate(-90deg);
+	font-weight: 700;
+	color: #ffffff75;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 9px 19px;
+	border: 1px solid #fff;
+}
+
+.btn.btn-primary {
+	width: auto;
+	padding: 10px 48px;
+}
+
+
+.appointment-text h2 {
+	font-size: 24px;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+.appointment-text {
+	padding-left: 71px;
+}
+
+.appointment ul li {
+	text-align: center;
+}
+
+.appointment-text li {
+	font-size: 17px;
+	margin-bottom: 19px;
+}
+
+.appointment-text .btn {
+	margin-top: 45px;
+}
+
+
+.contact-form textarea {
+	height: 220px;
+}
+
+input:focus,
+textarea:focus {
+	border-color: #0774e8;
+} */
+
+
+
+/*!========= RRF - Section - 2 - ZigZag Bg Tricks  ===========  */
+
+/* .section-padding{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.section-padding.zigzag-bg-1 {
+	background: url(../images/bg-1.jpg);
+	border-bottom: 10px solid #64ff64;
+  }
+  .section-padding.zigzag-bg-2 {
+	background: url(../images/bg-2.jpg);
+	border-top: 10px solid #64ff64;
+  }
+  .zigzag-text {
+	position: relative;
+	z-index: 2;
+	padding: 30px 30px 30px 0px;
+  }
+  .zigzag-text::before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: -4890%;
+	height: 100%;
+	width: 5000%;
+	background: gray;
+	z-index: -1;
+	transform: skewx(14deg);
+  }
+  .zigzag-bg-2 .zigzag-text {
+	padding-right: 0px;
+	padding-left: 50px;
+  }
+  .zigzag-bg-2 .zigzag-text:before {
+	left: auto;
+	right: -4890%;
+  }
+  .zigzag-text h1 {
+	font-size: 28px;
+	font-weight: 700;
+	color: #ffe684;
+	text-transform: uppercase;
+  }
+  .zigzag-text p {
+	color: white;
+  } */
+/* !========= RRF - Section - 3 - Video PopUp ===========  */
+
+/* #video-area {
+	position: relative;
+}
+
+.video-bg {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	background: #ffdf32;
+	width: 45%;
+	box-shadow: 0px 0px 10px black;
+}
+
+.video-bg a {
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #8873ed;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+	border-radius: 50%;
+	margin-top: -50px;
+}
+
+#video-area {
+	padding: 80px 0;
+}
+
+.video-text h2 {
+	font-size: 28px;
+	font-weight: 700;
+	color: #8873ED;
+}
+
+.video-text p {
+	font-size: 17px;
+	color: black;
+}
+
+.video-text ul li {
+	color: black;
+	font-size: 17px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.video-text ul li i {
+	display: inline-block;
+	position: absolute;
+	top: 13%;
+	left: 0%;
+}
+
+
+.video-text span {
+	display: inline-block;
+	padding-left: 40px;
+} */
+
+/* !========= RRF - Section - 4 - Services Box ===========  */
+
+/* .sec-title h1 {
+	font-size: 30px;
+	font-weight: 700;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+#services {
+	padding: 50px 0;
+}
+
+.sec-title h1:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 5px;
+	background: red;
+	width: 80px;
+	margin-left: -40px;
+}
+
+.sec-title h1::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 5px;
+	background: #00ff40;
+	width: 30px;
+	margin-left: -15px;
+}
+
+.sec-title {
+	margin-bottom: 50px;
+}
+
+.single-services .icon {
+	min-height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-services .icon img {
+	display: inline-block;
+	width: 70px;
+}
+
+.single-services {
+	min-height: 280px;
+	padding: 0 5px;
+}
+
+.single-services p {
+	margin-top: 20px;
+}
+
+.single-services .icon i {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	color: #FFA64D;
+	background: black;
+	font-size: 28px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 50%;
+} */
+
+/* !========= -RRF - Section - 5 - Accordion Box- ===========  */
+
+/* .section-padding {
+	position: relative;
+	min-height: 645px;
+	padding: 50px 0 0 0;
+}
+
+.section-padding:before {
+	background: #68d9eb;
+	content: "";
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+}
+
+.style-faq .card {
+	background-color: none;
+	background-clip: content-box;
+	border: none;
+	border-radius: 0px;
+}
+
+.style-faq .card-header {
+	padding: 0px;
+	margin: none;
+	background-color: transparent;
+	border-bottom: none;
+}
+
+
+.style-faq .card-header h2 a {
+	display: block;
+	padding: 15px 20px;
+	background: #80808030;
+}
+
+.style-faq .accordion>.card>.card-header {
+	margin-bottom: 0px;
+}
+
+
+.style-faq .card-header h2 a:before {
+	content: "-";
+	font-size: 30px;
+	float: right;
+	line-height: 15px;
+}
+
+.style-faq .card-header h2 a[aria-expanded="true"]::before {
+	content: "+";
+}
+
+.style-faq .card-body {
+	background: aqua;
+} */
+
+/* !========= RRF - Section - 6 - Pricing Table ===========  */
+
+/* .sec-title {
+	text-align: center;
+	margin-bottom: 55px;
+  }
+  .sec-title h1 {
+	font-size: 30px;
+  }
+  .sec-title h1 span {
+	color: blue;
+  }
+  .single-price {
+	padding: 20px;
+	background: aliceblue;
+	text-align: center;
+	border: 2px solid aliceblue;
+	transition: .3s;
+	box-shadow: 0 0 3px 1px #0000007d;
+  }
+  .single-price .price-header .price-icon {
+	min-height: 70px;
+	font-size: 44px;
+  }
+  .single-price .price-header .price-icon img {
+	width: 44px;
+  }
+  .price-content li {
+	margin-top: 15px;
+	transition: .3s;
+  }
+  .price-content li:before {
+	content: "a";
+	padding-right: 10px;
+	color: #00e04d;
+	font-size: 18px;
+	font-weight: 600;
+  }
+  .price-money {
+	margin: 15px 0;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .price-content .price-btn {
+	display: inline-block;
+	border: 1px solid blue;
+	padding: 10px 15px;
+	border-radius: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 15px;
+	transition: .3s;
+  }
+  .price-content .price-btn:hover {
+	background: blue;
+	color: white;
+  }
+  .single-price:hover {
+	border-color: blue;
+	box-shadow: 0 0 8px 0px #000000de;
+	transform: translateY(-5px);
+  }
+  .single-price:hover .single-price .price-header .price-icon {
+	color: blue;
+  }
+  
+.single-price:hover .price-header .price-icon {
+	color: blue;
+  }
+  .single-price .price-header .price-icon i {
+	transition: .3s;
+  }
+  .price-header h3 {
+	font-weight: 700;
+  }
+  .price-content li:hover {
+	padding-left: 20px;
+  }
+  
+.price-content ul {
+	text-align: left;
+	padding-left: 27px;
+  }
+
+  .section-padding{
+	  padding:50px 0;
+  } */
+/* !========= RRF - Section - 7 - Cool Staff ===========  */
+
+/* .sec-title h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+.sec-title h1:before {
+	content: "";
+	background: blue;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 180px;
+	height: 3px;
+}
+
+.sec-title h1:after {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 57px;
+	background: black;
+	width: 64px;
+	height: 3px;
+	border-left: 16px solid white;
+	border-right: 16px solid white;
+}
+
+.staff-img {
+	width: 180px;
+	display: inline-block;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.staff-text h2 {
+	font-size: 23px;
+	font-weight: 700;
+	color: blue;
+	margin-top: 20px;
+}
+
+.staff-text span {
+	color: #cb2b2b;
+}
+
+.staff-text p {
+	color: #1818189c;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.sec-title p {
+	margin-top: 30px;
+}
+
+
+
+.staff-active .owl-nav button span {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	background: gray !important;
+	display: inline-block;
+	width: 70px;
+	height: 60px;
+	line-height: 57px;
+	transition: .5s;
+	font-weight: 700;
+}
+
+.staff-active .owl-nav {
+	position: absolute;
+	top: -100px;
+	right: 0;
+}
+
+.staff-active .owl-nav button:last-child span {
+	margin-left: 10px;
+}
+
+.staff-active .owl-nav button span:hover {
+	background: blue !important;
+}
+
+.sec-title {
+	margin-bottom: 80px;
+}
+
+.section-padding {
+	padding: 50px 0;
+}
+
+
+.staff-active .owl-dots button span {
+	display: inline-block;
+	width: 30px;
+	height: 11px;
+	background: gray;
+	margin-right: 10px;
+	border-radius: 20px;
+	transition: .5s;
+}
+
+.staff-active .owl-dots {
+	text-align: center;
+	margin-top: 21px;
+}
+
+.staff-active .owl-dots button.active span {
+	background: blue;
+	width: 50px;
+} */
+
+/* !========= RRF - Section - 8 - Happy Client ===========  */
+
+/* #happy-client {
+	background: azure;
+  }
+  .section-padding {
+	padding: 50px 0;
+  }
+  .sec-title h1 {
+	font-size: 30px;
+	font-weight: 700;
+	position: relative;
+	padding-bottom: 24px;
+	margin-bottom: 21px;
+  }
+  .sec-title h1:before {
+	content: "";
+	background: blue;
+	width: 140px;
+	display: inline-block;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -70px;
+  }
+  .sec-title h1::after {
+	content: "";
+	background: red;
+	width: 70px;
+	display: inline-block;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+	border-left: 15px solid azure;
+	border-right: 15px solid azure;
+  }
+  .sec-title {
+	margin-bottom: 60px;
+  }
+
+  
+.single-client {
+	position: relative;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 2px solid blue;
+  }
+  .single-client i {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 7px;
+	font-size: 35px;
+	transform: translateY(-50%);
+  }
+  .client-text {
+	border-left: 6px solid #80808057;
+	padding-left: 18px;
+  } */
+
+/* button dots */
+/* .happy-client-active .owl-dots button span {
+	display: inline-block;
+	width: 33px;
+	height: 9px;
+	background: blue;
+	margin-right: 5px;
+	border-radius: 30px;
+	transition: .5s;
+  }
+  .happy-client-active .owl-dots button.active span {
+	background: red;
+	width: 53px;
+  }
+  .happy-client-active .owl-dots {
+	text-align: center;
+	margin-top: 35px;
+  } */
+
+
+/* number dots */
+/* .happy-client-active .owl-dots button:nth-child(1) span::before {
+	content: "1";
+  }
+  .happy-client-active .owl-dots button:nth-child(2) span::before {
+	content: "2";
+  }
+  .happy-client-active .owl-dots button:nth-child(3) span::before {
+	content: "3";
+  }
+  .happy-client-active .owl-dots button:nth-child(4) span::before {
+	content: "4";
+  }
+  .happy-client-active .owl-dots button:nth-child(5) span::before {
+	content: "5";
+  }
+  .happy-client-active .owl-dots {
+	position: absolute;
+	top: 0px;
+	right: -100px;
+  }
+  .happy-client-active .owl-dots button {
+	display: block;
+  }
+  .happy-client-active .owl-dots button span {
+	display: inline-block;
+	border-left: 2px solid blue;
+	padding: 15px;
+  }
+  .happy-client-active .owl-dots button.active span {
+	border-color: red;
+  } */
+
+
+/* !========= RRF - Section - 9 - Blog Section ===========  */
+
+/* .sec-title.text-center h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 100px;
+  }
+  .sec-title.text-center h1:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 50px;
+	height: 3px;
+	background: blue;
+  }
+  .blog-bg {
+	height: 200px;
+	background: #80808061;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  .bg-1{
+	  background:url(../images/team2.png);
+
+  }
+  .blog-content h2 {
+	font-size: 20px;
+	font-weight: 700;
+  }
+  .blog-content {
+	padding: 30px 10px;
+	min-height: 230px;
+  }
+  .blog-content p {
+	color: gray;
+  }
+  .blog-content .blog-btn{
+	display: inline-block;
+	color: blue;
+	padding: 10px 0px;
+	transition: .3s;
+	font-weight: 500;
+  }
+  .blog-content .blog-btn:hover {
+	display: inline-block;
+	background: blue;
+	color: white;
+	padding: 10px 22px;
+	border-radius: 30px;
+  }
+  .blog-content .blog-btn:after {
+	content: ">";
+	display: inline-block;
+	padding-left: 15px;
+	transition: .2s;
+  }
+  
+.single-blog {
+	box-shadow: 0px 0px 8px 0px #0000004a;
+	transition: .3s;
+  }
+  .single-blog:hover {
+	transform: translatey(-20px);
+	box-shadow: 0px 0px 8px 0px #0000ff7d;
+  }
+  
+.single-blog:hover h2 {
+	color: blue;
+  }
+  
+.section-padding {
+	padding: 50px 0;
+  } */
+
+
+/* !========= RRF - Section - 10 - Hero Section ===========  */
+
+/* .top-header {
+	padding: 15px 0;
+	background: #3a0ae7;
+}
+
+.left-side {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+
+.right-side span {
+	padding-left: 25px;
+}
+
+.right-side .icon-1 span {
+	padding-right: 25px;
+}
+
+.right-side {
+	color: white;
+	font-weight: 500;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	display: block;
+	padding: 17px 24px;
+	position: relative;
+	transition: .5s;
+	margin: 15px 0;
+	font-weight: 500;
+	color: white !important;
+}
+
+nav ul li:last-child a {
+	padding-right: 0px;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background: aqua;
+	width: 0%;
+	height: 4px;
+	transition: .5s;
+}
+
+nav ul li:hover>a::before {
+	width: 100%;
+}
+
+nav ul li:hover>a {
+	color: aqua !important;
+}
+
+
+.logo {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 0;
+	border: 4px solid white;
+	position: relative;
+	padding: 2px 27px;
+	font-weight: 700;
+}
+
+.main-header {
+	background: #000c0c;
+}
+
+.logo span {
+	color: red;
+	font-size: 40px;
+}
+
+.logo:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translatex(-50%);
+	background: #1aff93;
+	width: 30px;
+	height: 4px;
+}
+
+
+#header {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: 999;
+}
+
+.hero-slider .single-slider {
+	min-height: 100vh;
+	background: blueviolet;
+}
+
+
+.hero-text h1 {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+}
+
+.hero-text p {
+	color: white;
+	font-weight: 300;
+	margin: 20px 0 35px;
+}
+
+.hero-text a {
+	display: inline-block;
+	background: aqua;
+	color: black;
+	font-weight: 700;
+	padding: 10px 33px;
+	transition: .3s;
+	border: 2px solid aqua;
+}
+
+.hero-text {
+	margin-top: 55px;
+}
+
+.hero-img {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.hero-img img {
+	width: 366px;
+}
+
+.single-slider .row {
+	padding-top: 222px;
+}
+
+.hero-text a:hover {
+	color: white;
+	background: transparent;
+	border-color: white;
+}
+
+.hero-text a i {
+	padding-left: 10px;
+}
+
+
+.sub-menu {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	width: 200px;
+	top: 115%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+ul li {
+	position: relative;
+}
+
+.sub-menu li a {
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+.sub-menu li a:before {
+	background: transparent;
+}
+
+nav ul li:hover>.sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.sub-menu li .ul.sub-menu {
+	left: 100%;
+	background: red;
+}
+
+.sub-menu li .sub-menu {
+	left: 90%;
+	top: 0%;
+}
+
+.sub-menu li:hover>.sub-menu {
+	left: 100%;
+	top: 0%;
+}
+
+
+.hamberger span {
+	color: white;
+	display: inline-block;
+	font-size: 23px;
+	padding: 10px 25px;
+	background: red;
+	cursor: pointer;
+	color: black;
+	background: white;
+}
+
+
+
+@media (max-width: 767px) {
+
+	.sub-menu {
+		display: none !important;
+	}
+
+	nav {
+		position: fixed;
+		top: 0%;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: black;
+		transition: .5s;
+	}
+
+	nav.active {
+		left: 0%;
+	}
+
+	nav ul li a:before {
+		background: transparent;
+	}
+
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	nav ul li a {
+		padding: 20px 0 20px 0;
+		margin: 0;
+	}
+
+	.times span {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: white;
+		text-align: center;
+		line-height: 16px;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		font-weight: 700;
+		font-size: 30px;
+		z-index: 999;
+		cursor: pointer;
+	}
+
+} */
+
+
+
+/* !========= RRF - Section - 11 - About Us===========  */
+
+/* #about-us {
+	margin: 100px 0;
+  }
+  .full-width-bg {
+	position: relative;
+	z-index: 1;
+  }
+  .full-width-bg:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background: url(../images/bg-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 500px;
+  }
+  .about-bg .row {
+	background: #093a52 !important;
+	position: relative;
+	z-index: 9999;
+	padding: 100px 20px;
+  }
+  
+.about-content {
+	color: white;
+  }
+  .about-content .about-btn {
+	color: white;
+	font-weight: 700;
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #dfb308;
+	margin-left: 41px;
+  }
+  
+.about-text h1 {
+	color: white;
+	font-size: 60px;
+  }
+  .about-text h3 {
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+	position: relative;
+	padding-left: 50px;
+  }
+  .about-text h3 span {
+	font-size: 59%;
+	color: #5160b6;
+  }
+  
+.about-text {
+	padding: 45px;
+	position: relative;
+	z-index: 3;
+	margin-bottom: 30px;
+  }
+  .about-text:before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+  }
+  .about-text:after {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: 0;
+	right: 0;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+  }
+  
+.about-img img {
+	max-width: 424px;
+	display: inline-block;
+	padding-left: 27px;
+  }
+
+  
+.about-text h3:before {
+	content: "";
+	position: absolute;
+	top: 47%;
+	left: 0;
+	width: 41px;
+	height: 1px;
+	background: white;
+  }
+  
+.about-text p {
+	margin-top: 25px;
+	margin-bottom: 30px;
+  } */
+/* !========= RRF - Section - 12 - Image Position Gallery ===========  */
+
+/* .gallery-text {
+	text-align: center;
+	padding: 30px 83px;
+  }
+  .gallery-text p {
+	font-size: 17px;
+	padding: ;
+	line-height: 33px;
+	margin-bottom: 40px;
+  }
+  .gallery-text h2 {
+	font-size: 39px;
+	font-weight: 600;
+	margin-top: 23px;
+	line-height: 47px;
+	margin-bottom: 47px;
+  }
+  .gallery-text .gallery-btn {
+	background: blue;
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	font-weight: 600;
+	border: 1px solid blue;
+	transition: .5s;
+  }
+  .gallery-text .gallery-btn:hover {
+	color: blue;
+	background: transparent;
+  }
+  .image-gallery {
+	position: relative;
+	z-index: 999;
+  }
+  .image-gallery img {
+	position: absolute;
+	width: 50%;
+	box-shadow: 0px 0px 8px #000000a3;
+  }
+  .image-gallery img:nth-child(1) {
+	z-index: 1;
+	position: relative;
+	left: 15%;
+  }
+  .image-gallery img:nth-child(2) {
+	z-index: 2;
+	right: 8%;
+	top: 14%;
+  }
+  .image-gallery img:nth-child(3) {
+	z-index: 3;
+	bottom: -30%;
+	width: 70%;
+	left: 6%;
+	height: auto;
+  }
+  
+#galley {
+	padding: 80px 0;
+  } */
+/* !========= RRF - Section - 13 - Why Choose Us ===========  */
+
+/* .single-box-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  .single-box {
+	display: flex;
+	margin-bottom: 40px;
+  }
+  #why-choose {
+	padding: 100px 0;
+  }
+  .single-box-text {
+	padding: 0 30px;
+  }
+  .single-box-text h2 {
+	font-size: 22px;
+	border-bottom: 3px dotted #868dfb;
+	padding-bottom: 18px;
+  }
+
+
+  .big-img-wrapper {
+	position: relative;
+	z-index: 9;
+	max-width: 601px;
+  }
+  .big-img-wrapper:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 100%;
+	height: 100%;
+	background: #7457fe;
+	z-index: -1;
+  }
+  
+.big-img-wrapper:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000054;
+  }
+  
+.single-box-img {
+	position: relative;
+	width: 160px;
+	height: 107px;
+  }
+  .single-box-img:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	height: 100%;
+	background: #7457fe;
+	z-index: -1;
+  }
+  
+.sec-title h1 {
+	font-size: 33px;
+	margin-bottom: 75px;
+	position: relative;
+	padding-bottom: 18px;
+  }
+  .sec-title h1:before {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	width: 200px;
+	height: 5px;
+	background: blue;
+	margin-left: -100px;
+	border-radius: 24px;
+  }
+
+  .sec-title h1:after {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	width: 100px;
+	height: 5px;
+	background: #0dde1a;
+	margin-left: -50px;
+	border-left: 20px solid white;
+	border-right: 20px solid white;
+  } */
+/* !========= RRF - Section - 14 - Charity Section ===========  */
+
+
+/* .section-padding {
+	padding: 80px 0px;
+	background: #001b37;
+	color: #fffc;
+	position: relative;
+  }
+  .box-content h3 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 30px;
+  }
+  .box-content .box-btn {
+	color: white;
+	border: 1px solid white;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+  }
+  .box-content {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  
+.box-content:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	background: white;
+	width: 1px;
+	height: 100px;
+  }
+
+  .section-bg-absolute{
+	  background:url(../images/cart-3.jpg);
+  }
+  .section-bg-left .section-bg-absolute{
+	  background:url(../images/cart-2.jpg);
+	  right: auto;
+	  left: 0px;
+  }
+  
+.section-bg-absolute {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+.section-bg-left .box-content {
+	margin-left: 33px;
+	padding-right: 0px;
+  }
+  .section-bg-absolute::before {
+	content: "";
+	position: absolute;
+	background: black;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 0%;
+	margin-top: -50px;
+} */
+
+/* !========= RRF - Section - 15 - Medical Promo Section ===========  */
+
+/* 
+.fullwidth-section {
+	background: aliceblue;
+}
+
+.promo-box-wrapper {
+	margin-left: -15px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.single-promo-box {
+	width: 50%;
+	height: 366px;
+	background: white;
+	display: table;
+}
+
+.promo-tablecell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 70px;
+	transition: .3s;
+}
+
+.promo-tablecell i:before {
+	font-size: 60px;
+	margin-left: 0px;
+}
+
+.promo-tablecell h3 {
+	font-size: 24px;
+	font-weight: 900;
+	position: relative;
+	padding-bottom: 21px;
+	margin-bottom: 44px;
+}
+
+.promo-tablecell h3 span {
+	text-transform: uppercase;
+}
+
+.promo-tablecell h3:before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 50px;
+	height: 1px;
+	background: black;
+	margin-left: -25px;
+}
+
+.box-btn {
+	display: inline-block;
+	border: 3px solid #fd5da0;
+	padding: 10px 20px;
+	border-radius: 30px;
+	font-size: 17px;
+	font-weight: 900;
+	background: #fd5da0;
+	color: white;
+	text-transform: uppercase;
+}
+
+.single-promo-box:nth-child(2) {
+	background: #fd5da0;
+}
+
+.single-promo-box:nth-child(2) i::before,
+.single-promo-box:nth-child(2) h3,
+.single-promo-box:nth-child(3) i::before,
+.single-promo-box:nth-child(3) h3 {
+	color: white;
+}
+
+.single-promo-box:nth-child(2) h3::before,
+.single-promo-box:nth-child(3) h3::before {
+	background: white;
+}
+
+.single-promo-box:nth-child(2) .box-btn,
+.single-promo-box:nth-child(3) .box-btn {
+	background: white;
+	border-color: black;
+	color: black;
+}
+
+.single-promo-box:nth-child(3) {
+	background: #08a4b5;
+}
+
+.single-promo-box a {
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+
+.single-promo-box:hover .box-btn {
+	opacity: 1;
+	visibility: visible;
+}
+
+.single-promo-box:hover .promo-tablecell {
+	padding-top: 0px;
+}
+
+.single-promo-box:nth-child(1) i::before {
+	color: #FD5DA0;
+}
+
+.single-promo-box:nth-child(1) h3:before {
+	background: #FD5DA0;
+}
+
+.single-promo-box:nth-child(4) i::before {
+	color: #08A4B5;
+}
+
+.single-promo-box:nth-child(4) h3:before,
+.single-promo-box:nth-child(4) .box-btn {
+	background: #08A4B5;
+	border-color: #08A4B5;
+}
+
+.promo-right-content h3 {
+	font-size: 25px;
+	font-weight: 500;
+	font-style: oblique;
+	color: #08A4B5;
+}
+
+.promo-right-content h2 {
+	font-weight: 900;
+	word-spacing: 3px;
+	margin-top: 15px;
+	margin-bottom: 53px;
+}
+
+.promo-right-content h4 {
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.promo-right-content p {
+	color: #000000a3;
+	font-weight: 500;
+	margin-top: 26px;
+	margin-bottom: 45px;
+}
+
+.border-btn {
+	display: inline-block;
+	border: 3px solid #08A4B5;
+	padding: 10px 20px;
+	border-radius: 30px;
+	font-size: 17px;
+	font-weight: 900;
+	background: transparent;
+	color: #08A4B5;
+	text-transform: uppercase;
+}
+
+.right-content-btns .box-btn {
+	background: #08A4B5;
+	border-color: #08A4B5;
+	margin-right: 20px;
+}
+
+.promo-right-content {
+	padding: 183px 50px;
+	padding-right: 90px;
+}
+
+.single-promo-box:nth-child(1) .box-btn:hover {
+	background: transparent;
+	color: #FD5DA0;
+}
+
+.single-promo-box:nth-child(4) .box-btn:hover {
+	background: transparent;
+	color: #08A4B5;
+}
+
+.right-content-btns .box-btn:hover {
+	background: transparent;
+	color: #08A4B5;
+}
+
+.border-btn:hover {
+	color: #08A4B5;
+} */
+
+/*!!!--------RRF - Section - 42 - Restaurent Pricing Box---------*/
+
+/* #restaurent-price {
+	padding: 100px 0px;
+	background: aliceblue;
+}
+
+.single-price-box{
+	min-height: 529px;
+}
+
+
+
+.price-bg {
+	height: 300px;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+.price-bg.price-bg-1 {
+	background: gray;
+	background: url(../images/cart-2.jpg);
+	
+
+}
+
+.price-bg.price-bg-2 {
+	background: aqua;
+	background: url(../images/cart-1.jpg);
+
+
+}
+
+.price-bg.price-bg-3 {
+	background: palevioletred;
+	background: url(../images/cart-3.jpg);
+	
+
+}
+
+.price-content {
+	background: antiquewhite;
+	padding: 24px 50px;
+	margin: 0 30px;
+	text-align: center;
+	border-top: 4px solid orange;
+	margin-top: -60px;
+	transition: .3s;
+}
+
+
+.price-content h2 {
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.price-content h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-top: 23px;
+	margin-bottom: 25px;
+	color: orange;
+	font-weight: 700;
+}
+
+.price-content a {
+	display: inline-block;
+	border: 2px solid orange;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	color: orange;
+	font-weight: 700;
+	font-size: 13px;
+	margin: 15px 0;
+}
+
+.price-content p {
+	font-weight: 700;
+}
+
+.price-content p span {
+	font-size: 34px;
+}
+
+.single-price-box:hover .price-content {
+	background: orange;
+	color: white;
+	margin-top: -70px;
+}
+
+.single-price-box:hover .price-content h3,
+.single-price-box:hover .price-content h2,
+.single-price-box:hover .price-content p{
+	color: white;
+}
+
+.single-price-box:hover .price-content a {
+	border-color: white;
+	color: white;
+} */
+
+/*!! =========RRF - Section - 40 - Product Car===========  */
+/* 
+.sec-title h2 {
+	font-size: 37px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: orange;
+	margin-bottom: 65px;
+  }
+  #product-car {
+	padding: 100px 0;
+  }
+ 
+  .product-icon-box {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	top: 20px;
+	left: 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+  }
+  .product-img-wrapper {
+	padding: 40px;
+	min-height: 300px;
+	background: antiquewhite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3;
+  }
+  .product-content {
+	padding: 40px;
+	text-align: center;
+  }
+  .product-content h4 {
+	font-weight: 500;
+	font-size: 19px;
+	margin-bottom: 22px;
+  }
+  .product-content p {
+	font-size: 27px;
+	font-weight: 700;
+	color: orange;
+  }
+  .single-product-box {
+	position: relative;
+	z-index: 1;
+	transition: .3s;
+	border: 2px solid white;
+  }
+ 
+  .product-icon-box .left-icon i {
+	display: inline-block;
+	margin: 10px 0px;
+	margin-right: 15px;
+  }
+  .left-icon {
+	margin-left: 20px;
+  }
+  .right-icon {
+	margin-right: 20px;
+  }
+  .right-icon i {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px;
+  }
+  .product-icon-box i {
+	font-size: 14px;
+	color: #ffffffd9;
+	border-color: orange;
+  }
+  
+
+  .single-product-box:hover .product-icon-box {
+	opacity: 1;
+	visibility: visible;
+	top: 10px;
+  }
+  .single-product-box:hover .product-img-wrapper {
+	background: transparent;
+  }
+  
+.single-product-box:hover:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	background:url(../images/car/map.png);
+	background-size: cover;
+	background-position: center;
+	transition: .3s;
+  }
+ .single-product-box::after {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0px;
+	height: 105%;
+	width: 100%;
+	background: transparent;
+	z-index: -1;
+	transition: .3s;
+}
+.single-product-box:hover:after{
+	background: #000000d9;
+	top: -5%;
+	height: 110%;
+}
+.single-product-box:hover .product-content h4{
+	color:white;
+}
+
+
+#product-car .col-md-4 {
+	margin-bottom: 50px;
+  }
+  #product-car .col-md-4:last-child {
+	margin-bottom: 0px;
+  } */
+
+
+/*! ========= RRF - Section - 48 - Pricing Box Orange===========  */
+
+/* .pricing-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .single-price-box {
+	width: 31.5%;
+	box-shadow: 0px 0px 10px #9999993d;
+	margin: 30px 0;
+	min-height: 560px;
+  }
+  .single-price-box.active {
+	width: 37%;
+	margin: 0px;
+	box-shadow: 0px 0px 10px #999999d4;
+  }
+  
+#pricing-orange {
+	padding: 50px 0px;
+  }
+  .pricing-heading-box {
+	background: #80808052;
+	padding: 34px 90px;
+  }
+  .pricing-heading-box h4 {
+	color: #0000007a;
+	font-weight: 500;
+  }
+  .pricing-heading-box p {
+	color: #0000007a;
+  }
+  .pricing-heading-box h2 {
+	font-weight: 598;
+  }
+  .pricing-content-box .border-btn {
+	display: inline-block;
+	border: 2px solid orangered;
+	padding: 10px 20px;
+	border-radius: 30px;
+	margin-top: 15px;
+	color: orangered;
+	font-weight: 600;
+  }
+  .pricing-content-box {
+	padding: 36px 0;
+  }
+  .pricing-content-box li {
+	margin-bottom: 20px;
+  }
+  .single-price-box.active .pricing-heading-box {
+	background: orangered;
+	padding: 34px 140px;
+	position: relative;
+	overflow: hidden;
+  }
+  .single-price-box.active .pricing-heading-box h4,.single-price-box.active .pricing-heading-box h2,.single-price-box.active .pricing-heading-box p {
+	color: white;
+  }
+  
+.single-price-box.active .pricing-heading-box:before {
+	content: "Featured";
+	color: orangered;
+	background: white;
+	padding: 5px 61px;
+	position: absolute;
+	top: 23px;
+	right: -48px;
+	transform: rotate(45deg);
+	box-shadow: 0px 0px 10px #000000c4;
+  } */
+
+
+
+/*! =========RRF - Section - 85 - Happy Client 2 ===========  */
+
+
+/* .single-client-bg {
+	background-image: url(../images/cart-2.jpg);
+	background-color: yellowgreen;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#happy-client-2 {
+	padding: 50px 0px;
+}
+
+.client-text {
+	width: 40%;
+	padding-top: 52px;
+}
+
+.single-client {
+	position: relative;
+	padding: 80px 0;
+}
+
+.single-client-bg {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 58%;
+	height: 100%;
+}
+
+.client-text p:first-child {
+	line-height: 30px;
+	color: #00000094;
+}
+
+.client-text i {
+	display: inline-block;
+	color: blue;
+	margin: 20px 0 35px;
+}
+
+.client-text h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: orangered;
+}
+
+.author-position {
+	font-weight: 600;
+}
+
+.happy-client-slider-wrapper {
+	position: relative;
+}
+
+.client-heading {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	font-size: 65px;
+	z-index: 2;
+}
+
+.client-heading span {
+	color: white;
+}
+
+
+
+.happy-client-active-2 .owl-nav button span {
+	background: orangered;
+	display: inline-block;
+	color: white;
+	padding: 15px 35px;
+	box-shadow: 0px 0px 10px #0000005e;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.happy-client-active-2 .owl-nav {
+	position: absolute;
+	bottom: 24px;
+	left: 392px;
+}
+
+.happy-client-active-2 .owl-nav button.owl-prev span {
+	background: blue;
+} */
+
+/*! =========RRF - Section - 73 - Blue Contact Section===========  */
+
+/* #contact {
+	padding: 50px 0px;
+  }
+  .contact-wrapper .contact-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 85%;
+	background: gray;
+	background-image:url(../images/bg-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  .contact-wrapper {
+	position: relative;
+	color: white;
+	padding: 60px 0;
+	padding-bottom: 0px;
+  }
+  .contact-wrapper .contact-bg:after {
+	content: "";
+	background: #0000b0c7;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  .contact-wrapper h2 {
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+  }
+  
+.contact-text {
+	padding: 0px 60px;
+  }
+  .contact-text h2 {
+	margin-bottom: 30px;
+  }
+  .contact-wrapper {
+  }
+  .contact-form-wrapper {
+	background: white;
+	max-width: 480px;
+	padding: 35px 60px;
+	box-shadow: 0px 0px 10px #0003;
+  }
+  .contact-form-wrapper h2 {
+	color: black;
+	font-size: 33px;
+	text-transform: uppercase;
+  }
+  .contact-form-wrapper input,.contact-form-wrapper textarea {
+	width: 100%;
+	background: none;
+	border: 1px solid #0000002e;
+	padding: 8px 20px;
+	margin-top: 16px;
+  }
+  .contact-form-wrapper textarea {
+	height: 130px;
+	resize: none;
+  }
+  .contact-form-wrapper input[type=submit] {
+	background: #1fb31f;
+	color: white;
+	font-weight: 700;
+  }
+  
+.contact-form-wrapper input:focus,.contact-form-wrapper textarea:focus {
+	border-color: red;
+  } */
+  
+/*! ========= My - Section - 00 - Header nav responsive===========  */
+
+
+/* .header-area {
+	background: aliceblue;
+	padding: 24px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+  }
+  nav ul {
+	display: flex;
+	margin-right: 40px;
+  }
+  nav ul li a {
+	display: block;
+	padding: 10px 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+  }
+  .sign-up-btn {
+	color: red;
+  }
+  .sing-up-btn {
+	color: white;
+	display: inline-block !important;
+	border: 2px solid;
+	padding: 10px 35px;
+	border-radius: 30px;
+	background: red;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .single-slider {
+	background: aquamarine;
+	min-height: 500px;
+	min-height: 100vh;
+	padding-top: 185px;
+  }
+  .hero-text h3 {
+	font-size: 33px;
+	font-weight: 700;
+	color: red;
+  }
+  .hero-text a {
+	display: inline-block;
+	border: 2px solid red;
+	background: red;
+	color: white;
+	padding: 10px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 30px;
+	transition: .3s;
+  }
+  .hero-btn i {
+	padding-left: 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+  }
+  .hero-btn:hover i {
+	padding-left: 20px;
+	opacity: 1;
+	visibility: visible;
+  }
+  .hero-text a:hover {
+	background: transparent;
+	color: red;
+  }
+  .hero-img img {
+	max-width: 370px;
+  }
+  .hero-img {
+	display: flex;
+	justify-content: center;
+  }
+  .hero-text p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+  }
+  
+.single-slider .col-md-6:first-child {
+	display: flex;
+	align-items: center;
+  }
+  
+.logo img {
+	max-width: 160px;
+  }
+  
+.sing-up-btn:hover {
+	background: transparent;
+	color: red;
+  } */
+
+/*! ========= RRF - Section - 122 - Special Bg Section===========  */
+
+
+/* .special-bg-wrapper {
+	position: relative;
+  }
+  .content {
+	padding-left: 55%;
+	background: antiquewhite;
+	border: 1px solid black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 30px;
+  }
+  
+.sec-padding {
+	padding: 100px 0px;
+  }
+  .special-bg-wrapper {
+  }
+  .special-bg:before {
+	content: "";
+	position: absolute;
+	top: -20%;
+	left: 0;
+	width: 50%;
+	height: 140%;
+	background: aqua;
+	z-index: 2;
+  }
+  .special-bg::after {
+	position: absolute;
+	top: 30px;
+	right: -30px;
+	width: 50%;
+	height: 100%;
+	border: 5px solid blue;
+	content: "";
+	z-index: -1;
+  }
+  .content h3 {
+	font-size: 40px;
+	font-weight: 700;
+	color: blue;
+  }
+  .content p {
+	margin-bottom: 40px;
+  }
+  .content a {
+	display: inline-block;
+	border: 2px solid blue;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background: blue;
+	color: white;
+	font-weight: 700;
+  } */
+/*! ========= RRF - Section - 130 - Timeline Section===========  */
+/* .section-padding{
+	padding:100px 0px;
+	background: url(../images/bg-2.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	background-color:gray;
+	
+}
+
+.sec-title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+  }
+  .sec-title {
+	text-align: center;
+	margin-bottom: 70px;
+  }
+  .sec-title p {
+	color: white;
+  }
+  #timeline::before {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #005daf;
+	position: absolute;
+	opacity: 0.4;
+  }
+  .single-timeline {
+	position: relative;
+	z-index: 1;
+  }
+  
+.timeline-img-absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: -75px;
+	margin-top: -75px;
+  }
+ 
+  .single-timeline:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: white;
+	margin-left: -1px;
+  }
+  .single-timeline-text {
+	background: white;
+	padding: 30px;
+	border-radius: 60px;
+  }
+  .single-timeline-text h3 {
+	font-size: 25px;
+	font-weight: 700;
+	color: orangered;
+	margin-bottom: 20px;
+  }
+  .single-timeline:nth-child(2n+1) .single-timeline-text {
+	text-align: right;
+}
+  .single-timeline:nth-child(2n) .single-timeline-text {
+	text-align:left;
+}
+
+
+.single-timeline:first-child:before {
+	height: 50%;
+	top: 55%;
+  }
+  .single-timeline:last-child::before {
+	height: 50%;
+  }
+  
+  .single-timeline:nth-child(2n+1) .single-timeline-text:before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	right: -13px;
+	width: 0;
+	height: 0;
+	border-left: 25px solid #fff0;
+	border-right: 25px solid transparent;
+	border-top: 50px solid white;
+	transform: rotate(-90deg);
+	margin-top: -25px;
+  }
+  .single-timeline:nth-child(2n) .single-timeline-text:before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: -13px;
+	width: 0;
+	height: 0;
+	border-left: 25px solid #fff0;
+	border-right: 25px solid transparent;
+	border-top: 50px solid white;
+	transform: rotate(90deg);
+	margin-top: -25px;
+  } */
+
+/*! ========= RRF - Section - 131 - Pricing Table Section===========  */
+/* .sec-padding {
+	padding: 100px 0px;
+	background: aliceblue;
+} 
+.sec-title {
+	text-align: center;
+	margin-bottom: 100px;
+  }
+  .sec-title h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .sec-title h3 span {
+	color: blue;
+  }
+  .single-price-box {
+	min-height: 394px;
+	border: 1px solid;
+  }
+  .price-header {
+	min-height: 170px;
+	background: aqua;
+	padding-left: 22px;
+	position: relative;
+	padding-top: 68px;
+  }
+  .price-money {
+	position: absolute;
+	background: black;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	top: -50px;
+	left: 50px;
+  }
+  .price-money h4 {
+	color: #ff8383;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 27px;
+  }
+  .price-money h4 span {
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+	color: aqua;
+  }
+  .price-header h2 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
+  }
+  .price-header h5 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: white;
+  }
+  .price-content {
+	background: white;
+  }
+  .price-content ul li:nth-child(2n) {
+	background: #80808047;
+  }
+  .price-content ul li {
+	padding: 20px 0;
+	padding-left: 22px;
+  }
+  .price-content ul li i {
+	display: inline-block;
+	padding-right: 15px;
+  }
+  
+.price-content .price-btn {
+	background: aqua;
+	display: inline-block;
+	padding: 10px 20px;
+	font-weight: 700;
+	border: 2px solid aqua;
+	color: black;
+	margin: 30px 0px;
+  }
+  .price-content .price-btn:hover {
+	background: transparent;
+	color: aqua;
+  }
+  
+.price-btn-wrapper {
+	text-align: center;
+  }
+  .single-price-box:hover {
+	box-shadow: 0px 0px 10px black;
+  } */
+
+
+
+/*! ========= RRF - Section - 135 - Google Brand Section===========  */
+
+/* .sec-padding{
+	  background:gray url(../images/bg-1.jpg) no-repeat center;
+	  background-size: cover;
+	  padding:66px 0px;
+	  position: relative;
+  }
+
+  
+.single-box {
+	min-height: 200px;
+	position: relative;
+	padding-left: 65px;
+	z-index: 3;
+  }
+  .single-box i {
+	font-size: 40px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	color: white;
+  }
+  .single-box h4 {
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 24px;
+  }
+  .single-box p {
+	color: #ffffffcf;
+	line-height: 24px;
+  }
+  .right-part h6 {
+	color: white;
+	font-style: oblique;
+  }
+  .right-part h1 {
+	color: white;
+	font-size: 47px;
+	line-height: 50px;
+	margin-top: 22px;
+	margin-bottom: 47px;
+	padding-bottom: 35px;
+	position: relative;
+  }
+  .right-part h1:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	width: 240px;
+	height: 2px;
+	background: #ebfe06;
+	z-index: 999;
+  }
+  .right-part p {
+	color: #ffffffbf;
+	margin-top: 25px;
+	line-height: 28px;
+  }
+  
+  .ovarlay-absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000096;
+	opacity: 1;
+}
+  .ovarlay-absolute:before {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%;
+	background: #358dffb5;
+	position: absolute;
+	z-index: 1;
+  }
+  
+.right-part {
+	position: relative;
+	z-index: 99;
+  } */
+
+
+/*! =========Yahoo Baba Hover Effect - Image 1 ===========  */
+
+/** style 1  */
+
+
+/* .hover-effect {
+	padding: 50px 0;
+	background: antiquewhite;
+  }
+  
+.img-box-1 img {
+	transform: scale(1);
+	transition: all .4s;
+  }
+  .img-box-1:hover img {
+	transform: scale(0);
+  }
+  
+.img-box-1 {
+	position: relative;
+	overflow: hidden;
+  }
+  .content {
+	background: #00ffff4d;
+	text-align: center;
+	padding: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	transform: scale(0) rotate(-180deg);
+	transition: all 0.4s;
+  }
+  .img-box-1:hover .content {
+	transform: scale(1) rotate(0deg);
+  } */
+
+
+/** style 2  */
+
+/*   
+.img-box-2 {
+	position: relative;
+	perspective: 550px;
+	overflow: hidden;
+  }
+  .img {
+	transition: all .4s;
+	transform: rotateY(0deg);
+  }
+  .img-box-2:hover .img {
+	transform: rotateY(-90deg);
+  }
+  .content-2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #ff00008f;
+	color: white;
+	transition: all .4s;
+	transform: rotateY(90deg);
+  }
+  .content-2 h2 {
+	color: white;
+  }
+  .img-box-2:hover .content-2 {
+	transform: rotateY(0deg);
+  } */
+
+/** style - 3 */
+
+/* .img-box-3 {
+	position: relative;
+	overflow: hidden;
+  }
+  .content-3 {
+	background: #63f16c9e;
+	position: absolute;
+	top: -100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 130px;
+	transition: all .4s;
+  }
+  .img-box-3:hover .content-3 {
+	top: 0%;
+  } */
+
+
+/** style-4 */
+
+/* .img-box-4 {
+	position: relative;
+	border: 1px solid black;
+  }
+  .man-img {
+	border-radius: 50%;
+	overflow: hidden;
+	transition: all .4s;
+	transform: rotate(0deg);
+	transform-origin: 95% 50%;
+	position: relative;
+	z-index: 2;
+  }
+  .img-box-4:hover .man-img {
+	transform: rotate(-190deg);
+  }
+  
+.content-4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: red;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 100px;
+	color: white;
+  }
+  .man-img:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 95%;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%; 
+  }
+  */
+
+
+/*** style 5  */
+
+
+/* .img-box-5 {
+	padding: 3px;
+	border: 1px solid;
+  }
+  .main-img {
+	display: block;
+	position: relative;
+  }
+  .main-img::before, .main-img::after,.overlay:before,.overlay:after {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	transition: all .4s;
+  }
+  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top:330px;	
+	
+  }
+  .img-box-5 .main-img::before {
+	background: #ff49c94f;
+	left: -50%;
+	top: 0%;
+  }
+  .main-img:hover::before {
+	left: 0%;
+  }
+  
+.img-box-5 .main-img::after {
+	background: #0f34ff8f;
+	right: 0%;
+	top: -50%;
+  }
+  
+.img-box-5:hover .main-img::after {
+	top: 0%;
+  }
+  
+.overlay::before {
+	bottom: -50%;
+	left: 0%;
+	background: #0f34ff8f;
+  }
+  .img-box-5:hover .overlay::before {
+	bottom: 0%;
+  }
+  .img-box-5:hover .overlay::after {
+	right: 0%;
+  }
+  .overlay::after {
+	right: -50%;
+	bottom: 0%;
+	background: #ff49c94f;
+  }
+  .main-img {
+	overflow: hidden;
+	color: white;
+	font-size: 50px;
+	color: red;
+  }
+  
+.img-box-5 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 89px;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: .4s;
+	z-index: 999999;
+	color:black;
+  }
+  .img-box-5:hover span {
+	opacity: 1;
+	color: black;
+  } */
+
+
+/*? =========NO Html Yahoo baba transform Effects===========  */
+
+/* .transform-effect {
+	padding: 90px 0;
+}
+
+.single-card {
+	min-height: 300px;
+	position: relative;
+	perspective: 800px;
+}
+
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: 1s;
+}
+
+.single-card:hover .content {
+	transform: rotateY(180deg);
+}
+
+.front-side,
+.back-side {
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	font-size: 50px;
+	text-align: center;
+	line-height: 271px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 30px;
+}
+
+.back-side {
+	background: orange;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.front-side {
+	background: aqua;
+}
+
+.front-side img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+} */
+
+
+/*! ========= RRF - Section - 106 - Home Slider New Style===========  */
+
+/* .single-slider{
+	background-size: cover!important;
+}
+.slider-1{
+	background:url(../images/bg-2.jpg) no-repeat center;
+	
+}
+.slider-2{
+	background:url(../images/cart-2.jpg) no-repeat center;
+	
+}
+.slider-3{
+	background:url(../images/bg-2.jpg) no-repeat center;
+	
+}
+
+
+
+.header-area {
+	padding: 30px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+  }
+  .logo {
+	max-width: 120px;
+  }
+  .right-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+  nav ul {
+	display: flex;
+  }
+  nav ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: black !important;
+  }
+  .social-info {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	align-items: center;
+  }
+  nav {
+	width: 60%;
+  }
+
+  .social-info > a i {
+	display: inline-block;
+	margin-right: 14px;
+  }
+  .social-icons a {
+	display: inline-block;
+	padding: 6px;
+  }
+  .single-slider {
+	min-height: 515px;
+	position: relative;
+	z-index: 2;
+  }
+  .hero-text h4 {
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+  }
+  .hero-text h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: aqua;
+	margin-top: 16px;
+  }
+  .hero-text a {
+	display: inline-block;
+	border: 1px solid aliceblue;
+	padding: 10px 20px;
+	margin-top: 30px;
+	background: aqua;
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .hero-text {
+	padding-top: 122px;
+	padding-left: 30px;
+  }
+  
+.hero-slider {
+	padding-top: 100px;
+	position: relative;
+	padding-bottom: 13px;
+  }
+  
+.hero-slider:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 63%;
+	background: #c7ff00;
+  }
+
+
+.hero-slider-2 .owl-nav button span {
+  background: #92d3f3;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.hero-slider-2 .owl-nav button:last-child span {
+  background: blue;
+}
+
+.hero-slider-2 .owl-nav {
+	margin-top: 15px;
+  } */
+
+
+/*! ========= Css positon Practice===========  */
+
+/* .parent-1 {
+	border: 1px solid;
+	padding: 30px;
+	position: relative;
+	background: wheat;
+	min-height: 300px;
+  }
+  .container.position-test {
+	padding: 90px 0;
+  }
+  .parent-1:after {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	background: green;
+	content: "";
+	z-index: -1;
+  }
+  .container.position-test {
+	background: yellow;
+	z-index: -9;
+	position: relative;
+  }
+  .child {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	line-height: 150px;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .child-1 {
+	background: aliceblue;
+	top: 0%;
+	left: 0%;
+	color: black;
+  }
+  .child-2 {
+	background: yellow;
+	top: 30%;
+	left: 30%;
+	color: black;
+  }
+
+  .child.child-3 {
+	background: red;
+	top: 50%;
+	left: 50%;
+  } */
+
+
+/* expariment-2 */
+
+
+/* .grand-parent {
+	background: gray;
+	min-height: 200px;
+	position: relative;
+	z-index: 2;
+  }
+  .grand-parent h1 {
+	color: white;
+  }
+  .parent-real::after {
+	position: absolute;
+	content: "";
+	top: 20%;
+	left: 40%;
+	width: 100%;
+	height: 100%;
+	background: green;
+	z-index: -1;
+  }
+  .parent-real {
+	min-height: 200px;
+	background: red;
+  } */
+
+
+
+
+/*! ========= RRF - Section - 34 - Appoinment Section===========  */
+
+/* .sec-padding {
+	background: url(../images/bg-2.jpg) no-repeat center;
+	background-size: cover;
+	padding-top: 100px;
+  }
+  .Appoinment-text {
+	background: aqua;
+	padding: 80px 0;
+	padding-right: 25px;
+	position: relative;
+  }
+  .Appoinment-text:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1000%;
+	width: 1000%;
+	height: 100%;
+	background: aqua;
+  }
+  .Appoinment-text:after {
+	content: "";
+	position: absolute;
+	top: calc(50% - 25px);
+	right: -25px;
+	width: 50px;
+	height: 50px;
+	background: aqua;
+	transform: rotate(45deg);
+  }
+  .Appoinment-text h2 {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: blue;
+  }
+  .Appoinment-text .appoinment-btn {
+	color: white;
+	border: 3px solid blue;
+	display: inline-block;
+	padding: 10px 20px;
+	background: blue;
+  } */
+  
+/*! ========= RRF - Section - 37 - Our TEAM===========  */
+
+
+/* .single-team .team-content {
+	border: 2px solid black;
+	margin-top: 25px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.team-content h2 {
+	background: white;
+	margin: 0px 70px;
+	font-size: 19px;
+	margin-top: -11px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.absolute-title {
+	position: absolute;
+	border-top: 3px solid blue;
+	transform: rotate(-90deg);
+	top: 70px;
+	left: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: blue;
+}
+
+.sec-padding {
+	padding: 90px 0;
+}
+
+
+.col-md-4:nth-child(2) .single-team {
+	transform: translateY(90px);
+} */
+
+
+
+/* !=========My - Section - Bootstrap Modal No CSS===========  */
+
+/* !========= My - Product slider with tab===========  */
+
+/* .product-slider {
+	padding: 100px 0;
+  }
+  .product-img {
+	position: relative;
+  }
+  .product-img img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s;
+	opacity: 0;
+  }
+  .single-product-wrapper:hover .product-img img:nth-child(2) {
+	top: 0;
+	opacity: 1;
+  }
+  .product-icon-img {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background: black;
+	color: white;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: .3s;
+  }
+  .product-icon-img i {
+	display: block;
+	padding: 13px;
+  }
+  .single-product-wrapper:hover .product-icon-img {
+	top: 50%;
+	opacity: 1;
+  }
+  
+.product-content {
+	text-align: center;
+  }
+  .product-content h3 {
+	font-size: 16px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  .price {
+	position: relative;
+	margin-top: 12px;
+  }
+  .price .name {
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 100%;
+	opacity: 0;
+  }
+  .price h4 {
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: .3s;
+  }
+  .single-product-wrapper:hover .price .name {
+	left: 0;
+	opacity: 1;
+  }
+  .single-product-wrapper:hover .price h4:first-child {
+	opacity: 0;
+	margin-right: -60px;
+  }
+  
+.name:before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 152px;
+	height: 5%;
+	background: black;
+  } */
+
+
+
+  /* !========= Demo Content===========  */

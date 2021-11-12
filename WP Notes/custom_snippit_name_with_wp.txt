@@ -1,0 +1,95 @@
+<?php 
+/**
+ * !html 
+ * wpAuthorNameWithLink
+ * wpSearchHtml
+ * example_get_template_directory_uri
+ 
+ 
+ * !css
+ * themeInfoComment
+ * childTheme_infoComment
+ * 
+ * !php example
+ * example_SwitchStatement 
+ * example_incrementPrePost 
+ * example_WhileLoop 
+ * example_doLoop 
+ * example_increDecreOperator 
+ * example_foreachSimple
+ * example_foreachAdvance
+ * 
+ * !php basic
+ * funExists
+ * print__r
+ * function_s
+ * example_avoidVarUndefine
+ * var__dump
+ * TernaryOperator
+ * NullOperator
+ * 
+ * !wp 
+ * theLoop
+ * wpCashBusting
+ * pageTemplate
+ * regSidebar
+ * dynamicSidebar
+ * addThemeSupport
+ * wpQuery
+ * wpQueryArgs
+ * example_wpTojavascript
+ * thePostsPagination
+ * commentsTemplate
+ * wpRequire
+ * example_getTemplatePart
+ * filterExcerpt
+ * postPassTitle
+ * regNav
+ * wpNavMenu
+ * wpNavMenuArgs
+ * example_wpEnqueueStyle
+ * example_wpEnqueueScript
+ * customLogo
+ * postPaginateLinks
+ * sidebarCheck
+ * filterBodyClass
+ * searchHighlight
+ * example_assetsDequeueManagement
+ * wpNavMenuReplace
+ * backgroundDynamic
+ * codeRunByTemplateName
+ * example_SectionRunByType
+ * example_relatedPostshow
+ * Auto_EnqueueScript
+ * Auto_EnqueueStyle
+ * 
+ * !wp Collected snippit
+ * disableSearch
+ * wpProtect_from_malicious
+ * removeAdminBar_all
+ * blockFromView
+ * changeFailLoginMessage
+ * wpRemoveVersion
+ * addClassToLastPost
+ * wpHideUpdate
+ * snapshotWebsite
+ * changeExcerptText
+ * changeExcerptLength
+ * enableShortCodeInWidgets
+ * customLogoToWpAdmin
+ * enableSvgUpload
+ * removeCommentsUrlField
+ * changeSearchResulstNumber
+ * ExcludePageFormSearch
+ * removeImgWidthHeight
+ * addCategoryToBodyClass
+ * IncludeINArchives_CPT
+ * PluginInfoComments
+ * hoverAdminBar
+ * removeAdminBar_subscribers
+
+ */
+
+
+
+?>

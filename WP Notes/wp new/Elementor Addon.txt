@@ -1,0 +1,8 @@
+Livemash - start bar , piechart,
+premium addon - image scroll.
+Elementor kit - landing page
+
+
+Revision = portfoio images,text hight,logo change,service under text.hover services, portfolio name
+
+profile add = linking , twitter, whats app, freelancer.com, upwork, fiverr, facebook , gmail, 

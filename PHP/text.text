@@ -1,0 +1,131 @@
+<?php 
+
+    //*edit button click e data retrtive kora id shoho and oita pore input text e show kora,
+    //*select * from student where id="$result[id-edit]";
+
+    //* update e click korle , input hidden e update-id pass korbo
+    //* update id diye update student set name="arfan" where id=request[update-id];
+
+    //*delete e from e input hidden e delete id thakbe oita delete form submit e catch krbo,
+    //* delete from student where id = $result[delete-id];
+
+    //* create e insert into student()values(); 
+
+    //* select all form student, 
+
+
+
+
+    //!database connect = 
+
+    $conn = new mysqli(); //connect database,
+    $conn->connect_error; //error check,
+    // data retrive 
+     //retrive data 
+     $sql = "SELECT * from student_info";
+     $students = $conn->query($sql);
+    $result->num_rows;
+    $result->fetch_assoc();
+
+    //data insert 
+    //eita run korlei insert hobe,
+    $sql = "INSERT INTO student_info(name,roll)VALUES('$name','$roll')";
+
+    if($result){
+        echo "data inserted";
+    }
+
+  
+
+    //data delete,
+
+    $result = $conn->query("delete from students where id=5");
+    $update = "DELETE FROM student_info WHERE id=$id";
+        if($conn->query($update)){
+            echo "delete";
+        }
+
+    //update 
+
+    /* 
+    
+    */
+
+    $update = "UPDATE student_info SET name='$name',roll='$roll' WHERE id=$id";
+    if($conn->query($update)){
+        echo "Update";
+    }
+
+
+    // upper code for database,
+
+
+
+$conn = new mysqli('localhost','root','','table'); //connect with phpMyadmin
+
+if($conn->connect_error){
+    echo "Fail" . die($conn->connect_error); 
+}
+
+$conn = new mysqli('localhost','root','','test_db');
+
+if($conn->connect_error){
+    die('connection Fail');
+}
+else{
+
+   //query , and after get info of table, num row, loop korbo and fech asoos,
+
+   $result = $conn->query('Select * from testdb'); //test db all info 
+
+   if($result->num_rows > 0){
+       // $result->fetch_assoc() = eita while e sob deta asha porjonto run korbe,
+       while($rows = $result->fetch_assoc()){
+           echo $rows['id'];
+       }
+   }
+
+
+}
+
+//connection make with database,
+//error check, database -> table find -> make table info in asso array,
+
+    
+    $conn = new mysqli('localhost','root','','testDB');
+
+         if($conn->connect_error){
+             die('connection fail');
+         }
+
+         else{
+             $sql = "insert into tableName(fname,lname,email)Values('data1','data2','data3')"
+             $result = $conn->query("insert into tableName('fname','lname','email')Values('value1','value2','value3')")
+         }
+
+
+  
+
+         else{
+             $tableInfo = $conn->query('select * from testDB'); // $tableInfo collect, 
+             if($tableInfo->num_rows > 0){
+    ?>
+            <html></html>
+    <?php
+                 while($rows = $tableInfo->fetch_assoc()){
+    ?>
+    <tr><td><?php echo $row['id']; ?></td></tr>
+    <tr><td><?php echo $row['id']; ?></td></tr>
+    <tr><td><?php echo $row['id']; ?></td></tr>
+    <?php
+                    
+                 }
+             }
+             else{
+                 echo "0 Record find";
+             }
+
+         }
+    
+    
+    ?>

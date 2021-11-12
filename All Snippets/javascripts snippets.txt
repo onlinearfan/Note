@@ -1,0 +1,105 @@
+{
+	"owl-carousel Activation": {
+		"prefix": "owlActive",
+		"body": [
+			"$('.product-slider-active.owl-carousel').owlCarousel({\r",
+			"        loop: true,\r",
+			"        margin: 30,\r",
+			"        nav: true,\r",
+			"        dots: false,\r",
+			"        responsive: {\r",
+			"            0: {\r",
+			"                items: 1\r",
+			"            },\r",
+			"            600: {\r",
+			"                items: 3\r",
+			"            },\r",
+			"            1000: {\r",
+			"                items: 4\r",
+			"            }\r",
+			"        }\r",
+			"    })"
+		],
+		"description": "owl-carousel Activation"
+	},
+	"responsiveNavToggle": {
+		"prefix": "responsiveNavToggle",
+		"body": [
+			"$(\".hamberger\").click(function(){\r",
+			"        $(\"nav\").addClass(\"active\");\r",
+			"    });\r",
+			"    $(\".times\").click(function(){\r",
+			"        $(\"nav\").removeClass(\"active\");\r",
+			"    });"
+		],
+		"description": "responsiveNavToggle"
+	},
+	"hoverActive": {
+		"prefix": "hoverActive",
+		"body": [
+			" $(\".single-price-box\").hover(function(){\r",
+			"        $(\".single-price-box\").removeClass(\"active\");\r",
+			"        $(this).addClass(\"active\");\r",
+			"    });"
+		],
+		"description": "hoverActive"
+	},
+	"stickyHeaderActive": {
+		"prefix": "stickyHeaderActive",
+		"body": [
+			"$(window).on('scroll',function() {\r",
+			"        var scroll = $(window).scrollTop();\r",
+			"         if (scroll < 50) {\r",
+			"               $(\"#sticky-header\").removeClass(\"sticky-menu\");\r",
+			"              }else{\r",
+			"               $(\"#sticky-header\").addClass(\"sticky-menu\");\r",
+			"          }\r",
+			"       });"
+		],
+		"description": "stickyHeaderActive"
+	},
+	"scrollUpBtn": {
+		"prefix": "scrollUpActive",
+		"body": [
+			" $(window).scroll(function(){\r",
+			"        \r",
+			"        // scroll-up button show/hide script\r",
+			"       if(this.scrollY > 500){\r",
+			"           $('.scroll-up-btn').addClass(\"show\");\r",
+			"       }else{\r",
+			"           $('.scroll-up-btn').removeClass(\"show\");\r",
+			"       }\r",
+			"   });\r",
+			"\r",
+			"    // slide-up script\r",
+			"    $('.scroll-up-btn').click(function(){\r",
+			"       $('html').animate({scrollTop: 0});\r",
+			"       // removing smooth scroll on slide-up button click\r",
+			"       $('html').css(\"scrollBehavior\", \"auto\");\r",
+			"   });"
+		],
+		"description": "scrollUpBtn"
+	},
+	"responsive plugin run": {
+		"prefix": "responsivePluginRun",
+		"body": [
+			"  if (window.innerWidth > 1020) {\r",
+			"        $(\".remove\").addClass(\"color\");\r",
+			"    } else {\r",
+			"        // do something else or do nothing\r",
+			"    }"
+		],
+		"description": "responsive plugin run"
+	},
+	"JqueryActive": {
+		"prefix": "jqueryActive",
+		"body": [
+			"(function ($) {\r",
+			"\r",
+			"            //Your Code\r",
+			"\r",
+			"        })(jQuery);"
+		],
+		"description": "jqueryActive"
+	}
+}

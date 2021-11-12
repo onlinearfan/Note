@@ -1,0 +1,969 @@
+Index Of Course --------
+Introduction
+Free Theme Customization
+Personal Branding
+Domain Hosting Details
+WordPress Website Backup – Migration – Transfer
+WP Bakery Page Builder (Visual Composer)
+Slider Revolution
+Email Marketing With Mailchimp
+Lead Collecting Landing Page Design With Mailchimp Integration
+Bridge Theme Customization
+Newspaper 9 Theme Customization
+Avada Theme Customization
+Be Theme Customization
+Uses Of WordPress Plugins Part – 1
+Woo-commerce Details Discussion
+Oxygen Theme Customization
+Woodmart Theme Customization
+Flatsome Theme Customization
+Elementor Pro Page Builder With Addons
+On Page SEO
+WordPress Speed Optimization
+WordPress Security
+Divi Theme Customization
+Uses Of WordPress Plugins Part – 2
+Payoneer
+Fiverr Market Place
+LMS (Learning Management System) – Online Education Website – Online Course Website
+Professional Newspaper Or Blog Website Creation
+Listing Directory Website Creation
+Hotel Booking Website Creation
+=========================
+
+
+
+[Chapter] - ৪ - প্রজেক্ট ১
+*********************************************
+
+৪.১ - প্রজেক্ট ১ - একটা কামিং সুন 
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+                                ওয়ার্ডপ্রেস থিম Customization - ABC IT Park Course Note
+                        =================================================================
+
+(Wordpress Basic Theme customiza - Course)
+__________________________________________
+
+[Chapter] - ১ - Wordpress - Basic : Introduction
+**************************************
+
+
+01 - What Is WordPress - How Is It Made
+_______________________________________________________________
+*)wordpress hocche ekta content management system jta diye khub sohoje profession website make krte parbo,
+*)kno code na likhe site banate parbo,
+*)eita manage kore (image,audio,video,text) file muloto,
+*)eita free and easy to use,
+*)wp er page builder diye custom desing khub sohoje krte parbo,
+*)er bibino theme ase ja diye site banate parbo,
+*)wp banano hoise php and mysql(data rakhar jonno,) diye,
+_________________End____________________
+
+What We Can Do By WordPress
+_______________________________________________________________
+
+_________________End____________________
+
+WordPress Theme Customization & Course Outline
+_______________________________________________________________
+
+_________________End____________________
+
+Difference Between WordPress.org & WordPress.com
+_______________________________________________________________
+
+_________________End____________________
+
+Working Environment Setup & WordPress Installation
+
+_______________________________________________________________
+
+_________________End____________________
+
+Some Options Of Local By Flywheel:
+_______________________________________________________________
+
+_________________End____________________
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] WordPress Dashboard Discussion
+*********************************************
+
+WP Dashboard, Toolbar etc
+_______________________________________________________________
+
+_________________End____________________
+
+WP Post,Media,Page,comment,catagory,tags Discussion
+_______________________________________________________________
+
+_________________End____________________
+
+WP Appearance,Plugins,Users,Tools Discussion
+_______________________________________________________________
+
+_________________End____________________
+
+WP Settings Discussion
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+      
+
+
+[Chapter] - Free Theme Customization
+*********************************************
+
+One Page Theme Customization
+_______________________________________________________________
+
+_________________End____________________
+
+Tips For Logo Image Size – Footer Copyright Text Change
+_______________________________________________________________
+
+_________________End____________________
+
+Create A Professional Blog Website
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Some Essential Plugins
+*********************************************
+
+How To Change WordPress Login Dashboard Design
+_______________________________________________________________
+
+_________________End____________________
+
+WP Forms – Settings Discussion
+_______________________________________________________________
+
+_________________End____________________
+
+WP Forms – All Fields Discussion
+_______________________________________________________________
+
+_________________End____________________
+
+WP Forms – SMTP Set Up For Gmail Account
+_______________________________________________________________
+
+_________________End____________________
+
+WP Forms – Add Google Re-captcha V2 and V3
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+(Wordpress Elementor - Course)
+__________________________________________
+
+
+
+[Chapter] Introduction To Elementor Page Builder & Settings
+*********************************************
+
+Settings:
+_______________________________________________________________
+
+_________________End____________________
+
+Role Manager , Tools , Templates etc:
+_______________________________________________________________
+
+_________________End____________________
+
+Page Settings , Default Colors , Fonts , Color Picker , Navigator , History etc:
+_______________________________________________________________
+
+_________________End____________________
+
+Details On Section & Column:
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Elementor Free Version (All Widgets)
+*********************************************
+
+Inner Section:
+_______________________________________________________________
+
+_________________End____________________
+
+Heading,Image,Text Editor
+_______________________________________________________________
+
+_________________End____________________
+
+Video,Button,Divider & Spacer
+_______________________________________________________________
+
+_________________End____________________
+
+Image Box,Icon Box
+_______________________________________________________________
+
+_________________End____________________
+
+Google Maps & Icon
+_______________________________________________________________
+
+_________________End____________________
+
+
+Start Rating,Image Carousel,Basic Gallery
+_______________________________________________________________
+
+_________________End____________________
+
+
+Icon List,Counter & Progress Bar
+_______________________________________________________________
+
+_________________End____________________
+
+
+Testimonial,Tabs,Accordion
+_______________________________________________________________
+
+_________________End____________________
+
+
+Toggle , Social Icons & Alert
+_______________________________________________________________
+
+_________________End____________________
+
+
+Sound Cloud , Short Code & html
+_______________________________________________________________
+
+_________________End____________________
+
+Menu Anchor , Sidebar & More
+_______________________________________________________________
+
+_________________End____________________
+
+Assignment – Creative Landing Page Design
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Elementor Pro Version (All Widgets)
+*********************************************
+
+How Can We Use Elementor Pro,Overview,
+_______________________________________________________________
+
+_________________End____________________
+
+Custom Fonts,Custom Icons
+_______________________________________________________________
+
+_________________End____________________
+
+Typekit Adobe Fonts
+_______________________________________________________________
+
+_________________End____________________
+
+Post Widget,Portfolio,Gallery
+_______________________________________________________________
+
+_________________End____________________
+
+Form,Log In
+_______________________________________________________________
+
+_________________End____________________
+
+
+Slides,Nav Menu,Animated Headline
+_______________________________________________________________
+
+_________________End____________________
+
+Price List,Price Table
+_______________________________________________________________
+
+_________________End____________________
+
+
+Flip Box,Call To Action
+_______________________________________________________________
+
+_________________End____________________
+
+
+Media Carousel,Testimonial Carousel
+_______________________________________________________________
+
+_________________End____________________
+
+
+Reviews,Countdown
+_______________________________________________________________
+
+_________________End____________________
+
+Share Buttons,Block Quote,Facebook Button
+_______________________________________________________________
+
+_________________End____________________
+
+Comments,Facebook Embed,Facebook Page
+_______________________________________________________________
+
+_________________End____________________
+
+Template
+_______________________________________________________________
+
+_________________End____________________
+
+Site Logo , Site Title , Page Title , Search Form , Sitemap
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Elementor Pro (Theme Builder)
+*********************************************
+
+Header
+_______________________________________________________________
+
+_________________End____________________
+
+Footer
+_______________________________________________________________
+
+_________________End____________________
+
+Single
+_______________________________________________________________
+
+_________________End____________________
+
+Archive
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Elementor Pro (Pop Up)
+*********************************************
+
+Elementor Pop Up – Details
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Landing Page Design Using Elementor Pro
+*********************************************
+
+Important Discussion On Landing Page
+_______________________________________________________________
+
+_________________End____________________
+
+Landing Page Design From Scratch Using Elementor Pro
+_______________________________________________________________
+
+_________________End____________________
+
+Landing Page Responsive Issue Solved
+_______________________________________________________________
+
+_________________End____________________
+
+Assignment – Design A Landing Page
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Elementor Pro (Woo-Commerce Widgets)
+*********************************************
+
+Products
+_______________________________________________________________
+
+_________________End____________________
+
+Custom Add To Cart
+_______________________________________________________________
+
+_________________End____________________
+
+Woo-Commerce Pages
+_______________________________________________________________
+
+_________________End____________________
+
+Product Categories , Menu Cart
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Elementor Addons (Free)
+*********************************************
+
+Elements Kit Elementor Addons
+_______________________________________________________________
+
+_________________End____________________
+
+Happy Elementor Addons
+_______________________________________________________________
+
+_________________End____________________
+
+WunderWP
+_______________________________________________________________
+
+_________________End____________________
+
+Essential Addons For Elementor
+_______________________________________________________________
+
+_________________End____________________
+
+Livemesh Addons For Elementor
+_______________________________________________________________
+
+_________________End____________________
+
+Premium Addons For Elementor
+_______________________________________________________________
+
+_________________End____________________
+
+Unlimited Elements For Elementor
+_______________________________________________________________
+
+_________________End____________________
+
+Elementor Flexible Panel
+_______________________________________________________________
+
+_________________End____________________
+
+Make Elementor Column Clickable
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Professional Website Creation & Features Adding
+*********************************************
+
+How To Create A House Cleaning Website
+_______________________________________________________________
+
+_________________End____________________
+
+Yoast Seo Part
+_______________________________________________________________
+
+_________________End____________________
+
+Website Indexing To Google And Bing
+_______________________________________________________________
+
+_________________End____________________
+
+WordPress Security Set Up
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+---------------------------------------------------------------------------------------------------
+
+(Wordpress Big Advance - Course)
+__________________________________________
+
+
+[Chapter] Introduction To Advance Course:
+*********************************************
+
+Important Notice For All Of My Loving Students
+_______________________________________________________________
+
+_________________End____________________
+
+Introduction To WordPress
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Free Theme Customization
+*********************************************
+
+Create A Simple Website For Your University, College, School
+_______________________________________________________________
+
+_________________End____________________
+
+Assignment – Create A Website Using Your Own School, College, University Contents
+Create A Professional Newspaper Website
+_______________________________________________________________
+
+_________________End____________________
+
+Assignment – Create A Professional Newspaper Website
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+[Chapter] Personal Branding
+*********************************************
+
+Personal Branding
+_______________________________________________________________
+
+_________________End____________________
+
+Behance Portfolio Creation
+_______________________________________________________________
+
+_________________End____________________
+
+Flickr Profile Creation
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Domain Hosting Details
+*********************************************
+
+What is domain & hosting?
+_______________________________________________________________
+
+_________________End____________________
+
+cPanel interface and settings
+_______________________________________________________________
+
+_________________End____________________
+
+Install WordPress on a live server using Softaculous
+_______________________________________________________________
+
+_________________End____________________
+
+Changing PHP, maximum file upload size, memory limit etc.
+_______________________________________________________________
+
+_________________End____________________
+
+Changing Max Input Version, Maximum File Upload Size, Memory Limit etc. (Editing .ht Access File)
+_______________________________________________________________
+
+_________________End____________________
+
+How to install WordPress manually
+_______________________________________________________________
+
+_________________End____________________
+
+How to manually delete database, WordPress
+_______________________________________________________________
+
+_________________End____________________
+
+How to create business email or webmail and integrate with Gmail
+_______________________________________________________________
+
+_________________End____________________
+
+How to add multiple domains to the same hosting (same domain-hosting company)
+_______________________________________________________________
+
+_________________End____________________
+
+How to Add Multiple Domains to a Hosting (Different Domain-Hosting Companies)
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] WordPress Website Backup – Migration – Transfer
+*********************************************
+
+WordPress Website Backup – Migration – Transfer
+_______________________________________________________________
+
+_________________End____________________
+
+Manually transfer web site from local host to live server
+_______________________________________________________________
+
+_________________End____________________
+
+How to transfer website from one domain to another (Process – 01)
+_______________________________________________________________
+
+_________________End____________________
+
+How to transfer website from one domain to another (Process – 02)
+_______________________________________________________________
+
+_________________End____________________
+
+How to transfer website from one domain to another (Process – 03)
+_______________________________________________________________
+
+_________________End____________________
+
+How to Manually Transfer Websites from One Domain to Another Domain
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] WP Bakery Page Builder (Visual Composer)
+*********************************************
+
+WP Bakery Page Builder All Videos
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Slider Revolution
+*********************************************
+
+Slider Revolution Part 1
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+
+
+Audience Create – Settings – Manually add subscribers
+Importing subscribers
+Stats and settings
+Audience fields and merge tags
+Sign Up Form – Form Builder
+Embedded form
+Sign Up Form Responses
+Pop up subscriber form
+Form integration
+Add a sign up form to your Facebook page
+Create Group
+Create Segment
+Tags
+MailChimp Landing Page Design
+MailChimp template design and campaign creation
+Campaign report
+Configure automation email
+MailChimp Conclusion
+
+[Chapter] Email Marketing With Mailchimp
+*********************************************
+
+Email Marketing With Mailchimp
+_______________________________________________________________
+
+_________________End____________________
+
+What is Email Marketing? How does it work and why do we do email marketing?
+_______________________________________________________________
+
+_________________End____________________
+
+Best Email Marketing Companies
+_______________________________________________________________
+
+_________________End____________________
+
+MailChimp Account Opening
+_______________________________________________________________
+
+_________________End____________________
+
+Discussion on mailchimp profiles
+_______________________________________________________________
+
+_________________End____________________
+
+Discussion on mailchimp account
+_______________________________________________________________
+
+_________________End____________________
+
+WP Bakery Page Builder All Videos
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+
+[Chapter] Lead Collecting Landing Page Design With Mailchimp Integration
+*********************************************
+
+Full Video ,Assignment – Lead Collecting Landing Page Design With Mailchimp Integration
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] Woo-commerce Details Discussion
+*********************************************
+
+Theme Installation & Customization
+_______________________________________________________________
+
+_________________End____________________
+
+WooCommerce Plugin Install & Set Up
+_______________________________________________________________
+
+_________________End____________________
+
+How to upload Simple Product
+_______________________________________________________________
+
+_________________End____________________
+
+How to upload Grouped Product
+_______________________________________________________________
+
+_________________End____________________
+
+How to upload Affiliate Product / External Product
+_______________________________________________________________
+
+_________________End____________________
+
+How to upload Variable Product
+_______________________________________________________________
+
+_________________End____________________
+
+How To Set Up Coupon Code
+_______________________________________________________________
+
+_________________End____________________
+
+WooCommerce Settings (General & Product)
+_______________________________________________________________
+
+_________________End____________________
+
+WooCommerce Settings (Shipping, Account Privacy, Emails, Advanced)
+_______________________________________________________________
+
+_________________End____________________
+
+How To Transfer Website From Local Host To Live Server
+_______________________________________________________________
+
+_________________End____________________
+
+WooCommerce (Order Processing , Email Template Customization)
+_______________________________________________________________
+
+_________________End____________________
+
+
+****************Chapter End**********************
+
+
+
+[Chapter] On Page SEO
+*********************************************
+
+How to do SEO of a post
+_______________________________________________________________
+
+_________________End____________________
+
+How to do SEO of a page
+_______________________________________________________________
+
+_________________End____________________
+
+How to index your site in google & Google Analytics Set Up
+_______________________________________________________________
+
+_________________End____________________
+
+
+
+****************Chapter End**********************
+
+
+[Chapter] WordPress Speed Optimization
+*********************************************
+
+Increase Website Page Speed
+_______________________________________________________________
+
+_________________End____________________
+
+Problems Solving
+_______________________________________________________________
+
+_________________End____________________
+
+Speed Up Assignment
+_______________________________________________________________
+
+_________________End____________________
+
+****************Chapter End**********************
+
+
+
+[Chapter] WordPress Security
+*********************************************
+
+How To Secure Your WordPress Website
+_______________________________________________________________
+
+_________________End____________________
+
+****************Chapter End**********************
+
+
+
+
+---------------------------------------------------------------------------------------
+Bridge Theme Customization
+Newspaper 9 Theme Customization
+Avada Theme Customization
+Be Theme Customization
+Uses Of WordPress Plugins Part – 1
+Oxygen Theme Customization
+Woodmart Theme Customization
+Flatsome Theme Customization
+Elementor Pro Page Builder With Addons
+Divi Theme Customization
+Uses Of WordPress Plugins Part – 2
+Payoneer
+Fiverr Market Place
+LMS (Learning Management System) – Online Education Website – Online Course Website
+Professional Newspaper Or Blog Website Creation
+Listing Directory Website Creation
+Hotel Booking Website Creation
