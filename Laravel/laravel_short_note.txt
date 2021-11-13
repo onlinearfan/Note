@@ -1,0 +1,445 @@
+<?php
+*)form validation 
+=============================
+form
+-----------
+@csrf = filtering from data,
+@put = for update data 
+
+function show(Requests $requests){
+    dd($requests); // see all info of request,
+
+    $requests->all(); //  all input data as array,
+    $requests->input(); //  all input data as array,
+    $requests->input('name'); // single input get,
+    $requests->name; //collect as object,
+
+    if($requests->has(['name','email'])){}
+    if($requests->hasAny(['name','email'])){}
+    if($requests->filled(['name','email'])){}
+    if($requests->missing(['name','email'])){}
+
+    // as clouser 
+
+    $requests->whenHas('email',function(){
+        print('modified');
+    });
+    // whenFilled
+
+    // session 
+
+    $requests->flash(); //flash all
+    $requests->flashOnly(['name','email']); //without pass flash
+    $request->flashExcept(['name','email']); //without pass flash
+
+    redirect(route('routeName'))->route('routeName');
+    redirect('olddata')->withInput(); //flash kore jabe, old('name') ;
+    redirect('olddata')->withInput(
+        $request->except('name');
+    ); //flash kore jabe, old('name') ;
+
+    $requests->old('name');
+
+    // shortcut of request 
+    requ::type 
+
+    
+
+}
+
+
+*)validation form using validation method ---
+========================================
+
+function singUp(request $request)
+{
+    $request->except();
+    // validation data will come in $validation var 
+    $validation = $request->validate([
+        'email' =>["requried","min:20"],
+        'password' => 'requried|min:20|upperCase'
+    ]);
+
+    //validate na hole run korbe na,
+    print('form validation');
+}
+
+if($error->any()){
+    foreach ($error->all() as $value) {
+        echo $value;
+    }
+
+    $error->first(); //first error will come,
+}
+
+/* @error 
+{{$massage}}
+@enderror */
+
+//custom error message make,
+//resource/language directory te pabo,
+custom([
+    'email' =>[
+        'requried' =>'massege of custom',
+    ],
+
+    'requried' =>'field dene jaruru hai,'
+]);
+
+attribute([
+    'email' =>'email address',
+]);
+
+//custom validation make by closur and rule object,
+
+// object style 
+php artisan make:rule RagistrationFrom;
+
+function passes($attribute,$value){
+    return strtoupper($value) ===$value; //if true then ok else error msg will show,
+}
+function message(){
+    return 'the :attribute in not in uppercase';
+}
+
+new ClassAdd;
+
+// closur style 
+
+$validate = $request->validate([
+    'email' =>['requried',function($attribute,$value,$fail){
+        if(strtoupper($value) != $value){
+            $fail('the :attribute in fail');
+        }
+    }]
+])
+
+//form request validation way,
+php artisan make:request RagistrationRequest 
+authorize = true,
+rule = rule lekhbo,
+attiribute= attribute change korte parbo,
+message = messate changke korte parbo,
+
+
+
+
+
+
+
+
+*)migration of laravel,
+-----------------------------
+
+php artisan make:migration create_students_table;
+php artisan make:migration dropping_students_table;
+php artisan make:migration rename_students_to_employs;
+php artisan make:migration add_country_to_students --table=student; = column adding,
+php artisan make:migration dropping_price_from_mobile --table=mobile;
+php artisan make:migration dropping_price_ram_from_mobile --table=mobile;
+
+
+
+php artisan migrate = migrate all migration file,
+
+php artisan migrate:status,
+php artisan migrate:rollback, = rollback single migration,
+php artisan migrate:rollback --step=5,
+
+php artisan migrate:reset = all migration rollback
+php artisan migrate:refresh = all migration rollback and migrate again,
+php artisan migrate:refresh --step=3 = all migration rollback and migrate again,
+php artisan migrate:fresh = table drop fully and add again with column, all column migrate again,
+
+creating table, 
+------------------
+Schema::create('tableName', function (Blueprint $table) {
+    $table->bigIncrements('id');
+    $table->string('name');
+    $table->string('password')->unique();
+    $table->string('email')->unique()->safeEmail();
+    $table->timestamps();
+
+    //for drop column
+    $table->dropColumn('column');
+    $table->dropColumn(['name1','name2']);
+});
+
+dropping table 
+-------------------
+Schema::drop('table'); = drop korbei, na thakle error dibe,
+Schema::dropIfExists('tableName');
+
+
+checking table and column 
+----------------------------
+if (Schema::hasTable('table')) {
+    if (Schema::hasColumn('table', 'column')) {
+        
+    }
+}
+
+rename table 
+----------------
+Schema::rename($from, $to);
+
+create column
+-----------------
+available column type,
+---------------------------
+
+Schema::table('TableName', function (Blueprint $table) {
+    $table->string('name'); //new column adding,
+    $table->id('name');
+    $table->increments('id');
+    $table->intiger();
+    $table->increments('id');
+    $table->char('name', 4)4->default('text');
+    $table->text('description')->nullable()->default('text');
+    $table->date('created_at')->nullable()->default(new DateTime());
+    $table->time('sunrise')->nullable()->default(new DateTime());
+    $table->string('name', 100)->nullable()->default('text');
+    $table->timestamp('added_on')->nullable()->default(time());
+    $table->float('amount',8,2)->nullable()->default(123.45);
+
+    $table->string('name',100)->change(); // change char
+
+    // column modifier 
+    requirement doctrain
+    composure require doctrine/dbal
+    after() / autoincrement() / charset()/ comment() / default()/ first() / from() /
+    nullable(true)/  change,
+
+    $table->renameColumn('from', 'to');
+
+    $table->string('emain')->unique();
+    $table->unique('email');
+    $table->forein('course_id')->reference('id')->on('student_table');
+    $table->forein('course_id')constrained('student');
+
+    
+    $table->dropForeign('posts_user_id_foreign');
+    $table->dropColumn('column');
+    primary,index, $table->dropUnique('users_email_unique');
+});
+
+
+
+
+column:string = shortcut schema,
+schema:table-update = schema shortcut,
+
+
+
+
+*)CRUD USING query builder 
+--------------------------------------
+DB::table('Student')->where()->orderBy()->get();->first()->update()->delete();
+steps:
+*)database create kore laravel er shate add korebo,
+*)migration er maddhome table create kore data add korbo,
+1)form banabo and eita show krbo get e and button hit e post 
+2)form er data gulo retrive korbo and query builder diye insert kore dibo database table e,
+3)retrive data = index fun e data gulo retrive kore pass kore show kore dibo table er bitor
+ and 
+4)name_route use korbo redirect e and session status pass kore show kroe dibo, has session diye, 
+5)edit - e click korle route edit/2 niye datable thke ei id er row ta ber kore new view edit er bitor show kore dibo,
+6)update e hit korle same url ei action krbo tai, update hobe data update function e id dore update kore dibo,
+
+7)delete = delete e hit korle delete/3 route e hit hobe and and oi id dore 3 table row delete kore dibo and index e redirect krbo,
+8)if condition use krobo empty insert er jonno,
+
+php artisan make:controller StudentController -r = resource soho asbe,
+db facade include krbo, db query builder use krte, hash, str,
+
+hash::make('34324'); str(10); = 10 ta string make hobe,
+
+$student  = '';
+if($student){
+    $student = 'new value';
+}
+
+redirect('/')->with('status','student ADD');
+
+@method('put');
+
+// retrive 
+
+$studnet = DB::table('student')->get();
+
+//insert 
+
+DB::table('student')->insert(
+    [
+        'name'=>'arfan',
+        'roll' =>32,
+        'marks' =>'3334',
+    ]
+)
+
+// delete 
+
+DB::table('student')->where('id',2)->delete();
+
+//Edit 
+
+DB::table('student')->where('id',2)->get();
+$student = DB::table('student')->find($id);
+
+// update 
+
+DB::table('student')->where('id',3)->update(
+    [
+        'name' => 'arfan',
+    ]
+    );
+
+
+
+*)Seeding data into table by code,
+---------------------------------------
+
+php artisan:make Seeder StudentSeeder 
+
+run(
+    Schema::create('users', function (Blueprint $table) {
+        $table->bigIncrements('id');
+        $table->timestamps();
+    });
+)
+
+main seeder e 
+
+run(
+    $this->call([
+        StudentSeeder::class,
+        user::class,
+    ]   
+    )
+)
+
+php artisan db:seed --class=StudentSeeder
+php artisan db:seed = all seed 
+php artisan migrage:fresh --seed = for new builder database table,
+
+illmi/support/facade/db
+illmi/support/facade/hash
+illmi/support/facade/str
+
+*)faker php using = 
+
+/* install by composure,
+include class of faker 
+$faker = faker::create();
+
+$faker->name();
+$faker->unique()->safeEmail();
+
+foreach(range(1,10) as value); */
+
+
+
+
+
+
+
+
+*)Equlom ORM and Model 
+-----------------------------
+php artisan make:model student = for students table,
+php artisan make:model student -m/migration = also migration create_students_table,
+php artisan make:model student -mc = c = StudentController will create also,
+ph artisan make:model student --seed  = seeder soho,
+php artisan make:model student -s = seeder with,
+php artisan make:model student -mfsc =
+
+app/model/student = model location - model use er somoy eita extend krbo,
+
+model default properties= 
+-----------------------
+Protected $table = 'student_tableNewName';
+Protected $PrimaryKey = 'stu_id'; = anno column PrimaryKey
+Protected $KeyType = 'string'; = anno column PrimaryKey onno type caile,
+public $incrementing = false; = false krbo string primary krle,
+public $timestamps = false; = create_at and update_at column include ta krle eita use krte hobe,
+Protected $DateFormat = 'U'; = date format change,
+const CREATED_AT = 'NEW_CREATED_AT';
+const UPDATED_AT = 'NEW_UPDATED_AT';
+Protected $connetion = 'sqlite';
+protected $fillable = ['name','password','email'];
+
+database baniye tar name laravel e .env te connect korbo,
+
+Retrive date for table using model, = 
+-----------------------
+make model for table,include model into StudentController where you want to Retrive,
+
+Student::all() = static function tai call kora lage nai, eita object akare data pass korbe,
+ dd() kore dekhe nibo sob
+
+student::find($id); = single row Retrive krbe id ta
+student::where('id','=','5')->get() = single row nibe,
+$student = student::where('id','>','5')->orderBy('name')->get() = single row nibe,
+
+foreach ($Student as $items) {
+    echo $item->name; //object akare asbe, $item['name'] = array hole,
+}
+
+$student = student::chunk(5,function($student){
+    foreach ($student as $item) {
+        echo $item->name;
+
+        $items = '';
+        $items = $items . $item->name . "<br>";
+    }
+    echo "chunk End";
+    //return false, = ekta chunk shese false,
+    //return $items
+});
+
+// single row retrive 
+student::find($id); 
+student::where('city','=','dhaka')->first();
+student::firstWhere('city','dhaka');
+student::where('id','>',2)->firstOr(function(){
+    echo "not Found";
+});
+
+$student = student::firstOrCreate(
+    ['city'=>'dhaka'],
+    ['name'=>'arfan','number'=>'9343423'],
+); //thakle single data row retrive krbe na takhle create kore retrive krbe,
+
+$student = student::firstOrNew(
+    ['city'=>'dhaka'],
+    ['name'=>'fahim','number'=>'34235'],
+)->save();
+
+// $student->save();
+
+//columt sob data filled na krle Fillable property error asbe,
+
+// Retriving Aggregate
+
+$student = student::where('city','dhaka')->sum('price'); = price column sum 
+min('price') = min value row collect,
+max('price') = max value collet,
+count(); all row count number,
+
+
+// Insert Data into table of database,
+
+$student = new student;
+
+$student->name = 'arfan';
+$student->number = '243234';
+
+$student->save();
+
+//2nd way of insert,
+$student = student::create([
+    'name' =>'arfan',
+    'city' =>'dhaka',
+]);
+
+

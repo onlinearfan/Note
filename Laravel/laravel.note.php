@@ -863,6 +863,10 @@ run(
 01:06:26 Delete Data from Table
 01:10:07 Delete All Data from Table */
 
+php artisan make:model student -mc  = model con
+
+
+
 
 //!session 
 
