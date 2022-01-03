@@ -1,3 +1,4 @@
+git push origin master --force = delete commit and hard push in remote,
 Here are the Git commands which are being covered:
 git --version
 git config

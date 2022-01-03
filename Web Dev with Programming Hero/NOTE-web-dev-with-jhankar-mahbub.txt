@@ -1,0 +1,690 @@
+
+how to learn in proper way,
+______________________________
+*)video dekha fully and ss neya,
+*)ss revised deya,
+*)video dekha abr and note neya lacture ki bolse ki topic dekhaise and practice all,
+---------------------------
+daily all ss revised must 
+
+
+
+                Web Development Course With Jhankar Mahbub:
+    =================================================================
+
+Module 1: Learn and Explore HTML as a Beginner
+
+1)html diye simle website banano, vs code Introduction and install,
+---------------------------
+2)hyper text mark language simple code, p tag learn and website e ki ki tag thake
+---------------------------
+3)b,strong tag, important text, 
+---------------------------
+4)h1-h6 tag important of website 
+---------------------------
+5)a tag e link , #id, relative path adding, 
+---------------------------
+6)folder/img er relative path dekhaise, img related dekhaise html 
+---------------------------
+7)ul ol li tag dekhaise, 
+---------------------------
+8)w3school er tag gulo dekhe nite bolse, span, div tag dekahise, 
+---------------------------
+9)meta tag er guruto bujaise seo er jonno,
+---------------------------
+10)section tag, artical tag,div,h1,p, tag dekhaise,
+
+
+_________________End____________________
+
+
+Module 2: Learn and Explore CSS as a Beginner
+
+1)css add kivabe kore jai ta dekhaise, inline,internal,external, css priorities,
+---------------------------
+2)color,background,height,widht,font css element,
+---------------------------
+3)id css e kivabe use hoi dekhaise #idName{color:red}
+---------------------------
+4)class dekhaise, friends name e, h1.friends etc, 
+---------------------------
+5)span tag e css class add,
+---------------------------
+6)border,border-radius,margin,padding,
+---------------------------
+7)float left right,auto, 
+---------------------------
+8)css priorities dekhaise,
+
+_________________End____________________
+
+Module 3: Git, source control, GitHub and hosting
+====================================================
+
+10)git hub introduction === eitai first video,
+---------------------------
+1)git download,git --version, github account open dekhaise,
+---------------------------
+2)git init,git local to remote connect dekhaise,git add,commit,
+configs,push,git add origin and push e account verify dekhaise,
+---------------------------
+3)vs code e git used dekhaise ,git diff,git pull dekhaise,
+---------------------------
+4)github desktop add dekhaise, kivabe install and github login kore,
+ amr init folder k git app e add kore, publish to github repo dekhaise app dara, 
+ push origin dekhaise,pull origin dekhai,se,
+5) branch dekhaise, github theke open kore,git checkout dekhaise, 
+git checkout -b newBranc,new branch push korle fatal error, delete branch for github,
+ ---------------------------
+6)git commit, modified file,config dekhaise,git branch -a, merge config and resolve , 
+ ---------------------------
+7)git live site make dekhaise,commit er age change back vs code diye dekhaise,
+ ---------------------------
+8)gh-page  name branch create kore oitai live kore site dekhaise, 
+ index name change kore site.html rakhle run korbe na git hub direct ta dekhaise,
+ ---------------------------
+9)git hub theke repo create dekhise,
+---------------------------
+
+
+_________________End____________________
+
+Module 3_5: CSS EXTRA HOVER, POSITION, SPECIFICITY, HOMEWORK
+1)hover,first-child,focus presudo element, nth-child,
+---------------------------
+2)active,visited,before,after,
+---------------------------
+3)----position,
+4)position dekhaise,!important 
+5)media query introduce,
+_________________End____________________
+
+Module 4: Build a beautiful and professional portfolio website
+1)protfolio website of jhankar mahbub dekhaise, bangla search kore resource get and,
+git clone project with cmd  and amr project git new repo create kore initial push dekhaise,
+---------------------------
+2)google font,site file ready html,css, img,
+---------------------------
+3)img make and background remove with phothopea,
+---------------------------
+4)img add and float kore ek shate kore dekhaise,
+---------------------------
+5)background img adding dekhaise,
+---------------------------
+6)webstie psd to html kore kaj dibe client ta bolse,
+---------------------------
+7)linkedin url add into hire button target new page, btn gradient
+---------------------------
+8)img edit 2nd section and add,
+---------------------------
+9)background add kore position kora dekhaise,
+---------------------------
+10)box section experians, dekhaise,box shadow,gradient,border gradient color,
+---------------------------
+11)border-image,border-image-slice:1,
+---------------------------
+12)git push first website,new branch create kore live site kora,
+_________________End____________________
+
+Module 5: Personal website, build a brand new website
+
+1)personal website assignment - hero section,
+2)personal website repository baniye
+amr banano webiste push kore dibo and live kore dibo,
+
+_________________End____________________
+
+Module 5.5: [Bonus] Box model, pseudo class, position
+
+1)padding,margin,pseudo class, position details,
+
+
+_________________End____________________
+
+Module 6: HTML 5 Semantic tags, audio, video, table, form
+
+1)iframe and control,audio-video tag and control,
+---------------------------
+2)ul>li*3>a{link-$} tab,
+
+<html>
+    ul>li*3 = 
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    2)ul>li*3>a{link-$} tab,
+    <ul>
+        <li><a href="">link-1</a></li>
+        <li><a href="">link-2</a></li>
+        <li><a href="">link-3</a></li>
+    </ul>
+</html>
+
+.blog*3>h1{romantic blog $}+p>lorem2 
+<div class="blog">
+    <h1>romantic blog 1</h1>
+    <p>Lorem, ipsum.</p>
+</div>
+<div class="blog">
+    <h1>romantic blog 2</h1>
+    <p>Eum, dicta.</p>
+</div>
+<div class="blog">
+    <h1>romantic blog 3</h1>
+    <p>Hic, debitis!</p>
+</div>
+
+html, address,section, etc html 5 tag,
+html4 vs html5,
+search html 5best practice,
+
+---------------------------
+
+3)table tag, <table border="1"><thead><tr><th rowspan="2" colspan="3"></th></tr></thead><tbody><tr><td></td></tr></tbody><tfoot></tfoot></table>
+---------------------------
+4)form tag = <form action=""><input type="text"></form> value,name,type,id,label,fieldset,<legend></legend>
+---------------------------
+5)fav icon,title tag,comment html,br tag, empty tag,
+---------------------------
+6)html interview question find out,
+
+_________________End____________________
+
+Module 7: More CSS, Icon, CSS3 animation
+
+1)css3 introduction ,
+---------------------------
+2)overflow,visiblity,img adding width,height, img resize with photopea,
+tinypng svg introduce, svg down and use, svg viewer vs extension,
+---------------------------
+3)transform css property,
+---------------------------
+4)transition property 
+---------------------------
+6)transition and transform practice bat ball,
+---------------------------
+8)animation property, ball drop and background change,
+---------------------------
+9)flex box , margin-auto with flexbox, css-trick flexbox,
+---------------------------
+10)css grid property,
+---------------------------
+11)grid diye calender,
+div.food*6>img[src="link"]+p{lorem }
+
+12)media query ,pc,leptop,tab,long mobile,small mobile,
+---------------------------
+13)css diner website see,css frog ,codepan,
+
+
+_________________End____________________
+Module 8: Responsive CSS Layout
+
+
+_________________End____________________
+Module 9:  HTML CSS only Landing Page
+
+
+_________________End____________________
+Module 10: Responsive Website Assignment 2
+
+
+_________________End____________________
+Module 10.5: bonus 
+
+
+_________________End____________________
+
+Module 11: Magic of Bootstrap (Getting started)
+
+1)bootstrap intoduction,add into local and global link cdn,
+---------------------------
+2)btn class = some class of bootstrap,
+---------------------------
+3)img width class,
+---------------------------
+4)bootstrap component card, etc,
+---------------------------
+5)navigation of bootstrap,
+---------------------------
+6)responsive website making tips,
+---------------------------
+7)bootstap row,col, etc introduce,
+---------------------------
+8),col-md, lg , sm, etc col-12, 
+--------------------------- 
+9)bootstrap carousel - all 
+---------------------------
+10)flex class of bootstrap,
+--------------------------- 
+11)fix-top position of bootstrap,
+
+
+_________________End____________________
+
+Module 12: Responsive Layout using Bootstrap
+
+
+_________________End____________________
+Module 12.5: Bootstrap Review and Practice
+
+
+_________________End____________________
+Module 13: Simple ecommerce landing page using Bootstrap
+
+
+_________________End____________________
+Module 14: A simple Introduction to Tailwind
+
+
+_________________End____________________
+Module 15: Responsive Landing Page Assignment
+
+
+_________________End____________________
+Module 15_5: HTML, CSS, Bootstrap Bonus
+
+
+_________________End____________________
+Module 16: Introduction to JavaScript
+
+1)static vs dynamic and js animation interactive 
+---------------------------
+2)js code running way, 
+console log of browser, terminal of browser with node js, online ide codepan,
+console e shift dore enter e new line, debugg tool ,
+---------------------------
+3)5 terms of programming, if,loop,function,variable,
+-variable = changleable things,
+---------------------------
+4)data types = number,string,boolen,etc,
+---------------------------
+5)keyword of js,var case sensitive, js a camelCase use hoi beshi var define e,
+---------------------------
+6)string like mala or neclas, ""/''/`` ei 3 ta string ache,string methods = .toLowerCase(),to.indexOf(-1 mane nai,), etc,
+hard = Hard same na indexof e, split() = make array of string,
+---------------------------
+7)number method, perseFloat, etc, var number = +number - convert number,
+var number = ''+number = convert string, .toFixed(fractionDigits,),perseInt,
+---------------------------
+8)math need for programming = +-*/ % etch simple math only need,
+increament,decreament, i++ , i-- pre and post increment, + sign concrit in js,
+---------------------------
+9)math function, ceil,floor,round, etc,abs,
+---------------------------
+10)condition if,else if ,else etc, ==,!=,===,!==, etc learn, '',0,null,undefined
+---------------------------
+11)oparetor of js, && || ! 
+---------------------------
+12)date time object 
+---------------------------
+
+_________________End____________________
+ Module 17: Fundamental Concepts Array and conditionals
+
+
+_________________End____________________
+Module 17.5: Concepts Recap and Loop
+
+
+_________________End____________________
+Module 18: Core Concepts functions and objects
+
+
+_________________End____________________
+Module 19: Apply Javascript Concepts
+
+
+_________________End____________________
+Module 19.5: JS Concept Recap
+
+
+_________________End____________________
+Module 20: JavaScript Simple Coding Problems
+
+_________________End____________________
+Module 21: More JS Coding Problems
+
+
+_________________End____________________
+Module 22: Assignment
+
+
+_________________End____________________
+Module 22.5: Basic JavaScript Bonus Module
+
+
+_________________End____________________
+Module 23: How Javascript Works & DOM
+
+_________________End____________________
+Module 24: Event, addEventListener, Event bubble
+
+
+_________________End____________________
+Module 24-5: HTML, CSS, DOM Revision Day
+
+
+_________________End____________________
+Module 25: Baap Er Bank, simple bank transactions
+
+
+_________________End____________________
+Module 26: Functional Bank(advanced) 
+
+
+_________________End____________________
+Module 26_5: Shopping Cart, develop an interactive Cart
+
+
+_________________End____________________
+Module 27: Revisit Javascript and work on Shopping Cart
+
+
+_________________End____________________
+Module 28: String and Array useful methods
+
+
+_________________End____________________
+Module 28.5: Practice and revision day
+
+
+_________________End____________________
+Module 29: Interactive Mac book Pro Assignment
+
+
+_________________End____________________
+Module 29.5: Integrate Javascript Bonus Content
+
+
+_________________End____________________
+Module 30: JS Recap and  Basic ES6, ES2015
+
+
+_________________End____________________
+Module 31: (advanced) ES6, Class, Inheritance
+
+
+_________________End____________________
+Module 31.5 ES6 Recap and Practice
+
+
+_________________End____________________
+Module 32: API, JSON, Data load, dynamic website
+
+
+_________________End____________________
+Module 33: API Examples and edge cases
+
+
+_________________End____________________
+Module 33.5: Recap and Even more API Examples
+
+
+_________________End____________________
+Module 34: JavaScript Tricky Concepts
+
+
+_________________End____________________
+Module 35: (advanced) JavaScript Object Concepts
+
+
+_________________End____________________
+Module 35.5 Have a World tour with API
+
+
+_________________End____________________
+Module 36: Assignment-6 
+
+
+_________________End____________________
+Module 36.5: Bonus API and JS Recap Concepts
+
+
+_________________End____________________
+Module 37: How JavaScript and Browser works
+
+_________________End____________________
+Module 38: Browser API and methods 
+
+
+_________________End____________________
+Module 38.5: Browser API practice
+
+
+_________________End____________________
+Module 39: JavaScript debug, web debug, dev tool mastering
+
+
+_________________End____________________
+Module 40: More debug and Regular Expression
+
+
+_________________End____________________
+Module 40.5: Devtool and debug practice
+
+
+_________________End____________________
+Module 41: Getting started with TypeScript
+
+
+_________________End____________________
+Module: 42: JavaScript You need to know for React
+
+
+_________________End____________________
+Module: 42.5 Browser Debug Practice Day
+
+
+_________________End____________________
+Module 43: Assignment -7
+
+_________________End____________________
+Module 43.5: Browser Debug bonus video
+
+
+_________________End____________________
+Module 44: Modern Front-end core concepts
+
+
+_________________End____________________
+Module 45: React Core Concepts, JSX, props, state
+
+
+_________________End____________________
+ Module 45.5: React Core Concept Recap and Practice day
+
+
+_________________End____________________
+Module 46: Simple React Rest Countries 
+
+
+_________________End____________________
+Module 47: (Conceptual) How React works
+
+
+_________________End____________________
+Module 47.5: Practice and React Side things
+
+
+_________________End____________________
+Module 48: Simple React SPA with simple e-commerce
+
+
+_________________End____________________
+Module 49: (advanced) Save and searchable e-commerce
+
+
+_________________End____________________
+Module 49.5: Simple React Revision day
+
+
+_________________End____________________
+Module 50: React SPA Assignment 8
+
+
+_________________End____________________
+Module 50.5: Simple React Bonus
+
+
+_________________End____________________
+Module 51:  React Bootstrap, Material UI, Axios, Rechart
+
+_________________End____________________
+Module 52: Simple React Router Examples
+
+
+_________________End____________________
+Module 53: ema-john with router and custom hook
+
+_________________End____________________
+Module 54: Router deploy, Simple Context API, devtool
+
+
+_________________End____________________
+Module 54_5: React Router Practice
+
+
+_________________End____________________
+Module 55: Educational Website Assignment 9
+
+
+_________________End____________________
+Module 55.5: React Router bonus content
+
+
+_________________End____________________
+Module 56: Simple React Firebase authentication
+
+
+_________________End____________________
+Module 57: Email Password Authentication, Login Form
+
+
+_________________End____________________
+Module 57.5: Firebase Recap and Practice
+
+
+_________________End____________________
+Module 58: React Auth Integration and Private Route
+
+
+_________________End____________________
+Module 59: Private Route Recap with Ema-John
+
+
+_________________End____________________
+Module 59.5: Firebase auth and private Route Recap 
+
+
+_________________End____________________
+Module 60: Responsive React Website and React Recap
+
+
+_________________End____________________
+Module 61: React Router and Firebase Auth Recap     
+
+
+_________________End____________________
+Module 61.5: Firebase auth and Simple Site Practice
+
+
+_________________End____________________
+Module 62: React Auth Assignment 10
+
+
+_________________End____________________
+Module 62.5: Add Google Map, MapBox GL to React
+
+
+_________________End____________________
+Module 63: Getting Started with Node, Express and Api
+
+
+_________________End____________________
+Module 64: Mongodb, database integration, CRUD
+
+
+_________________End____________________
+Module 64.5: CRUD Update and Product Management Practice)
+
+
+_________________End____________________
+Module 65: Genius Car Node Mongo CRUD Recap 
+
+
+_________________End____________________
+Module 66: E-commerce site Node and Mongodb integration
+
+
+_________________End____________________
+Module 67.5: Deploy to Heroku and Practice Problem
+
+
+_________________End____________________
+Module 68: Backend Database Milestone Assignment
+
+
+_________________End____________________
+Module 68.5: JWT token and image hosting
+
+
+_________________End____________________
+Module 69: Final Project Part-1 (Home page)
+
+
+_________________End____________________
+Module 70: Final Project Part-2 (Appointment)
+
+
+_________________End____________________
+Module 71: Final Project Part-3 (Auth Recap)
+
+
+_________________End____________________
+Module 72: Final Project Part-4 (Dashboard)
+
+
+_________________End____________________
+Module 73: Final Project Part-5 (Secure Admin)
+
+
+_________________End____________________
+Module 73.5: Final Project Deploy and Practice
+
+
+_________________End____________________
+Module 74: Build your own Complete Project
+
+
+_________________End____________________
+Module 75: Payment gateway Stripe Integration
+
+
+_________________End____________________
+Module 76: Image Upload, Live Site Deploy, React Router V6
+
+
+_________________End____________________
+Module 77: Introduction React Native, Next JS, Class Components
+
+
+_________________End____________________
+Module 77.5: useReducer, redux core concept, optional assignment
+
+_________________End____________________
+Module 78: Data Structure, Algorithm, OOP, Problem Solving
+
+
+_________________End____________________
+Module 79: Interview Preparation and Get Ready to be hired
+
+
+_________________End____________________
+
+Module 80: Last Module Grow as a web Developer
+
+
+_________________End____________________

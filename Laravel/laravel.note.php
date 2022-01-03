@@ -1,5 +1,30 @@
 <?php 
 
+//!how to upgrade and downgrape php version in xammp
+/* 
+*)download old php version xammp
+*)rename php and apache to old file 
+*)add your location of xamm into php.ini folder of your new version,
+*/
+
+// !How to clone laravel project and add into local work station 
+/* 
+Step:
+1. download or clone project
+2. Go to the folder application using cd 
+3. Run composer install if not install otherwise composer update on your cmd or terminal
+4. Copy .env.example file to .env on root folder. cmd = copy .env.example .env
+    You can type copy .env.example .env if using command prompt Windows 
+     or cp .env.example .env if using terminal Ubuntu
+     *)create database and add in your env file,
+5. Open your .env file and change the database name (DB_DATABASE) 
+6. Run php artisan key:generate key will generate into your env file,
+8.Run php artisan serve
+7. Run php artisan migrate table will migrate,
+9)php artisan db:seed --class=seederClassName 
+*/
+
+
 //!1) framwork , 
 
 //!2) laravel install ,
@@ -18,6 +43,92 @@
 //composer and laravel version details in composer.json 
 
 //!4) Route - --------------
+
+
+//?basic Route By view Return
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//2)route with parameter 
+// Routes in Laravel
+// 00:00 Introduction to Route
+
+//1) return and echo all can work  // 04:47 Route Returning String
+Route::get('/', function () {
+    echo "nice";
+    return "hello";
+});
+
+// 05:29 Route Parameter // 08:18 Routes Multiple Parameter
+Route::get('post_id/{post_id}/comment_id/{comment_id}', function ($post_id,$comment_id) {
+    
+    return "post id: $post_id | comment id: $comment_id";
+
+    /* if($post_id ==4){
+        return "post id: $post_id | comment id: $comment_id";
+    }else{
+        return "not found";
+    } */
+});
+
+// 10:16 Optional Route Parameter
+
+Route::get('users/{name?}', function ($name = null) {
+    return "hello $name"; //null na dile error khabo,
+});
+Route::get('default/{name?}', function ($name = 'sonam') {
+    return "hello $name";
+});
+// 14:20 Route Parameter and Regular Expression
+Route::get('reg/{name}/{id}', function ($name,$id) {
+    return "Name : $name Id: $id";
+})->where(['id'=>'[0-9]+','name'=>'[a-zA-Z]+']);
+
+
+// 18:49 Routes Parameter with Regular Expression helped Methods
+//using regular explation method
+Route::get('reg/{name}/{id}', function ($name,$id) {
+    return "Name : $name Id: $id";
+})->whereNumber('id')->whereAlpha('name');
+
+
+// 20:09 Redirect Routes
+Route::get('there', function () {
+    return "there";
+});
+
+Route::redirect('here', 'there', 301); //by default 302 301 parmanent redirect,
+Route::permanentRedirect('hello','ok');
+
+// 22:14 Fallback Route
+route::fallback(function(){
+    // echo "Fallback";
+    return "Fallback page";
+});
+// 23:25 Route Methods
+
+Route::get('users/{id}', function ($id) {
+    //run after hit url 
+});
+
+Route::post('users/{id}', function ($id) {
+    // run after from submition 
+});
+
+//* put/patch/delete/options/
+
+// 23:42 Using Multiple Methods
+
+Route::match(['get', 'post','put'], '/user/profile', function () {
+    //if need to run same route in 2methods like form submit and show,
+});
+
+Route::any('hello/{id}', function ($id) {
+    //it will run in any method,
+});
+
+// 25:07 Coding
 
 /* Routes in Laravel
 00:00 Introduction to Route
@@ -105,6 +216,40 @@ Route::fallback(function(){
 
 
 //!view ------------
+
+
+// 00:00:00 Introduction to View
+// 00:01:02 Creating a View = make name.blade.php in resource folder,
+// 00:02:13 Create Route for View
+Route::get('/', function () {
+    return view('home');
+});
+
+// 05:29 Route Parameter pass into view // 08:18 Routes Multiple Parameter
+// 00:25:20 Passing Data from Route to View
+// 00:28:47 Accessing Data which is passed from Route to View {{$name}}
+Route::get('post_id/{post_id}/comment_id/{comment_id}', function ($post_id,$comment_id) {
+    return view('home')->with(['post_id'=>$post_id,'comment_id'=>$comment_id,'simple_pass'=>20]);
+    return view('home',['post_id'=>$post_id,'comment_id'=>$comment_id,'simple_pass'=>'hello']);
+});
+
+// 00:07:25 Creating View File inside Folder and Creating Route 
+Route::get('folder/file_1', function () {
+    return view('folder.file_1');
+});
+
+Route::get('folder/subfolder/file_2', function () {
+    return view('folder.subfolder.file_2');
+});
+
+//if need to see only view without pass parameter 
+Route::view('onlyview', 'folder.file_1',['name'=>'arfan'])->name('routeName');
+
+Route::get('redirect', function () {
+    // return redirect(route('routeName'));
+    return redirect()->route('routeName');
+});
+
 // return view('folderName.nameOfview',['dataName'=>$dataValue,'dataName2'=>$dataValue2]);
 /* 00:00:00 Introduction to View
 00:01:02 Creating a View
@@ -144,6 +289,30 @@ Route::get('path_view/{u_id}', function ($id) {
 
 
 //!contorleer --
+// 00:00 Introduction to Controller
+//app/http/controller,
+
+// 05:05 Defining Controller Class
+// php artisan make:controller studentController -r = resource soho,
+//php artisan make:controller ShowController --invokable = for single function
+
+// 06:20 Creating Route for Controller Class
+Route::get('controller',[studentController::class,'show']);
+
+// 10:00 Getting Parameter in Controller
+route::get('controllerWithPara/{name}',[studentController::class,'showWithPara']);
+
+// 20:15 Returning View from Controller Class
+// 33:45 Getting URL Parameter in Controller Class and Passing to View
+// 38:36 Passing Data from Controller to View
+
+// 42:50 Multiple Methods inside Controller
+route::get('controllerwithview/{name}',[studentController::class,'showByview']);
+
+// 47:21 Single Action Controller
+//jodi ektai function run er need hoi,
+route::get('singleControler/{id}',ShowController::class);
+
 /* 00:00 Introduction to Controller
 05:05 Defining Controller Class
 06:20 Creating Route for Controller Class
@@ -199,6 +368,148 @@ public function __invoke(Request $request)
 
 //!Blade Tamplate ------------
 
+// $loop->first can't run without foreach,
+
+/* {{-- Blade Template Crash Course 
+    00:00:00 Introduction to Blade
+    00:01:37 Theory
+    00:12:01 Creating Project
+--}}
+
+{{-- 00:15:17 Displaying Data --}}
+{{ $name }}
+
+{{-- 00:24:04 Calling Function --}}
+{{ time() }}
+{{ print_r(['arfad']) }}
+
+<br><br>
+
+{{-- 00:25:22 If Directive --}}
+
+@if (true)
+<h1>If Declarative Run</h1>
+@endif
+
+{{-- 00:27:04 If Else Directive --}}
+
+@if (true)
+<h2>If else run</h2>
+@else
+<h3>else part</h3>
+@endif
+
+{{-- 00:30:17 If Elseif Else directive --}}
+
+@if (false)
+if run
+@elseif(true)
+elseif run
+@else
+else run
+@endif
+
+{{-- 00:32:18 Unless directive --}}
+
+@unless(false)
+<br>unless run by false
+@endunless
+
+{{-- 00:34:02 isset directive --}}
+
+@isset($name)
+<br> isset
+@endisset
+
+{{-- 00:37:49 empty directive --}}
+
+@empty($name1)
+<br> can't run
+@endempty
+
+{{-- 00:39:40 production directive --}}
+@production
+production run
+@endproduction
+
+{{-- 00:40:23 specific env directive --}}
+@env('local')
+
+@endenv
+{{-- 00:41:03 multiple env directive --}}
+@env(['local', 'staging'])
+
+@endenv
+
+{{-- 00:41:52 switch directive --}}
+@switch($name = 'arfan')
+@case('arfan')
+    arfan swith call <br>
+@break
+@case('adnan')
+    adnan switch call <br>
+@break
+@default
+    <br> default run
+@endswitch
+
+{{-- 00:45:25 for loop --}}
+
+@for ($i = 0; $i <= 10; $i++)
+{{ $i }} <br>
+@endfor
+
+{{-- 00:47:42 foreach loop --}}
+
+@foreach (range(1, 10) as $item)
+{{ $item }}
+@endforeach
+
+{{-- php code write --}}
+@php
+$collection = [];
+$i = 0;
+@endphp
+
+{{-- 00:49:46 forelse empty loop --}}
+@forelse ($collection as $item)
+
+@empty
+<br> no data found
+@endforelse
+
+{{-- 00:51:37 while loop --}}
+
+@while (false)
+
+@endwhile
+
+{{-- 00:52:35 break and continue directives --}}
+<br>
+@for ($i = 0; $i < 5; $i++)
+{{-- @if ($i == 3)
+    @break;
+@endif --}}
+
+@break($i ==3)
+
+{{ $i }}
+@endfor
+
+{{-- 00:56:40 loop variables --}}
+@php
+$collection = [2, 3, 4, 5, 6];
+@endphp
+
+@foreach ($collection as $item)
+{{ $item }}
+@if ($loop->first)
+    first loop run
+@endif
+
+@endforeach
+
+ */
 
 /* Blade Template Crash Course 
 00:00:00 Introduction to Blade
@@ -585,6 +896,25 @@ override code will be here;
 //asset method use krbo always
 //sass or external kichu use krte caile resourse e use krbo,
 //simple e css js public e use krbo,
+
+    /* 
+    ?process of resourse install by npn resourse folder,
+    *)install node.js,
+    *)after install node js install npm by [npm install] in your laravel project folder,
+    *)make css and js file into your resource folder
+    *)add your css and js file into webpace.mix.js file
+    *)run [nmp run dev] / [npm run pro] [npm run watch]
+    *)see your public folder css and file will be compiled.
+    *)now if you change something in your resource file it will compiled to your public assets file,
+    */
+
+    mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/my.js', 'public/js')
+    .js('resources/js/scripts.js', 'public/js')
+
+    .postCss('resources/css/my.css', 'public/css')
+    .postCss('resources/css/style.css', 'public/css')
+    .postCss('resources/css/app.css', 'public/css',);
 
 //!bootstrap adding 
 

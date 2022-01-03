@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open NOTE-web-dev-with-jhankar-mahbub.txt",
+            "file": "c:\\Users\\Asus\\Desktop\\Note\\Web Dev with Programming Hero\\NOTE-web-dev-with-jhankar-mahbub.txt"
+        }
+    ]
+}

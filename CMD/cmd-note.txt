@@ -13,6 +13,7 @@
 *)cd tab = sob folder ekta kore asbe,
 *)cd s + tab = s er sob folder ekta kore asbe,
 *)up arrow down arrow = back and forward cmd command
+*)touch file.txt
 *)echo>ar.txt = file create,
 *)echo "file inner text">b.txt = new file with inner text,
 *)arfan.txt = file open in notepad,
