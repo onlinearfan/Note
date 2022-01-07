@@ -1,0 +1,43 @@
+================ vs code short =======================
+
+================= cmd =====================
+cd folderName,
+cd ../.. 
+ls,pwd,mkdir rmdir 
+*)mkdir newFolderName = new folder banate,
+*)rmdir nameFolder = empty folder delete krte,
+*)rmdir /s folderName = delete folder with file, (y/n)
+
+=================== git ==========================
+git push origin master --force = delete commit and hard push in remote,
+git clone
+git add
+git commit 
+git reset (filename) = unstage hobe file,
+git branch
+git checkout = branchName / -f = reset to last commit *)git checkout filename
+git push
+git pull
+*)git config --global user.name
+*)git clean -f = untrack file remove all, not folder in file untrack
+*)git clean -f -n = untrack file remove all show,
+
+==================== Yarn important =====================
+creat react-app,add,remove,upgrade,init,install,time,-v,yarn ls,outdated,bootstrap@2.3,start
+,global add/remove/upgrade bootstrap,check,import,scripts,
+
+yarn global bin
+yarn check = yarn.lock and package.json match with package File,
+yarn import = if bychance delete yarn.lock then this will with package.json all dependency
+yarn global add package
+yarn start = run project
+yarn ls = see dependency list of your project 
+yarn outdated loadash = checkout particular dependency 
+yarn upgrade bootstrap@5.0 = update 
+yarn create react-app appname
+yarn gitty update message 
+yarn init/ init -y = package.json 
+time yarn add bootstrap / bootstrap@2.3.3 = add package with yarn + time 
+yarn --version/-v
+"scripts":{
+    "dev":"nodemon index.js"

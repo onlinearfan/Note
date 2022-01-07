@@ -7,3 +7,5 @@
 7)alt + z = word wrapping off on
 8)alt + arrow up/down = move line 
 9)
+
+----------------------------------
