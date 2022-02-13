@@ -1,12 +1,12 @@
 1) clt+p = search bar,
-2)SHIFT + ALT + A = BLOCK COMMENT
+2)SHIFT + Alt + A = BLOCK COMMENT
 3) CLT + / = SINGLE LINE COMMENT
 4)CLT + MOUSE CLICK = ADD TEXT LOCATION
 5)CLT + Z = UNDO , CLT + y = redo,
-6) shift + alt + up/down arrow= paste line
-7)alt + z = word wrapping off on
-8)alt + arrow up/down = move line 
-9)
+6) shift + Alt + up/down arrow= paste line
+7)Alt + z = word wrapping off on
+8)Alt + arrow up/down = move line 
+9)select and F2 and changle text and enter, 
 
 ----------------------------------
 
@@ -25,6 +25,7 @@ Ctrl+X Cut line (empty selection) ***
 Ctrl+C Copy line (empty selection) ***
 Alt+ ↑ / ↓ Move line up/down *****
 Shift+Alt + ↓ / ↑ Copy line up/down *****
+Alt+clt +↑ / ↓ = cursor make ****
 Ctrl+Shift+K Delete line
 Ctrl+Enter Insert line below
 Ctrl+Shift+Enter Insert line above
@@ -45,7 +46,7 @@ Ctrl+K Ctrl+C Add line comment
 Ctrl+K Ctrl+U Remove line comment
 Ctrl+/ Toggle line comment *****
 Shift+Alt+A Toggle block comment *****
-Alt+Z Toggle word wrap ***
+Alt+Z Toggle word wrap *****!
 
 Navigation
 Ctrl+T Show all Symbols
@@ -74,7 +75,7 @@ Ctrl+Alt+ ↑ / ↓ Insert cursor above / below *****
 Ctrl+U Undo last cursor operation ***
 Shift+Alt+I Insert cursor at end of each line selected ***
 Ctrl+L Select current line ***
-Ctrl+Shift+L Select all occurrences of current selection
+Ctrl+Shift+L Select all occurrences of current selection ******!
 Ctrl+F2 Select all occurrences of current word ***
 Shift+Alt+→ Expand selection
 Shift+Alt+← Shrink selection
@@ -157,10 +158,10 @@ Ctrl+K Ctrl+I Show hover
 
 Integrated terminal
 Ctrl+` Show integrated terminal *****!
-Ctrl+Shift+` Create new terminal
+Alt+g = Create new terminal
 Ctrl+C Copy selection
 Ctrl+V Paste into active terminal
 Ctrl+↑ / ↓ Scroll up/down *****
 Shift+PgUp / PgDn Scroll page up/down
 Ctrl+Home / End Scroll to top/bottom
-alt+g = add new terminal  *****!
+Alt+g = add new terminal  *****!

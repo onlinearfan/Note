@@ -11,6 +11,7 @@ ls,pwd,mkdir rmdir
 =================== git ==========================
 git push origin master --force = delete commit and hard push in remote,
 git clone
+git push -all = all branch push into remote
 git add
 git commit 
 git reset (filename) = unstage hobe file,

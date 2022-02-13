@@ -1,3 +1,9 @@
+Issue---------
+git config --global http.postBuffer 524288000
+git config --global http.maxRequestBuffer 524288000
+git config --global core.compression 0
+------------------
+
 delete@git-repo  /c/remove/repository (main-branch)
 $ rm -fr .git
 
@@ -10,12 +16,13 @@ git clone
 git add
 git commit 
 git diff
-git reset (filename) = unstage hobe file,
+git reset (hard,head~1,filename) (filename) = unstage hobe file,
 git status
 git rm
 git log
 git show commit_id = shudu show master info show krbe
 git tag
+git branch -a
 git branch
 git checkout = branchName / -f = reset to last commit
 git merge

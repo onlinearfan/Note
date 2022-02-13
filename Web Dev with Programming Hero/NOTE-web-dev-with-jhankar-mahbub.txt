@@ -384,6 +384,21 @@ Module 27: Revisit Javascript and work on Shopping Cart
 
 
 _________________End____________________
+
+Module 27_5: Shopping Cart, Deploy an Interactive cart 
+*)revised - event diye kaj pari naki,kaj dise, 
+*)button event handeler pick kora chellange
+*)kno kisu click kore console.log krte partesi naki ,
+*)dom k diye - update text,class etc, add text,class etc, event adding banano, delete text,class 
+
+
+_________________End____________________
+Module 28: Shopping Cart and pinned matcher, 
+
+
+
+_________________End____________________
+
 Module 28: String and Array useful methods
 
 
