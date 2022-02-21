@@ -407,26 +407,195 @@ Module 28.5: Practice and revision day
 
 
 _________________End____________________
-Module 29: Interactive Mac book Pro Assignment
+
+Module 29: String and Array useful methods, 
+
+29-1 String comparison using toLowerCase toUpperCase
+--------------------------------------------------
+string.toUpperCase()/ toLowerCase;
+
+29-2 Apply Search includes, indexOf, startswith, endswith
+--------------------------------------------------
+string.search(), includes(), indexOf() != -1, startswith(),endswith();
+
+29-3 How to split, slice, substr, substring, concat, join
+--------------------------------------------------
+split(string to array,), slice(kete ber kore string,index,kop er jaiga), substr(kete ber kore,index,total car ), substring(kete ber kore,index,kop er jaiga), concat(join string), join(array to string)
+
+29-4 Check an Array using isArray, indexOf, includes, concat
+--------------------------------------------------
+isArray, indexOf, includes, concat,
+
+29-5 Get part of an array and insert elements using slice, splice
+--------------------------------------------------
+slice(index,kop er jaiga),splice(index,total count, insert array)
+
+
+29-6 Have fun with sort and reverse a javascript array
+--------------------------------------------------
+sort(simple, desc,asce,object, sort); reverse (ulta array,) 
+
+
+29-7 Unlimited parameters to a function using arguments
+--------------------------------------------------
+function display(){
+    console.log(arguments)
+}
+
+
+29-8 Different types of Error object and explore Try-catch
+--------------------------------------------------
+many types of errors ase, try catch use hoi api diye data anar somoy,
+
+29-9 Date Time 
+--------------------------------------------------
+moment.js, uct time 
 
 
 _________________End____________________
-Module 29.5: Integrate Javascript Bonus Content
+
+
+Module : 29_5 Practice and review
+
+29_5-1 Practice and review integrate Javascript with checklist
+-----------------------
+kichu dom er chellenge task dise, 
+
+_________________End____________________
+
+
+MOdule : 30 Money Master DOM and JavaScript Assignment
+
+30-1 Money Master DOM and JavaScript Assignment
+--------------------------------
+*)assignment requirement,
 
 
 _________________End____________________
-Module 30: JS Recap and  Basic ES6, ES2015
+Module 20.5: Integrate Javascript Bonus Content
+
+30_5-1 Revisit Baap er bank with Clean functional approach
+----------------------------------------------------------------
+dom diye diposite, widtrow ,balance show , 
+
+30_5-2 sharing function for diposite,widrow,balance ,
+----------------------------------------------------------------
+ekta emn function banabo ja diye ek ka krte just call krbo param diye ,
+
+30_5-3 Error handling, more functions, different balance calculation
+----------------------------------------------------------------
+condition diye input vlaue check etc kore error handle ,
+
+30_5-4 Revisit id, class selector, querySelector, querySelectorAll
+----------------------------------------------------------------
+selector revised dom (id,class, querySelector,querySelectorAll)
+
+30_5-5 (advanced) Event Bubble in a semi complex situation
+----------------------------------------------------------------
+event bubble dekhaise, eita parent diye click er ka jkore, 
 
 
 _________________End____________________
-Module 31: (advanced) ES6, Class, Inheritance
+Module 31: JS Recap and  Basic ES6, ES2015
+
+31-0 Introduction
+----------------------------------------------------
+ki ki shikhsi tar animation
+
+31-1 Simple Recap of JavaScript six core parts
+----------------------------------------------------
+function, var,object, array, etc condition, etc basic ager gulo recap, 
+
+31-2 Recap of DOM Manipulation and event handler
+----------------------------------------------------
+click event, classList,Stye,createElement, loop elementChild for of, etc 
+
+31-3 Breakup with var to have a relationship with Let and const
+----------------------------------------------------
+let,const ,var 
+
+31-4 default param of function 
+----------------------------------------------------
+function (a=null)
+
+31-5 Template string, multiple line string, dynamic string
+----------------------------------------------------
+let a = `${name} arfan khan ${fun()} ${2+3} ${a+b}` eitar bitor sob krte parbo ,
+
+31-6 Arrow function, multiple parameter, function body
+----------------------------------------------------
+const array = (x)=>x*2; {return x*2} {return (x*2)} , single line e code thakle return lagbe na ,
+
+31-7 More Arrow functions and big arrow function
+----------------------------------------------------
+const a = (x,y,z) => {
+    let total = x+y+z;
+    return (total);
+}
+
+31-8 Spread operator, array max, copy arrays
+----------------------------------------------------
+let array = [2,3,2,3]; let array2 = [...array]; 
+spear(eita sob value gulo spear kore dei, copy array,object jonno use hoi, object spead kra jai,)
+
+31-9 Module Summary and ES6 Recap
+----------------------------------------------------
+let,const, array fun, Template string, spread,default param fun, dom recape,
 
 
 _________________End____________________
-Module 31.5 ES6 Recap and Practice
+Module 32: (advanced) ES6, Class, Inheritance
+
+32-1) Module Introduction and Basic ES6 Recap
+----------------------------------------------------
+const,let,array fun,default param, ...spread oparator, 
+
+32-2) Destructuring Object to extract values to variables
+--------------------------------------------------------------
+object Destructuring , basic, little advc 
+
+32-3 (advanced) Array Destructuring, nested object Optional chaining
+--------------------------------------------------------------
+array Destructuring,object Destructuring advanced obje?.one?.two?.three = simple undefined
+
+32-4 Array map to do one line loop magic
+--------------------------------------------------------------
+array map function er kaj, (proti elem loop,modified,return new array, )
+debug = loop, function er bitor krbo, 
+
+32-5 Map string array, array of objects map, foreach
+-------------------------------------------------------------
+map krbo string ,array, object er bitor and new array return nebo ,forEach halka,
+
+32-6 (advanced) Implement filter, find on an array of objects
+-------------------------------------------------------------
+filter,and find dekhabe, 
+
+32-7 (advanced) Class, constructor, method, create object from class
+-------------------------------------------------------------
+class(common object),constructor(property pass krte use hoi), method(object er bitor kisu calate use hoi), bapa pitha Examples
+*)kno object akadik use krte caile banate pari class,
+
+
+32-8 (advanced) Inheritance, extends class, super, class method
+-------------------------------------------------------------
+uttoradikar vabe base class er sob tar child pabe, constructor e super call child er ,
+common jinis gulo extend kore use krbo ,
+eita ekhn lagbe na pore lagte pare,,
+
+32-9 (advanced) Prototypical inheritance and module summary
+-------------------------------------------------------------
+obj.__proto__.__proto__. == eivabe js object kaj kore, 
+eitar bitor check korbo must, 
+
+_________________End____________________
+
+Module 32.5 ES6 Recap and Practice
 
 
 _________________End____________________
+
+
 Module 32: API, JSON, Data load, dynamic website
 
 
