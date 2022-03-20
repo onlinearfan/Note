@@ -8,6 +8,32 @@
 8)Alt + arrow up/down = move line 
 9)select and F2 and changle text and enter, 
 10)shift click and select text 
+11)clt + d = select match word next one,
+12)shift+clt+ l = select match word all,
+*)end = last line,
+*)start = first line,
+*)clt + , = settings 
+*)Alt+clt +↑ / ↓ = cursor make ****
+*)Ctrl+/ Toggle line comment *****
+*)Shift+Alt+A Toggle block comment *****
+Ctrl+G Go to Line... ***
+Ctrl+P Go to File... ***
+Ctrl+F Find ******!
+Ctrl+H Replace *****!
+Ctrl+L Select current line ***
+Ctrl+Shift+T Reopen closed editor  *****
+Ctrl+K P Copy path of active file  ******!
+Ctrl+K R Reveal active file in Explorer  ******!
+Ctrl+Shift+X Show Extensions  *****!
+Ctrl+Shift+H Replace in files *****!
+Ctrl+` Show integrated terminal *****!
+Alt+g = Create new terminal
+
+
+
+git commit = 
+-----------------
+see all shortcut on command pallet
 
 ----------------------------------
 

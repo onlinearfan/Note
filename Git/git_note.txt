@@ -2,6 +2,12 @@ Issue---------
 git config --global http.postBuffer 524288000
 git config --global http.maxRequestBuffer 524288000
 git config --global core.compression 0
+
+repository not found:
+git remote rm origin
+re-add the origin but with your username and pwd with writing privileges on this pvt repo
+
+git remote add origin  https://USERNAME:PASSWORD@github.com/username/reponame.git
 ------------------
 
 delete@git-repo  /c/remove/repository (main-branch)

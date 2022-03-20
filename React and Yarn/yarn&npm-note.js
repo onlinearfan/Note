@@ -1,6 +1,7 @@
 yarn create react-app appname
+npm run build, = for deploy app in netlify,
 yarn gitty update message 
-yarn init/ init -y = package.json 
+yarn init/ init -y(all yes defalult) = package.json 
 time yarn add bootstrap / bootstrap@2.3.3 = add package with yarn + time 
 yarn --version/-v
 yarn have offline && yarn main folder chech collect 
@@ -47,7 +48,7 @@ npx create-react-app my-app --use-npm / --use-yarn
 npx create-react-app app-name = npx will choose
 npm uninstall yarn / yarn --global = yarn uninstall,
 npm install yarn /--global yarn  = yarn install,
-npm init = package.json and package.lock create,
+npm init = package.json,
 time npm install bootstrap / bootstrap@2.3.3 = add package with npm + time 
 npm uninstall bootstrap / bootstrap@2.3.3 = remove package with npm + time 
 
