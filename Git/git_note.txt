@@ -1,3 +1,8 @@
+send all branch 
+--------------------
+git push --all origin,
+git rm cached filename,
+
 Issue---------
 git config --global http.postBuffer 524288000
 git config --global http.maxRequestBuffer 524288000

@@ -763,9 +763,115 @@ Module 43.5: Browser Debug bonus video
 _________________End____________________
 Module 44: Modern Front-end core concepts
 
+44-1 Module overview and modern application core parts
+--------------------------------------------------------
+react er age ki ki jana lagbe tuk tak darona arki,
+
+---------------------------------------------------------
+44-2 Web component, 4 types of component, identify component
+--------------------------------------------------------
+component somporke darona, = (state change,container,using perpose,section component)
+---------------------------------------------------------
+
+44-3 Template, dynamically create HTML elements based on data
+--------------------------------------------------------
+countries.api diye data load kore map diye dom er dara html e show krse,
+---------------------------------------------------------
+
+44-4 Single Page Application (SPA), Performance benefit
+--------------------------------------------------------
+SPA page load hoi na,
+single page application benifits (loadfast,component base,)
+problems(seo,load everything once)
+
+---------------------------------------------------------
+
+44-5 Routing, Route parameter, Routing in React
+--------------------------------------------------------
+route diye app er location decide kore, route anujai ki dekhabe ta thik kore,
+
+---------------------------------------------------------
+
+44-6 Explore destructuring and send data to html elements using props
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 Explore destructuring and send data to html elements using props
+--------------------------------------------------------
+*)object destructuring korse object theke countries.api er file e,
+
+---------------------------------------------------------
+
+44-7 Website state, state management, purpose of state
+--------------------------------------------------------
+state hocche kno situation e state er change , like water(in fire,freez,normal )
+man mind
+*)real life example (cart,login,like,count,)
+
+---------------------------------------------------------
+44-8 Install React App and explore folder structure and edit
+--------------------------------------------------------
+*)react app install, doc read,file and folder structure learn,
+
+---------------------------------------------------------
+
+44-9 Module Summary and concept recap
+--------------------------------------------------------
+motivation,congratulations,keep learing with stay foolish,
+---------------------------------------------------------
 
 _________________End____________________
 Module 45: React Core Concepts, JSX, props, state
+
+45-1: Module Introduction, Create React App, 6 core concepts
+--------------------------------------------------------
+*)introduction to react, 6 core concepts,
+
+---------------------------------------------------------
+
+45-2 JSX, Dynamic content, Dynamic Style in React
+--------------------------------------------------------
+*)react app.js modified, css adding, variable create {name,}
+
+---------------------------------------------------------
+
+45-3 Create Component, return HTML from a component
+--------------------------------------------------------
+*)app.jsx e component banano multiple,(friends,persons)
+
+---------------------------------------------------------
+
+45-4 Pass dynamic data to components, props in react
+--------------------------------------------------------
+props dealing korse same app.js file er bitor,
+
+---------------------------------------------------------
+
+45-5 (advanced) Create multiple components from an array of objects
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
 
 
 _________________End____________________
@@ -778,6 +884,54 @@ Module 46: Simple React Rest Countries
 
 _________________End____________________
 Module 47: (Conceptual) How React works
+
+47-1 Module Introduction Create React App under the hood
+--------------------------------------------------------
+*)NPX VS NPM = NPX INSTALL VS Check kore ek shate , npm alada 2 steps e kore,
+*)create react app ki,
+
+
+---------------------------------------------------------
+
+47-2 What is JSX, React Component, babel transpiler
+--------------------------------------------------------
+jsx er benifits
+
+---------------------------------------------------------
+
+47-3 Components and how props works, unidirectional data flow
+--------------------------------------------------------
+
+
+---------------------------------------------------------
+
+47-4 (advanced) How states works, asynchronous, console state
+--------------------------------------------------------
+*)state use er khetre eita dekhe kon state change hoise then seta rerender kore and state er man ta change er ta rekeh dei,
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+44-6 
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+
 
 
 _________________End____________________
@@ -833,9 +987,68 @@ Module 55.5: React Router bonus content
 _________________End____________________
 Module 56: Simple React Firebase authentication
 
+56-1 Module Introduction, authentication vs Authorization
+==================================================================
+*)direct login with email pass = no third paryty
+*)third party authentication is google,git others using for sign up,
+*)third party ra password dibe na , ekta id dibe shudu varification er jonno,
+*)admin , user,moderator, etc power onujai kaj  krte para tao, handle,(Authorization kom beshi er jonno,)
+
+Authentication = login er jonno,
+Authorization = se ki ki krte parbe webstie e tar power k nirdes kore,
+*)age authentication er jonno custom vabe baniye use krte hoto but ekhn third party service dei authentication er jonno(google,okta,firebase,)
+
+*******************************************
+56-2 Create firebase project and Install Firebase SDK
+===================================================
+firebase.googel.com->console->createproject,->projectName->(google analytic etc disable kre agai)->create Project
+*)scroll krle amr sob project dkehte pabo,
+*)navigation er bitor(project settings,)
+
+*)for authentication - go to docs->build->authentication
+
+*)1st(project name diye banabo)->project er bitor banabo register kre,,->firebase configuration
+
+********************************
+56-3 set Firebase configuration and initialize firebase auth
+===================================
+/**
+ * Steps to use firebase
+ * 1. Create a project on console.firebase.google.com
+ * 2. npm install firebase 
+ * 3. Register Web app in firebase
+ * 4. copy firebase init with config from firebase project settings into a file firebase.init.js
+ * 5. export default app from firebase.init.js
+ * 6. import getAuth from firebase/auth and create const auth = getAuth(app) in App.js
+ * 7. import app firebase init.js into your app.js
+ * 8. turn on google authentication (firebase >authentication> enable google sign in)
+ * 9. create google provider
+ * 10. use signInWithPopup and pass auth and provider
+ * 11. handle .then (if successful) and catch error (if error) 
+ */
+
+
+*********************
+56-5 Recap google popup sign in process with 11 steps
+==========================
+*)google e ekbar permission dile google mone rakhe
+
+********************************
+56-6 Display logged in user info, Sign out, toggle sign in, sign out
+=============================
+showing user data into ui and / sign in - sign out toggle /
+
+******************************
+56-8 Module Summary and display user info
+=========================
+
 
 _________________End____________________
 Module 57: Email Password Authentication, Login Form
+
+57-1 Login, Registration, Sign up, Sign in, project setup
+================================
+
 
 
 _________________End____________________
@@ -875,7 +1088,17 @@ Module 62.5: Add Google Map, MapBox GL to React
 
 
 _________________End____________________
-Module 63: Getting Started with Node, Express and Api
+Module 64: Getting Started with Node, Express and Api
+====================================
+
+64-1 Module overview Why Node, node vs other language
+----------------------
+interview quesion find and learn
+big application er jonno node.js use hoi, 
+
+64-2 Getting started with Node and Express, your first api
+----------------------
+
 
 
 _________________End____________________

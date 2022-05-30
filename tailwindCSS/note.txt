@@ -1,0 +1,110 @@
+*)Break point = sm(640), md(768), lg(1024), xl(1280) , 2xl(1600) 
+-)css writing er somoy sob gulo break point mathai rakhbo , mainly (lg,sm)
+*)Container = 100% , lg:Container = 1024px hobe, container extend kore nibo margin auto kore,
+*)box-sizing = box-border,box-content, 
+*)display = flex,grid,block,inline-block,table,hidden,
+*)float = float-left, clear-both, object-cover/contain,
+*)position = fixed,static, / top-0 = 0px top-1 = 4px / -top-2 = -8px, inset-1 = all 4px, inset-x-1,
+inset-y-1; inset-1/2; inset-full = all 100% , top-auto, inset-x-auto
+*)visibility = visible, invisible, z-10-50, z-auto,
+*)padding = p-1 = 4px all, pl, -pl-2 = 8px, = 4- 384px px, py,
+*)m-auto, mx-auto,ml-auto, -ml-2 = 4px, flex use kore ml-auto use krte pari,
+*)Sets left or top (x or y) margin between child elements, but skips the first element.
+*)space-x-1, space-y-1;
+
+Background =========
+ bg-red-200, bg-success, bg-fixed, bg-center ,bg-left-top, bg-no-repeat,bg-cover,bg-opacity-10-90
+bg-gredient-to-bl from-blue-700,
+
+transform ===========
+ scale-90,translate-1/2,,rotate, origin-top, origin-top-right,origin-center,
+
+box-shadow = shadow shadow-md, shadow-inner,
+
+flexbox =============== flex,flex-row,flex-col, flex-1,flex-wrap,flex-nowrap,flex-shirnk,flex-grow,
+order-first,last, order-1,gap-10,
+
+Grid =======================
+grid,grid-cols-3,grid-rows-3,gap-2,, col-auto, col-start-10,col-end-12,col-span-2,
+
+alinement of element ===================
+justify-center,items-center,content-center,self-center
+,justify-items-center,
+place-content-center,place-items-center,place-self-center,
+
+
+
+Sizing ====================
+border-radius = rounded, rounded-md,rounded-3xl, rounded-rt-2xl,rounded-none,rounded-full,
+border-width = border = 1px  , border-2 = 2px, border-b-4 = bottom  4px,
+border-red-200,border-white, border-solid,border-l-solid
+
+Sets left or top (x or y) border width between child elements, but skips the first element.
+divide-x-2; divide-black,divide-solid,divide-opacity,ring-2, transition
+
+animation = 
+animation-pulse,outline-none,
+
+typography : 
+text color = text-white, text-red-200, text-black
+DOCS
+
+text opacity = text-opacity-50
+DOCS
+
+font-family = font-Poppins ,
+DOCS
+
+font-size = text-sm ,text-lg, text-base, text-xl,text-2xl,
+DOCS
+
+font-smoothing
+DOCS
+
+font-style = italic,not-italic,
+DOCS
+
+font-weight = font-bold,
+DOCS
+
+font-variant-numeric
+DOCS
+
+letter-spacing = traking -wider,
+DOCS
+
+line-height = leading-10 = leading-soft, 
+DOCS
+
+list-style-type = list-none, list-disc
+DOCS
+
+list-style-position
+DOCS
+
+::placeholder color
+DOCS
+
+::placeholder opacity
+DOCS
+
+text-align = text-center,
+DOCS 
+
+text-decoration = no-underline, underline
+DOCS
+
+text-transform = uppercase,
+DOCS
+
+text-overflow
+DOCS
+
+vertical-align = align-middle
+DOCS
+
+white-space
+DOCS
+
+word-break
+DOCS
