@@ -1,0 +1,14 @@
+*)basic Must Do :
+->chorm settings and account extensions,
+->vs code, external github log in, git, 
+->font install, git syce settings,
+->important ss collect, 
+->note2.0 downlaod,
+->node js install
+->npm install -g npm
+
+*)React Works : 
+npm,yarn,git,react project download,
+
+*)Js works: 
+->js problem solving, js stack learner,
