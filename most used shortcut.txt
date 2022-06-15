@@ -1,0 +1,112 @@
+================ vs code short =======================
+1) clt+p = search bar,
+2)SHIFT + Alt + A = BLOCK COMMENT
+3) CLT + / = SINGLE LINE COMMENT
+4)CLT + MOUSE CLICK = ADD TEXT LOCATION
+5)CLT + Z = UNDO , CLT + y = redo,
+6) shift + Alt + up/down arrow= paste line
+7)Alt + z = word wrapping off on
+8)Alt + arrow up/down = move line 
+9)select and F2 and changle text and enter, 
+10)shift click and select text 
+11)clt + d = select match word next one,
+12)shift+clt+ l = select match word all,
+*)end = last line,
+*)start = first line,
+*)clt + , = settings 
+*)Alt+clt +↑ / ↓ = cursor make ****
+*)Ctrl+/ Toggle line comment *****
+*)Shift+Alt+A Toggle block comment *****
+Ctrl+G Go to Line... ***
+Ctrl+P Go to File... ***
+Ctrl+F Find ******!
+Ctrl+H Replace *****!
+Ctrl+L Select current line ***
+Ctrl+Shift+T Reopen closed editor  *****
+Ctrl+K P Copy path of active file  ******!
+Ctrl+K R Reveal active file in Explorer  ******!
+Ctrl+Shift+X Show Extensions  *****!
+Ctrl+Shift+H Replace in files *****!
+Ctrl+` Show integrated terminal *****!
+Alt+g = Create new terminal
+
+================= cmd =====================
+cd folderName,
+cd ../.. 
+ls,pwd,mkdir rmdir 
+*)mkdir newFolderName = new folder banate,
+*)rmdir nameFolder = empty folder delete krte,
+*)rmdir /s folderName = delete folder with file, (y/n)
+
+=================== git ==========================
+git reset (--hard,head~1,filename) 
+git branch -a,checkout -b newName, branch -d deleteName
+*).gitignore = *.png / name.png/arfan /dir == dir/ = inner dir shoho, /static/dir = exact inner only
+*)git rm --cached file.txt
+)git commit -a -m "direct commit"
+git config --list
+
+(--version,.gitignore,init,status,add,commit -m,clone,pull,checkout -f/branch,fileName,reset,config)
+git push origin master --force = delete commit and hard push in remote,
+git clone
+git push -all = all branch push into remote
+git add
+git commit 
+git reset (filename) = unstage hobe file,
+git branch
+git checkout = branchName / -f = reset to last commit *)git checkout filename
+git push
+git pull
+*)git config --global user.name
+*)git clean -f = untrack file remove all, not folder in file untrack
+*)git clean -f -n = untrack file remove all show,
+
+==================== Yarn important =====================
+creat react-app,add,remove,upgrade,init,install,time,-v,yarn ls,outdated,bootstrap@2.3,start
+,global add/remove/upgrade bootstrap,check,import,scripts,
+
+yarn global bin
+yarn check = yarn.lock and package.json match with package File,
+yarn import = if bychance delete yarn.lock then this will with package.json all dependency
+yarn global add package
+yarn start = run project
+yarn ls = see dependency list of your project 
+yarn outdated loadash = checkout particular dependency 
+yarn upgrade bootstrap@5.0 = update 
+yarn create react-app appname
+yarn gitty update message 
+yarn init/ init -y = package.json 
+time yarn add bootstrap / bootstrap@2.3.3 = add package with yarn + time 
+yarn --version/-v
+"scripts":{
+    "dev":"nodemon index.js"
+
+
+new updated :
+------------------------
+run build
+rm -R node_modules/ && rm package.json && rm yarn.lock = remove this 
+yarn add jquery angular  = add multiple,
+yarn outdated = checkout outdated version 
+yarn --help/help  = list of yarn cmd 
+yarn global add package = must in this order  
+yarn global bin = global location find C:\Users\Asus\AppData\Local\Yarn\bin 
+yarn add gulp -D = development environment
+yarn check = yarn.lock and package.json match with package File,
+yarn import = if bychance delete yarn.lock then this will with package.json all dependency
+"scripts":{
+    "dev":"nodemon index.js"
+} == yarn run dev = this will run index.js in console 
+# CREATE YARN.LOCK FILE
+yarn import
+
+====================
+NPM Command : 
+---------------------
+npm start
+npx create-react-app my-app --use-npm / --use-yarn 
+npm global install/uninstall app-name
+npm install lodash --save
+--save-dev
+npm update lodash --save
+npm install -g live-server

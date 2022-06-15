@@ -1,0 +1,144 @@
+import { create } from "domain"
+
+*)index e browser dom include, 
+*)app js e react routers and rounter diye path and element(component,html,string) e pass kore,
+=================================
+index.js
+-------------
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+App.js
+--------
+
+ <>
+      <h1>React Router Dom 6 - By Geeky Show</h1>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<Contact/>}></Route>
+        <Route path="/contact" element={<About/>}></Route>
+        <Route path="/post" element={<Post/>}></Route>
+        <Route path="*" element={<h1>Error - 404 page</h1>}></Route>
+      </Routes>
+    </>
+
+nav.js
+-----------
+ <NavLink to="/" style={({isActive})=>{return {background:isActive?"red":""}}}>Home</NavLink>
+class o dorte parbo,
+
+*)first e pages gulo banabo,
+*)app theke route gulo define krbo and menually try krbo,
+*)last e nav link er ta try krbo,
+=================================
+
+Data pass by useParam,
+-------------------------------
+app.js
+------------
+        <Route path="/post/:category" element={<Post/>}></Route>
+        <Route path="/post/:brand/:id" element={<Post/>}></Route>
+post.js
+---------
+import { useParams } from 'react-router-dom'
+const {category,brand,id} = useParams();
+
+====================================
+UseSearch Param ,
+post.js 
+    const {category,brand,id} = useParams();
+    const [searchParam,setSearchParam] = useSearchParams()
+    // http://localhost:3000/post/leptop-brand/32?price=200
+    console.log(searchParam.get('price'));
+=============================
+Login handle to redirect somewhere:
+-----------------------------
+app.js
+----------
+useLocations
+-----------------
+hash: ""
+key: "s6be3qwi"
+pathname: "/login"
+search: ""
+state: {st: 'User is not Login'}
+[[Prototype]]: Object
+
+ let isLogged = false;
+        <Route path="/dashboard" element={isLogged? <Dashboard/>:<Navigate to='/login' replace state={{st:'User is not Login'}}/>}></Route>
+
+----------------------------
+Log out 
+------------------
+*)useNavigate diye path e logout krbo message diye,(useNavigate,useLocation diye show)
+-------------------------
+import { useLocation, useNavigate } from "react-router-dom";
+component er bitor 
+--------------------------
+ const Location = useLocation();
+  const Navigate = useNavigate();
+  const data = {
+      name:"arfan khan"
+  }
+
+<button onClick={() => {
+          Navigate('/logout',{state:data}) //button click e navitor 
+      }}>Log Out</button>
+
+
+=========================================================
+React with firebase authetications
+-------------------------------------------
+error handle react 18;
+index.js
+--------------
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<React.StrictMode>
+  <App />
+</React.StrictMode>);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+----------------------------------
+firebase project creating steps:
+/**
+ * Steps to use firebase
+ * 1. Create a project on console.firebase.google.com
+ * 2. npm install firebase 
+ * 3. Register Web app in firebase
+ * 4. copy firebase init with config from firebase project settings into a file firebase.init.js
+ * 5. export default app from firebase.init.js
+ * 6. import getAuth from firebase/auth and create const auth = getAuth(app) in App.js
+ * 7. import app firebase init.js into your app.js
+ * 8. turn on google authentication (firebase >authentication> enable google sign in)
+ * 9. create google provider
+ * 10. use signInWithPopup and pass auth and provider
+ * 11. handle .then (if successful) and catch error (if error) 
+ */
+
+firebaser Github app adding :
+/** 
+ * 1)enable git login system with github->developer-settings->oAuthNew app create
+ * 2)add information name,url,id of firebase 
+ * 3)get client id and generate client secrets 
+ * 4)add client id and secrets to fireabase git enable Options 
+ * 5)enable firebase after enable add like google into your app,
+ * */ 
