@@ -1,0 +1,127 @@
+*)name, what i am?, link social,
+*)address, = home,dhaka bangladesh,gmail,git,linkedin,protfolio site, phone number,
+*)projects, = title, = live link,code link, server link, 3 best point of the projects,technology used,
+*)skills = expertise, familiar, comfortable, tools, 
+*)Educational,
+*)professional training: complete web development course , programming hero, mern stack,online  - janu 1 - may 2022,
+*)language = bangla - native, english = fluent,hindi - fluent,
+*)extra curricular activities : 
+*)others projects,
+*)Experience
+*)Complete WEb desing form rr foundation online,
+--------------------------------
+*)skills e key hisebe use hobe,
+
+*)mainly project and skills gulo dekhbe,
+
+tips by jhankar mahbub:
+যদি ৫ টাইপের চাকরির জন্য এপ্লাই করেন, এটলিস্ট ৫ টা ডিফারেন্ট resume বানান।;
+*) কোনো স্পেসিফিক software বা qualification চাইসে বাট আপনি সেটা জানেন না। ছেড়ে না দিয়ে
+*)২. তারপর ৫ সেকেন্ড টেস্ট। এইবারও ওরা পুরা resume পড়বে না। একটা resume এর দিকে ৫-১০ সেকেন্ড তাকিয়েই ডিসিশন নিবে এইটা ভালো না
+*)আপ্নের গুরুত্বপূর্ণ এচিভমেন্টগুলো আগে দিন। শুরুতে একটা সামারিও দিতে পারেন। resume দেখতে যাতে সুন্দর হয় এবং 
+*)এখন ইন্টারভিউতে ডাকার জন্য সর্টলিস্ট করা হবে। এইবার কিন্তু সে resume গুলা দেখবে, ৫-৭ মিনিট করে এবং ২০ টা resume থেকে ৫-১০জনকে ইন্টারভিউ এর জন্য ডাকবে।
+*)পোলাপানের চাইতে বেশী/আলাদা কি করেছেন সেটা ভালো করে দিন।
+*)টিপস -৮: বহুল পরিচিত ফন্ট (arial, calibri, verdana) ব্যবহার করুন।ফন্ট সাইজ ১০-১২ এর মধ্যে রাখুন। মার্জিন আধা ইঞ্চি থেকে ১ ইঞ্চি এর মধ্যে রাখুন।
+টিপস-৯: resume তে আজাইরা জিনিস বা হিস্ট্রি লিখবেন না। বি প্রিসাইজ। ১-২ পৃষ্ঠা এর মধ্যে রাখুন। কোনো কিছু হাইলাইট করতে বোল্ড, আন্ডারলাইন বা বড় ফন্ট সাইজ ব্যবহার করতে পারেন। তবে এগুলার পরিমিত ব্যবহার করুন।
+টিপস -১১: resume তে কোনো বানানে বা সেন্টেন্স কনস্ট্রাকশনে ভুল থাকতে পারবে না। দরকার হলে ইংলিশ মিডিয়ামের বা ইংলিশে পড়ে এমন কাউরে লাঞ্চ করাইয়া আপনার resume রিভিউ করান।
+৪. ইন্টারভিউতে যাওয়ার আগে অবশ্যই ওই কোম্পানি এর ওয়েবসাইট থেকে জেনে নিবেন ওরা কি কি নিয়ে কাজ করে। ওইখানে পরিচিত কেউ জব করলে বা আগে কেউ ইন্টারভিউ দিছে তাদের কাছ থেকে কি কি টাইপের প্রশ্ন হতে পারে তা জেনে নিন। এমনকি যে ইন্টারভিউ এর জন্য কল করবে তাকেও জিগ্গেস করে দেখতে পারেন।
+টিপস-৬: প্রজেক্টে আপনার রোল (ভূমিকা) যেমন: লিডার, টিম মেম্বার, অর্গানাজার, টেকা গোছান এবং কবে থেকে কবে প্রজেক্ট ছিলো সেটা বলবেন।
+*)Can a Resume Be 2 Pages? A resume can be two pages, but most should be one page.
+
+
+*)assignment copy to my repo, 
+make a folder , 
+copy git clone link and add git clone --bare link 
+*)go to assignment folder, 
+*)create a new repo in your git hub and take git push url ,
+*)now go to assignment cmd folder and type git push --mirror linkYOurRepo,
+
+*)now amr project e new kichu add krte caile amr repote add krte hobe, 
+-)how ? 
+-) programming hero repo te add kore amr folder e giye git remote -v cmd run krbo,
+-)git remote set-url origin yourRepoLink 
+-)now check by typing git remote -v = you can see your remote link 
+-)now you can add and commit like same way. everythigs will work .
+
+cv = summery : 
+*)Enthusiastic learner,
+*)Love to take challenge,
+*)I have so much addiction on coding,
+*)sometimes coding error give me afraid but i never give up,
+An Enthusiastic learner,passionate about learning new technology skills, Always love to take new challenges, so much addiction on coding, A believer of never give up without achieving GOALS, Keep friendly and inspiring attitude to everyone.
+
+I’m a full stack web developer with hands-on skills & knowledge willing to take on chellanging and productive roles. I’m a quick learner and passionate about learning new technology skills. Currently I’m looking for a position to utilize my skill and knowledge as well as to learn and continuous improvement.
+
+An Enthusiastic learner, Passionate about learning new technology skills, always loves to take new challenges, Huge addiction on coding, A believer in never giving up without achieving GOALS, Keep a friendly and inspiring attitude toward everyone.
+
+Problem Solving Skills
+------
+I have solved almost 100 of Basic to medium level coding problems at edabit.com by using Javascript.Besides that I have some basic understanding about Data Structures and Algorithm.
+Complete Themeforest Standard Web Design Course
+RR Foundation (Online)
+2020
+Skills :
+Jquery,Psd To Html,Git,Heroku,Netlify,Postman,
+
+*)Inventory Management Website Base on Mern Stack.
+*)Successfully Implemented Firebase Auth, JWT Token Verification, Multiple User and Admin role with Dashboard Feature.Proper Form Validated. React Query Used.
+*)Backend Crud Rest API Made on User,Review,Products,Orders  with Jwt verification.
+*)Included ReactRouter@6, Minimalistic Animation, Eye Catching Design, Perfectly Respinsive and many more.
+Technology : React Router 6,React Hook Form With Yup.Firebase,React Query
+
+Resume Link :
+https://drive.google.com/file/d/1aFHxkxPifoG1T62-A9p74WKKn97Mp4Bl/view?usp=sharing
+========================================
+
+Subject : Applying for ReactJs developer possion - with 5+ projects experience.
+Dear Sir,
+I have seen your job post at LinkedIn.com that you need a ReactJS developer for your company.I Think I Can be the right one for you.
+
+*)I have done so many big projects based on frontend reactJS.
+*)Implemented some of them backend staff also based on Exprees With MongoDB database. 
+*)Have Better understanding about NEXT.JS.
+I would like to do any kind of sample task for your company without any payment. You can accept or reject me base on the sample task proficiency.
+Thanks for investing your valuable time to read this email. I have attached my resume so that you can know about my skills and projects for getting better Idea.
+Sincerely,
+Md Arfan Khan
+Mobile : +8801631512541
+Mail proff.
+Color simple,
+How to send jib email,
+
+Resume Link :
+https://drive.google.com/file/d/1aFHxkxPifoG1T62-A9p74WKKn97Mp4Bl/view?usp=sharing
+========================================
+
+Subject : Applying for ReactJs developer possion - with 5+ projects experience.
+
+Dear Sir,
+I have seen your job post at LinkedIn.com that you need a ReactJS developer for your company.I Think I Can be the right one for you.
+
+1)I have done so many big projects based on frontend reactJS.
+2)Implemented some of them backend staff also based on Exprees With MongoDB database. 
+3)Have Better understanding about NEXT.JS.
+
+I would like to do any kind of sample task for your company without any payment. You can accept or reject me base on the sample task proficiency.
+
+Thanks for investing your valuable time to read this email. I have attached my resume on top so that you can know about my skills and projects for getting better Idea.
+I'm eagerly waiting for your response.
+
+Sincerely,
+Md Arfan Khan
+Mobile : +8801631512541
+LinkedIn : https://www.linkedin.com/in/arfankhan09/
+Github : https://github.com/khan188993
+Portfolio Site: https://arfankhan.netlify.app/
+
+Mail proff.
+Color simple,
+How to send jib email,
+
+Email template banabo,
+
+
+
+linked in profile updated : 
+-----------------------------------
+education = du all info, college , ssc, all info with result, programming hero all ,js stack learer

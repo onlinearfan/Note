@@ -12,25 +12,48 @@ inset-y-1; inset-1/2; inset-full = all 100% , top-auto, inset-x-auto
 *)Sets left or top (x or y) margin between child elements, but skips the first element.
 *)space-x-1, space-y-1;
 
+*)break = sm(640) md(768) ,lg(1024), xl (1280), 2xl(1600) = lg, sm, md, 
+*)box-border, box-content, 
+*)display = flex, grid, inline,hidden, 
+*)position = fixed, relative,static,absolute,sticky, 
+*)position sizing, = top-1 = 4px, top-auto, top-1/2, -top-1 = -4px, top-[50%]; inset, inset-x, inset-y, 
+inset-auto, inset-x-auto, 
+*)visible, invisible,
+*)padding = p-1, pl,pt,pr,pb, py,px, py-1 = 4px, -py-1; 
+*)margin = m-1, m-auto, ml-auto, mx-auto, mt-3 = 12px, 
+*)space-x-1, gap er moto kaj kore, , space-y-3 = parent e use krbo always 
+
+
+
 Background =========
  bg-red-200, bg-success, bg-fixed, bg-center ,bg-left-top, bg-no-repeat,bg-cover,bg-opacity-10-90
 bg-gredient-to-bl from-blue-700,
 
+
+
 transform ===========
  scale-90,translate-1/2,,rotate, origin-top, origin-top-right,origin-center,
 
+
 box-shadow = shadow shadow-md, shadow-inner,
+
 
 flexbox =============== flex,flex-row,flex-col, flex-1,flex-wrap,flex-nowrap,flex-shirnk,flex-grow,
 order-first,last, order-1,gap-10,
 
+
 Grid =======================
 grid,grid-cols-3,grid-rows-3,gap-2,, col-auto, col-start-10,col-end-12,col-span-2,
+
+grid, grid-cols-3,grid-rows-3, (repeat(3,minmax(min-content,1fr))), gap-y-2,col-span-2,col-end-4 ,col-auto,
 
 alinement of element ===================
 justify-center,items-center,content-center,self-center
 ,justify-items-center,
 place-content-center,place-items-center,place-self-center,
+
+justify-center,justify-items-center,(items-center,content-center,self-center, = align) , 
+place-item-center, place-content-center, place-self-center,
 
 
 
@@ -38,6 +61,7 @@ Sizing ====================
 border-radius = rounded, rounded-md,rounded-3xl, rounded-rt-2xl,rounded-none,rounded-full,
 border-width = border = 1px  , border-2 = 2px, border-b-4 = bottom  4px,
 border-red-200,border-white, border-solid,border-l-solid
+
 
 Sets left or top (x or y) border width between child elements, but skips the first element.
 divide-x-2; divide-black,divide-solid,divide-opacity,ring-2, transition

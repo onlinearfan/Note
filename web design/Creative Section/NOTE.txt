@@ -162,4 +162,58 @@ clt-shift-c
 
 -------------------******--------------
 wrapper div er bitor content center tricks
+*)position with traslate, flex,grid, top:cals(50%-height/2)
+
+Grid all property working process: 
+---------------------------------------
+display:grid = to open grid style,
+grid-template-columns =  grid-cols-3 = repeat(3,(minmax,1fr)); = eita dile block div 3 column e vag hobe soman vabe, but height tader content onujai nibe,
+grid-template-rows =  grid-rows-3 = repeat(3,(minmax,1fr)) eita kaj korbe jodi wrapper div er height thake and ba fixed row er height dile kaj krbe,
+grid-auto-row  =  grid-rows-flow:400px eita 3 row bade baki guloi height use krbe minimum,
+grid-columns-span =  cols-span-2 = 2 theke dibo 1 er kno value nai, eita dile 2ta column niye nibe, jaiga,
+grid-rows-span =  rows-span-2 = 2 theke dibo 1 er kno value nai, eita dile 2ta rows niye nibe, jaiga,
+
+height fact na but width sob somoy fluied rakhar cesta krbo,
+*)grid wrapper er bitor kno element er width fixed krbo na kono somoy,
+*)grid wrapper er height auto barbe, min-height deya lagbe na,
+
+	place-content:center; = 2ta ek shate use hoi,
+	/*justify-content: center;*/
+	/*align-content:center;*/
+  
+	place-items:center; = 2ta ek shate use hoi,
+	/*justify-items: center;*/
+	/*align-items:center;*/
+  https://www.digitalocean.com/community/tutorials/css-align-justify = grid blogs
+
+  to center all text of a div = grid, align-content-center, text-center/justify-content-center, 
+  place-content-center,
+
+  place-item-center,justify-items,align-item = use for single text center, vertical and horizontally,
+
+  justify-content or, align-conent items egulo use krte hole template columng delete krte hobe fluid ta or fix thakle kaj krbe,,
+grid-template-col:repeat(auto-fit,minmax(300px,1fr))
+
+  read this blogs : https://www.freecodecamp.org/news/author/joy/
+
+
+CSS Flexbox ===================
+display:flex = this will inline all child elements in one line,
+flex-wrap = wrap, = this will responsive grid,
+flex-width = fixed
+
+flex-wrap use krle flex-gap use krte parbo na, seta niche ene dibe, taile,
+flex-wrap er shate tar child er width dite hobei,
+flex-wrap chara only flex use krle child er width deya na deya eki, tokhon responsive er jonno flex-row and flex-column shudu krte parbo 2 column er jonno use krte pari,
+
+flex = justify-center:start and align-item: starch,
+
+flexbox use krbo jodi row and column direct use kri, and ekta ekta kora namale grid use krbo,
+video ; https://www.youtube.com/watch?v=3elGSZSWTbM
+https://www.youtube.com/watch?v=u044iM9xsWU
+https://www.youtube.com/watch?v=rg7Fvvl3taU
+youtube.com/watch?v=bn-DQCifeQQ
+
+
+
 

@@ -1186,3 +1186,52 @@ Module 80: Last Module Grow as a web Developer
 
 
 _________________End____________________
+
+
+Scic course Tip an Trick  : 
+=================================
+0-1: Welcome to SCIC Job Hunting Battleground
+be a determind person to do the task properly,
+focus only your daily task forget about your past and future, 
+
+0-2: Five tips to get best out of SCIC
+job is possible but will have to do hard work and make resume and project great,
+21 days commitments
+fakibaji kora jabe na , copy kora jabe na, idea neya jabe,
+lege thakbe hobe,chok bondo kore shikhte hobe, 
+
+0-3: How SCIC will work with Rules and Guidelines
+coding er bepar ta pore recover krte parbo but ekhn job hunting tricks gulo valo moto sikhe rakhbo,
+scic te somoy kom pabo , and druto kaj e monojogi hote hobe,
+main course er moto mark distribution system hobe,
+1)at any how i have to submit all the task,
+2)resume dkehar moto banate hobe, eitai job er jonno most important jinis, 70% marks paite hobe,
+daily task jara finished krbe tader mock interview the bosai dibe and video publish krbe,
+mock inverview te 70% marks er upor thakte hobe,
+50% marks pete hobe, avg 50 er kacha kachi,
+jar resume joto valo hobe take oto taratari recommand krben
+initial state par na korle kno tofat nai,
+
+0-4: Be Professional with Special Notice to protect privacy
+time maintain kre sob krbe hobe, kotha barta sob kichute professionalize ante hobe,
+scic one time,
+cesta korte hobe, 
+
+------------------------------
+W-1 D-1 Build a professional web developer Resume
+mission (1) = year strick, 
+*)resume lagbe,
+*)same format resume banano jabe na,
+*)khub color thakbe na, name gulo color full krte paro,
+*)resume te chobi thakbe na, certificate name thakbe,
+js ,react,frontend,web develper,
+*)1 page hole valo , 2 page krte pari bises khetre,
+ki ki lagbe,  = name,phone email,address,portfolio site address,linkend account,github,
+ja ja skill shomporke jani tai add krbo, summery dite pari choto kore,project gulo add krbo,
+3 main feature bollet point kre add krbo,(per project er jonno 3ta github link jabe, client side, github,server,side, livesite,)
+egulor por ami onno kisu thakle dite pari na dite caile na dite pari ,others experians add krbo thakble,
+(hsc ,ssc, php,laravel familiar, wp theme dev, )
+simple resume banabo and project e agun lagabo, icon discarage,kori,resume draft ready, for update,
+9-10 bitor google e rekhe submit krbo, grp e post dibo pdf resume baniye, login chara jate sobai dekhte pare,
+format similar kra theke biroto thakar try krbo, grammer check kore dibo,
+others project link gulo choto kore dibo, :  google public link hobe, grp e post dibo,others comments, website e link submit,
