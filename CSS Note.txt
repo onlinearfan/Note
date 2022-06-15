@@ -215,5 +215,102 @@ https://www.youtube.com/watch?v=rg7Fvvl3taU
 youtube.com/watch?v=bn-DQCifeQQ
 
 
+*)center verticle and horizontal = flex,justify,align, 
+*)header item horizontal center = flex,align-center,
+*)a tag = display:block,padding,margin-top-bottom, 
+*)header main div = padding-top-bottom,
+*)center by before after = position absolute,top-left:50%, transform:translate(-50%x,y);
+*)a tag dropDown = a tag relative and inner ul tag absolute,width,desing,
+*)button create = display:inlineBlock,padding,font-size,color,background-border(same),transition
+*)bg img set = bg-color-img-repeat-position-size, 
+*)kno div k upor ante caile seta position relative kre z-index bariye dibo,
+*)before after diye about left right border,section title border,bg img setup,overlay img setup krte parbo,
+*)kno div position relative kre z-index dile and tar child div k absolute kre z-index - krle se tar parent er  last e cole zabe tai parent k z-index dibo na, 
+*)img e max-width use krbo and height e min-height use krbo sob somoy,
+*)p tag e line height tar text size er dubble dibo,
+*)kno text k verticle center ante text-center and lineheight: parent div er height size dibo,
+*)img background cover krte caile = width,height 100%, object-fit:cover krbo,
+*)margin left-right diye div er dan bam kata jai,
+*)margin top - kore/transform y - kore, / top - kore same kaj kora jai,
+*)display grid, template column dile, tader width deya jabe na bitor er kno content e, height dite parbo, but min-height use krbo,
+
+
+Multiple selector use,
+============================
+.single-promo-box:nth-child(4) .box-btn:hover ,
+.single-price-box:hover .price-content ,
+.single-price-box>ul li:hover .price-content ,
+.single-price-box:hover .price-content h3,
+.single-price-box:hover .price-content h2,
+.single-price-box:hover .price-content p{
+	color: white;
+}
+==========================
+
+before after e ja ja lage 
+===========================
+  .big-img-wrapper:before {
+	content: ""; / content e icon code dite pari,
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 100%;
+	height: 100%;
+	background: #7457fe;
+	z-index: -1;
+  }
+
+=========================
+======================
+dropdown sub menu,
+
+.sub-menu {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	width: 200px;
+	top: 115%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+ul li {
+	position: relative;
+}
+
+.sub-menu li a {
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+.sub-menu li a:before {
+	background: transparent;
+}
+
+nav ul li:hover>.sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.sub-menu li .ul.sub-menu {
+	left: 100%;
+	background: red;
+}
+
+.sub-menu li .sub-menu {
+	left: 90%;
+	top: 0%;
+}
+
+.sub-menu li:hover>.sub-menu {
+	left: 100%;
+	top: 0%;
+}
+
+=======================
 
 
