@@ -1,0 +1,64 @@
+NodeJS is a javascript runtime engine which execute javascript code in web browser with the help of V8 engine.
+
+
+Basic React Js Question 2 Ans:
+============================
+Folder Link:
+https://drive.google.com/drive/folders/1i6PuBArp0gVvsR5blVygmouXdX0FtL5w?usp=sharing
+File PDF Link :
+https://drive.google.com/file/d/1XCCqtzl_jvKoLeMYNgiqP5RwNfNqVuXg/view?usp=sharing
+Audio Link :
+https://drive.google.com/file/d/1nPE1Ukn6jG_FFMzzg25XcVoMOTlZZ4V0/view?usp=sharing
+
+
+=======
+
+1)Javascript is a programming language but NodeJs is a javascript Runtime engine. 
+
+2)without nodeJs javascript can run only on browser but with the help of node js javascript can run outisde of browser. 
+
+3)Only Javascript works in clients side only. But node Js works mostly doing server side task.
+
+4)Javascript used in front End.but node js used for backed. 
+
+
+=======
+
+NodeJS works based on single Thread. 
+
+
+========
+Blocking non blocking
+
+=======
+
+NPM is a Node Package manager of javascript. It helps to manage the packages of Application.Like update old,install new,uninstall, downgrade etc.
+
+
+======
+
+Database is a store of collection of various datas for an application.The perpose of database is to store the application required datas in a well structured way.
+
+
+=======
+
+CRUD means Create,Read,UPDATE,DELETE.Generally In an application we need to works with four functionality like Sometimes we need to add new data in our application for this we use create functionality. sometimes we need to delete data for this we use delete functionality.like this we can Read and update data by using Updat and read functionality.
+
+
+======
+
+In an application put and patch method used for updating data. They both works for updating. But there has a little bit different Between them. In put method for updating data we first find the unique id for updating it and if data id found then it will update it but if unique id didn’t find then it will create a new data with a new ID. But patch method only update data. It will not create any new data if its not find any unique id.
+
+
+=======
+
+Webpack is a free and open-source module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included. Webpack takes modules with dependencies and generates static assets representing those modules
+
+Webpack is a tool that lets you compile JavaScript modules, also known as module bundler. Given a large number of files, it generates a single file (or a few files) that run your app. It can perform many operations: helps you bundle your resources.
+
+
+Webpack is a popular module bundling system built on top of Node. js. It can handle not only combination and minification of JavaScript and CSS files, but also other assets such as image files (spriting) through the use of plugins.
+NodeJS is a javascript runtime engine which execute javascript code in web browser with the help of V8 engine.
+
+
+amader choto nodi cole bake bake, ei bar take pele marbo zhake zhake,
